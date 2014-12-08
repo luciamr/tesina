@@ -1,15 +1,32 @@
 import os
 from os.path import exists, isdir, basename, join, splitext
 
-
-def read_tt_sets_file(filename='sets.txt'):                                                                                                                                         
-                                                                                                                                                                                        
-    if exists(filename) != False | os.path.getsize(filename) == 0:                                                                                                                                       
-        raise IOError("Wrong file path or file empty: "+ filename)                                                                                                                                        
-                                                                                                         
-        with open(filename, 'rb') as f:                                                                                                                                                                   
-            locs, descriptors = cPickle.load(f)                                                                                                                                                           
-    else:                                                                                                                                                                                                
+def read_tt_sets_file(filename='sets.txt'):
+    if exists(filename) != False | os.path.getsize(filename) == 0:
+        raise IOError('Wrong file path or file empty: ' + filename)
+    else:
+        with open(filename, 'rb') as f:
+            header = f.readline().split(' ')
+            num_cat = int(header[0])
+            num_set = int(header[1])
+            all_cats = []
+            all_files = {}
+            for i in range(0, num_cat):
+                cat_name = f.readline().rstrip('\n')
+                all_cats.append(cat_name)
+                cat_path = f.readline().rstrip('\n')
+                cat_files = {}
+                for j in range(0, num_set):
+                    train = f.readline().split(' ')
+                    test = f.readline().split(' ')
+                    train_path = [cat_path + t for t in train]
+                    test_path = [cat_path + t for t in test]
+                    cat_files[j] = (train_path, test_path)
+                all_files[cat_path] = cat_files
+            f.close()
+        return all_cats, all_files
+                        
+                                                                                                                                                                                                                    
         f = open(filename, 'r')                                                                                                                                                                           
         header = f.readline().split()                                                                                                                                                                     
                                                                                                                                                                                                           

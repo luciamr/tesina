@@ -2,7 +2,7 @@ from os.path import exists, isdir, basename, join, splitext
 from glob import glob
 import random
 
-DATASETPATH = '/home/lucia/Documents/curso_python/python-internal-seminar/clase 2/pictures/101_ObjectCategories'
+DATASETPATH = './pictures/101_ObjectCategories'
 EXTENSIONS = ['.jpg', '.bmp', '.png', '.pgm', '.tif', '.tiff']
 
 def get_categories(datasetpath):
