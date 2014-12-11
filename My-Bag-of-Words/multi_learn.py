@@ -10,7 +10,7 @@ from gen_sets import gen_tt_sets
 from load_sets import read_tt_sets_file
 
 EXTENSIONS = [".jpg", ".bmp", ".png", ".pgm", ".tif", ".tiff"]
-DATASETPATH = '101_ObjectCategories'
+DATASETPATH = './pictures/101_ObjectCategories'
 PRE_ALLOCATION_BUFFER = 1000  # for sift
 HISTOGRAMS_FILE = 'trainingdata.svm'
 K_THRESH = 1  # early stopping threshold for kmeans originally at 1e-5, increased for speedup
@@ -48,11 +48,11 @@ def extractSift(input_files):
     for i, fname in enumerate(input_files):
         features_fname = fname + '.sift'
         if exists(features_fname) == False:
-            print "calculating sift features for", fname
+            #print "calculating sift features for", fname
             sift.process_image(fname, features_fname)
-        print "gathering sift features for", fname,
+        #print "gathering sift features for", fname,
         locs, descriptors = sift.read_features_from_file(features_fname)
-        print descriptors.shape
+        #print descriptors.shape
         all_features_dict[fname] = descriptors
     return all_features_dict
 
@@ -124,8 +124,10 @@ if __name__ == '__main__':
         all_features = {}
         cat_label = {}
         for cat_path, label in zip(files.keys(), range(len(cats))):
-            cat_files_names = files[cat_path][set][0][0]
+            #print files[cat_path][set]
+            cat_files_names = files[cat_path][set][0]
             cat_files = [cat_path + '/' + name for name in cat_files_names]
+            #print cat_files
             cat_features = extractSift(cat_files)
             all_files = all_files + cat_files
             all_features.update(cat_features)

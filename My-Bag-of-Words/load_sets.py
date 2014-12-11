@@ -17,11 +17,11 @@ def read_tt_sets_file(filename='sets.txt'):
                 cat_path = f.readline().rstrip('\n')
                 cat_files = {}
                 for j in range(0, num_set):
-                    train = f.readline().split(' ')
-                    test = f.readline().split(' ')
-                    train_path = [cat_path + t for t in train]
-                    test_path = [cat_path + t for t in test]
-                    cat_files[j] = (train_path, test_path)
+                    train = f.readline().rstrip('\n').split(' ')
+                    test = f.readline().rstrip('\n').split(' ')
+                    #train_path = [cat_path + t for t in train]
+                    #test_path = [cat_path + t for t in test]
+                    cat_files[j] = (train, test)
                 all_files[cat_path] = cat_files
             f.close()
         return all_cats, all_files

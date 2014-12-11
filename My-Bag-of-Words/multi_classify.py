@@ -7,7 +7,7 @@ from load_sets import read_tt_sets_file
 HISTOGRAMS_FILE = 'testdata.svm'
 CODEBOOK_FILE = 'codebook.file'
 MODEL_FILE = 'trainingdata.svm.model'
-DATASETPATH = '101_ObjectCategories'
+DATASETPATH = 'pictures/101_ObjectCategories'
 NUM_SETS = 5
 
 def parse_arguments():
@@ -31,8 +31,8 @@ for set in range(0, NUM_SETS):
     all_features = {}
     
     for cat_path in files.keys():
-        cat_files = [cat_path + '/' + name for name in files[cat_path][set][1][0]]
-    all_files.extend(cat_files)        
+        cat_files = [cat_path + '/' + name for name in files[cat_path][set][1]]
+        all_files.extend(cat_files)        
 
     datasetpath = DATASETPATH
     model_file = datasetpath + str(set) + '.' + MODEL_FILE
@@ -67,4 +67,5 @@ for set in range(0, NUM_SETS):
 
     print "---------------------"
     print "## test data with svm"
-    print libsvm.test(datasetpath + str(set) + '.' + HISTOGRAMS_FILE, model_file)
+    accuracy = libsvm.test(datasetpath + str(set) + '.' + HISTOGRAMS_FILE, model_file)
+    print accuracy
