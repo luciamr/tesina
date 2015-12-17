@@ -1,0 +1,67 @@
+\section{Motivación y Objetivo General}
+\iffalse
+Explique el problema o situación de referencia en el que se desarrolla la
+propuesta o los interrogantes en el campo disciplinario a los que la propuesta se
+dirige. Desarrolle la importancia e impacto de los objetivos y el conocimiento
+que se generará. En esta sección no es necesario describir las tareas específicas
+que se realizarán (para eso, ver Objetivos específicos).
+\fi
+
+%Procesamiento de videos
+
+%Historia de los micros
+
+Desde su invenci\'on en 1971, los procesadores fueron evolucionando
+para aumentar su poder de c\'omputo.
+%Freq Scaling & Multicores
+Para poder lograrlo se utiliz\'o una t\'ecnica denominada
+\textbf{transistor-speed scaling}, que permit\'ia que en cada
+generaci\'on de procesadores la velocidad de c\'omputo se duplicara,
+disminuyendo el tama\~no de los transistores. Sin embargo, al llegar a
+tama\~nos muy peque\~nos, los transistores pierden energ\'ia y como
+consecuencia se aumenta tanto el consumo que la t\'ecnica ya no es
+viable~\parencite{Borkar:2011:FM:1941487.1941507}. Como forma
+alternativa de aumentar la capacidad de procesamiento, se opt\'o por
+retomar la idea de aumentar la cantidad de unidades de procesamiento
+dentro de un mismo
+procesador~\parencite{Noguchi:1975:DCH:1499949.1500062}.
+
+% Problema con Multicores
+Si bien aumentando los n\'ucleos dentro de los procesadores nos
+permite en \textit{teor\'ia} poder ejecutar instrucciones en paralelo
+multiplicando el poder de c\'omputo, en la pr\'actica no es tan
+f\'acil obtener un mayor rendimiento.  Cuando se aumentaba la
+frecuencia de los microprocesadores se ejecutaban \textbf{exactamente
+  las mismas} instrucciones. Es decir, se ejecutaban m\'as r\'apido
+\textbf{los mismos algoritmos}. En cambio, en un procesador
+multin\'ucleo, los algoritmos deber\'an tener en cuenta c\'omo se van
+a distribuir las tareas a los distintos n\'ucleos y c\'uales tareas se
+podr\'an realizar en paralelo. Es decir, se deber\'an adaptar
+los algoritmos para decidir qu\'e tareas se podr\'an desarrollar en
+paralelo, e incluso se deber\'an adaptar los lenguajes de
+programaci\'on para dotar a los programadores con primitivas lo
+suficientemente expresivas para que puedan explotar todo el hardware
+subyacente. Por su parte, los compiladores se deber\'an modificar para
+que puedan generar ejecutables que manejen la comunicaci\'on entre
+n\'ucleos, manejo de memoria, evitar o detectar \textit{deadlocks},
+etc.
+
+Para incorporar paralelismo en los programas se han extendido los
+lenguajes de programaci\'on, o bien se han desarrollado bibliotecas,
+con diversos grados de \'exito.  El estudio de formas de incorporar
+en forma simple y eficiente la programaci\'on paralela al desarrollo
+de software sigue siendo objeto de investigaci\'on.  En particular, en
+el lenguaje de programaci\'on Haskell se han desarrollado una variedad
+de extensiones del lenguaje, bibliotecas, y abstracciones, que permiten
+encarar el problema de la programaci\'on paralela desde diversos
+\'angulos.
+
+Para dar soporte a la experimentaci\'on con formas nuevas de
+incorporar paralelismo al desarrollo de software es necesario el
+desarrollo de herramientas adecuadas que permitan el an\'alisis de las
+ejecuciones obtenidas.
+%Objetivo general?
+El objetivo general de esta tesina ser\'a el desarrollo de un lenguaje
+de dominio espec\'ifico embebido en Haskell que permita la
+simulaci\'on simb\'olica de programas paralelos escritos para varias
+de las abstracciones existentes.

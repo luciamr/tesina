@@ -1,0 +1,227 @@
+\section{Fundamentos y estado del conocimiento sobre el tema}
+\iffalse
+Escriba una breve introducción general al tema y cite y comente las mayores
+contribuciones en el tema específico, incluyendo bibliografıa actualizada.
+\fi
+% % Paralelismo dificil
+% Los procesadores multin\'ucleo nos dan la posibilidad de poder ejecutar
+% de manera paralela tantos programas como n\'ucleos tenga de manera simult\'anea.
+% Por lo que si dado un problema en particular logramos establecer que tras realizar
+% varias tareas independientes podremos llegar a la soluci\'on, en principio podr\'iamos
+% realizarlas todas en paralelo y arribar a la soluci\'on de manera m\'as r\'apida.
+% Concretamente, deber\'iamos decidir como distribuir las tareas dentro de los distintos
+% n\'ucleos (posiblemente din\'amicamente), prepararnos para que las distintas tareas
+% se puedan comunicar de manera segura, proveer mecanismo para solucionar deadlocks y
+% problemas de sincronizaci\'on, etc.
+
+
+% % Paralelismo implicito y explicito.
+% Deber\'iamos entonces permitirle al programador dar ciertas directivas,
+% establecer cuales procedimientos son los que se realizar\'an para
+% distribuir las tareas, y as\'i para cada una de las cuestiones necesarias
+% para la correcta ejecuci\'on. Por lo que se deber\'an agregar ciertas
+% primitivas o funciones para el manejo de paralelismo denominadas
+% \textit{lenguaje de coordinaci\'on}, dado que permitir\'ian manipular la ejecuci\'on
+% de de las computaciones paralelas. Se han tomado varios enfoques, desde un lenguaje
+% de coordinaci\'on muy grande con mucho control por parte del programador, hasta
+% un lenguaje m\'inimo (o nulo) donde es el compilador \todo{en conjunto con el runtime?} quien se encarga de controlar
+% la ejecuci\'on, decidir como mapear los hilos a los n\'ucleos, establecer c\'omo 
+% se comunican los n\'ucleos, etc.
+% Ambos tienes ventajas y desventajas, el primer enfoque donde el paralelismo es expl\'icito
+% el resultado final es muy eficiente, se puede obtener un programa que utilice (en lo 
+% posible) todo el hardware subyacente mientras que el c\'odigo se ve plagado \todo{plagado?} del
+% lenguaje de coordinaci\'on, puede llegar a estar muy ligado \todo{ligado?} a un hardware espec\'ifico
+% y el desarrollador deber\'a adem\'as de dise\~nar la l\'ogica de negocios el modo de realizar
+% paralelismo; el segundo enfoque donde el paralelismo es impl\'icito
+% el resultado final no es muy eficiente, tiende a generar hilos para evaluar
+% computaciones que no requieren mucho poder de c\'omputo aunque
+% el c\'odigo no se ve modificado (o m\'inimamente modificado) permitiendo que tareas
+% como la b\'usqueda de errores sean m\'as sencillas y que el desarrollador
+% se pueda especializar en la implementaci\'on de la l\'ogica de negocios
+% sin tener que pensar en c\'omo se realizar\'a  la ejecuci\'on.
+
+% % Lenguajes Funcionales
+% Utilizando lenguajes funcionales algunos problemas antes mencionados
+% pasan a ser evidentes, de manera que tras cierto an\'alisis el compilador puede
+% inferir la soluci\'on autom\'aticamente. Particularmente algunos beneficios
+% de los programas funcionales mencionados por Paul Roe en~\parencite{Roe91parallelprogramming} son:
+% \begin{itemize}
+% 	\item que al ser determin\'isticos podemos razonar acerca de los programar paralelos de
+% la misma manera que de los secuenciales dejando a la paralelizaci\'on como
+% una soluci\'on para arribar a la respuesta
+% m\'as r\'apido.
+% 	\item no se necesita explicitar c\'omo va a ser la comunicaci\'on,
+% la sincronizaci\'on, o la exclusi\'on mutua de los programas, ya que el compilador
+% lo puede extraer autom\'aticamente.
+% 	\item  un deadlock solo puede ocurrir si el resultado del programa es indefinido.
+% \end{itemize}
+
+
+% Si bien es posible que el compilador explote el paralelismo inherente al programa
+% ~\parencite{Loidl92aparallelizing}, es decir, con un lenguaje de coordinaci\'on nulo,
+% resulta en programas con un nivel alto de granularidad.
+% Por lo que se opta por un enfoque intermedio donde la decisi\'on de
+% \textbf{qu\'e} es lo que se va a paralelizar es dejado al programador, mientras
+% que el compilador y el \textit{runtime} se encargan de distribuir el trabajo
+% sobre los n\'ucleos del procesador y la comunicaci\'on entre los distintos hilos del programa.
+
+La programaci\'on paralela, a diferencia de la programaci\'on concurrente, se refiere
+a la ejecuci\'on de un programa determin\'istico de forma de
+aprovechar varios procesadores. Debido a que en muchos lenguajes la
+programaci\'on paralela se implementa usando concurrencia, estos dos
+conceptos son a menudo confundidos. 
+
+En los lenguajes imperativos la computaci\'on se realiza mediante la
+modificaci\'on de un estado. Esto genera que se creen dependencias de
+datos esp\'ureas que dificultan la introducci\'on de paralelismo. En
+los lenguajes funcionales puros, en cambio, estas dependencias s\'olo
+aparecen cuando expl\'icitamente se produce un efecto lateral, por lo
+que hay m\'as oportunidades de paralelizaci\'on.  
+
+%Por que Haskell?
+En esta tesina vamos a trabajar con Haskell~\parencite{Marlow_haskell2010}, dado que es un
+lenguaje funcional puro. Esto nos otorga cierta libertad en el orden de ejecuci\'on
+de las computaciones, permiti\'endonos estudiar el paralelismo como un
+objeto aislado. Adem\'as el lenguaje es un buen anfitri\'on de
+lenguajes DSL~\parencite{Hudak:1996:BDE:242224.242477,Gill:2014:DLC:2611429.2617811}, por lo que se facilita la
+implementaci\'on de la herramienta planeada.
+
+%Paralelismo en Haskell
+Como primitivas de bajo nivel, Haskell presenta dos funciones (\textit{puras}) de paralelismo,
+la funci\'on \textit{par} y \textit{pseq}.
+\begin{itemize}
+  \item \textit{par} nos permite indicarle al compilador que una computaci\'on
+puede realizarse en paralelo, respetando la sem\'antica \textit{par a b = b} donde
+\textit{a} podr\'ia ser evaluada en paralelo.
+  \item \textit{pseq} nos permite secuenciar la evaluaci\'on de
+las expresiones, donde \textit{pseq a b = b} aunque primero \textit{a} es reducido
+a su formal normal d\'ebil a la cabeza.
+\end{itemize}
+%
+%
+Notar que el paralelismo es independiente del numero de procesadores disponibles, ya que
+cada vez que se utiliza \textit{par} se crea una nueva oportunidad de trabajo para que sea
+aprovechada por el procesador si \'este tiene poder de c\'omputo disponible.
+
+Se han desarrollado otros modelos generales de m\'as alto nivel como ser:
+\begin{itemize}
+\item \textbf{estrategias} o \textbf{m\'onada Eval:} ~\parencite{strategies-2010}
+  donde encapsulan \textit{par} y \textit{pseq} dentro de una m\'onada
+  permitiendo componer distintas estrategias de evaluaci\'on de distintas maneras
+  para paralelizar programas.
+\item \textbf{m\'onada Par:}  ~\parencite{Marlow:2011:MDP:2096148.2034685} donde utilizando
+  primitivas de concurrencia redefinen la noci\'on de par y en conjunto con \textit{I-estructuras},
+  otorgan al programador mayor granularidad sobre el manejo de hilos y canales
+  de comunicaci\'on entre los mismos.
+\end{itemize}
+
+
+%Mostrar que en Haskell se esta desarrollando el paralelismo??
+Dentro de Haskell se han desarrollado adem\'as DSLs para el manejo de
+paralelismo \textbf{espec\'ifico}, como ser: las librer\'ias
+Accelerate~\parencite{Accelerate}, Obsidian~\parencite{Obsidian}, y
+Nikola~\parencite{mainland2010} para la utilizaci\'on de
+\textbf{GPU}; \textbf{Data Parallel Haskell}~\parencite{DPH}; y
+\textbf{REPA} para computaciones de alto rendimiento en arreglos
+multidimensionales en paralelo~\parencite{REPA}.
+
+\subsection{Herramientas para el an\'alisis de programas paralelos}
+
+% ThreadScope
+Haskell posee una herramienta \textbf{ThreadScope}~\parencite{export:80976} que permite observar
+los resultados de una ejecuci\'on de un programa paralelo en Haskell.
+Nos permite realizar \textit{profiling} y as\'i observar de manera
+gr\'afica el uso de los diferentes procesadores durante una ejecuci\'on.
+Esto permitir\'ia ajustar un programa para obtener un mayor rendimiento~\parencite{export:79856},
+Sin embargo, la herramiento no nos permite observa qu\'e esta siendo
+paralelizado, d\'onde se generan hilos esp\'ureos, etc.
+
+% GranSim
+%~\cite{gransim}
+% ParaPhrase? Es de erlang, pero es una herramienta para generar paralelsimo,
+% no para estudiarlo. 
+% ParaScope Editor
+Fortran posee herramientas como \textbf{ParaScope}~\parencite{Kennedy:1991:IPP:628897.629046}
+que nos provee de un editor interactivo para la generaci\'on de programas paralelos.
+% Cuda-gdb & Cuda Visual Profiler & Nsight 
+El lenguaje de programaci\'on \textbf{Cuda} utilizado para
+programaci\'on de prop\'osito general en GPU, posee herramientas
+como \textbf{Cuda-Gdb}~\parencite{CudaGdb} utilizada para depurar los programas realizados,
+\textbf{NVIDIA Visual Profiler}~\parencite{CudaProf} utilizada para realizar profiling de
+los programas y as\'i poder optimizarlos, y adem\'as presenta una plataforma
+\textbf{NVIDIA Nsight}~\parencite{CudaNsight}  que permite depurar y hacer profiling de programas,
+ayuda al programador a detectar \textit{cuellos de botella} y a observar
+el comportamiento general de todo el sistema.
+
+En todos estos casos el foco est\'a, o bien en profiling
+(b\'asicamente, medir cuan
+r\'apido se ejecuta un programa y con qu\'e uso de los procesadores),
+o bien en depuraci\'on de bajo nivel. En ninguno de los casos las
+herramientas proveen forma de analizar la estructura paralela de los
+programas como se propone en esta tesina. 
+
+%\todo{herramientas en otros lenguajes?}
+
+% \iffalse
+% %par
+% Dentro de Haskell la funci\'on b\'asica de paralelismo \textit{puro} es el combinador
+% \textit{par}. Definido en la librer\'ia \textit{Parallel}
+% del compilador GHC como:
+% \begin{lstlisting}[language=Haskell]
+% infixr 0 `par`
+
+% par :: a -> b -> b
+% \end{lstlisting}
+% Que toma dos argumentos que van a ser c\'omputados en paralelo, con una sem\'antica
+% definida como:
+% \begin{lstlisting}[language=Haskell]
+% par q p = p
+% \end{lstlisting}
+% Es un combinador no estricto, que dado dos argumentos \textit{p} y \textit{q},
+% indica que p puede ser evaluado en un nuevo hilo de manera paralela, y el hilo
+% padre continua con la evaluaci\'on de q~\parencite{Trinder:1998:ASP:969616.969618}. 
+% Notar que \textit{par} indica que hay trabajo que puede llegar a realizarse, y que el runtime
+% puede ignorar estas indicaciones.
+
+
+% %pseq
+% Dado que controlar la secuenciaci\'on puede ser importante para un lenguaje
+% paralelo~\parencite{Roe91parallelprogramming}, es introducido el operador
+% de composici\'on secuencial, \textit{pseq}. Definido como:
+% \begin{lstlisting}[language=Haskell]
+% infixr 1 `pseq`
+
+% pseq :: a -> b -> b
+% \end{lstlisting}
+% Que toma dos argumentos, \textit{pseq p q}, donde se va a evaluar \textit{p}
+% a su forma normal d\'ebil a la cabeza, antes de retornar
+% \textit{q}.
+
+
+% %Ejemplo
+% Por ejemplo, podemos implementar \textit{Fibonacci} de la siguiente manera:
+% \begin{lstlisting}[language=Haskell]
+% fib :: Int -> Int
+% fib 0 = 1
+% fib 1 = 1
+% fib n = let
+% 	    x = fib (n-1)
+%             y = fib (n-2)
+%         in
+%             x `par` (y `pseq` x+y)
+% \end{lstlisting}
+% La computaci\'on de Fibonacci esta formada como un \'arbol binario, donde a cada
+% nodo de la computaci\'on se combina con \textit{par} y \textit{pseq} para evaluar
+% ambas ramas del \'arbol en paralelo. Con \textit{par} la rama de \textit{fib (n-1)} se encapsula
+% en un \textit{spark}, esperando por ser evaluado, y continua con la ejecuci\'on
+% de \textit{y `pseq` x+y}. Con \textit{pseq} logramos controlar la ejecuci\'on, se espera que
+% se eval\'ue \textit{y} antes de continuar con $(x+y)$
+
+
+% -----
+
+
+% \textbf{esqueletos:} ~\parencite{Darlington93structuredparallel}
+%   donde se utilizan estructuras de paralelismo ya conocidas para utilizarlas
+%   en los programas.
+% \fi

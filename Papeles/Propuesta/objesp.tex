@@ -1,0 +1,34 @@
+\section{Objetivos espec\'ificos}
+%Enuncie de manera clara las metas concretas a alcanzar en el marco de la tesina.
+Proponemos desarrollar una nueva herramienta que nos permita modelar
+algoritmos y modelos paralelos, y observar en detalle la estructura
+de una computaci\'on paralela. Para esto proponemos dise\~nar un EDSL
+(lenguaje de dominio espec\'ifico embebido) en Haskell que capture las
+computaciones paralelas y las simule. 
+%
+Debido a que el EDSL es embebido, no ser\'a necesario capturar las
+computaciones secuenciales, las cuales ser\'an ejecutadas por Haskell
+en forma usual.
+
+% En contraposici\'on con ThreadScope,
+% se buscar\'a desarrollar un DSL que nos permita modelar y observar el paralelismo
+% que el desarrollador construy\'o, sin la necesidad de tener que
+% ejecutar el programa. 
+
+\iffalse
+  \item[Desarrollo de sintaxis:] Se buscar\'a desarrollar una nueva sintaxis para
+la modelaci\'on de computaciones paralelas, que permita al desarrollador
+encapsular el paralelismo en forma que sea independiente a la computaci\'on.
+  \item[Sem\'antica de dicha sintaxis:] Se establecer\'a la sem\'antica de dicha
+sintaxis,
+permitiendo al desarollador especificar computaciones paralelas
+libremente
+permitiendo que el desarrollador obtenga el control sobre todas las computaciones
+paralelas, sin especializar el tipo de paralelismo.
+  \item[Desarrollo de casos de estudio:] Se buscar\'an y desarrollar\'an casos
+de estudio que permitan evaluar el rendimiento al utilizar la sintaxis desarrollada,
+mostrando que la sintaxis permite describir paralelismo f\'acilmente.
+
+\end{description}
+
+\fi
