@@ -4,8 +4,9 @@
 
 %biblatex
 %\usepackage[url=false, doi=false, style=authoryear, uniquename=false]{biblatex}
-\usepackage[style=authoryear, backend=bibtex, uniquename=false]{biblatex}
-\bibliography{cites}   
+%\usepackage[style=authoryear, uniquename=false]{biblatex}
+\usepackage{natbib}
+%\bibliography{cites}   
 %\renewcommand*{\bibfont}{\footnotesize}
 %\renewcommand*{\bibfont}{\small}
 
@@ -17,11 +18,12 @@
 \usepackage{stmaryrd}
 
 \begin{document}
-\title{Propuesta de Tesina para la obtención del grado Licenciado en Ciencias de la Computación}
+\date{9 de diciembre de 2015}
+\title{Propuesta de Tesina para la obtención del grado \\ Licenciado en Ciencias de la Computación}
 \maketitle
 
 \begin{description}
-  \item[Postulante:] Martín Reixach, Lucía N.
+  \item[Postulante:] Martín Reixach, Lucía Norma
   \item[Director:] Granitto, Pablo
   \item[Codirector:] Larese, Mónica
 \end{description}
@@ -33,7 +35,7 @@ Actualmente estoy realizando actividad docente en las materias Programación I y
 Se espera dedicar al menos 25 hs. semanales a la realización de la Tesina.
 
 \section{Título}
-Detección de eventos en videos: análisis de partidos de Rugby
+Detección de eventos en videos: análisis de partidos de Rugby.
 %\todo{Poner bien el titulo.}
 
 \input{motyobjgen.tex}
@@ -41,5 +43,9 @@ Detección de eventos en videos: análisis de partidos de Rugby
 \input{objesp.tex}
 \input{plantrab.tex}
 
-\printbibliography
+%\printbibliography
+\bibliographystyle{abbrv} %siam
+\nocite{*}
+\bibliography{cites}
+
 \end{document}
