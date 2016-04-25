@@ -8,9 +8,9 @@ para la industria. La detección de diferentes tipos de escenas por lo general s
 el color y la textura de las imágenes entre otras propiedades visuales.
 
 Hace ya más de una década, comenzó a verse una tendencia a usar \textit{keypoints} y puntos de interés local en la recuperación y
-clasificación de la información contendida en la imágenes. ***** Los \textit{keypoints} son zonas destacadas de las imágenes, que contienen
-abundante información local acerca de la misma, los cuales pueden ser identificados usando diferentes detectores *** y respresentados
-por diversos descriptores.***
+clasificación de la información contendida en la imágenes. Los \textit{keypoints} son zonas destacadas de las imágenes, que contienen
+abundante información local acerca de la misma, los cuales pueden ser identificados usando diferentes detectores y respresentados
+por diversos descriptores.
 
 Una vez que los \textit{keypoints} son obtenidos, éstos son distribuidos en una gran cantidad de \textit{clusters}, asignando a un mismo
 \textit{cluster} aquellos de características similares. Cada \textit{cluster} es considerado una \textit{visual word}
@@ -25,12 +25,14 @@ como la semántica. Ésto permite que muchas de las técnicas ya desarrolladas y
 al trabajo con imágenes.
 
 Los \textit{keypoints} suelen encontrarse en los ángulos y bordes de los objetos presentes en las imágenes.
-Uno de los métodos más utilizados para la detección de los \textit{keypoints} es la Diferencia Gaussiana (DoG), sin embargo existen otros como
-Harris corner detector, Fast Hessian detector, AGAST y multi-scale AGAST. 
+Uno de los métodos más utilizados para su detección es la Diferencia Gaussiana (DoG), sin embargo existen otros como
+Harris Corner Detector\parencite{harris1988combined}, Fast Hessian Detector\parencite{bay2006surf}, AGAST\parencite{mair2010adaptive} y
+multi-scale AGAST\parencite{leutenegger2011brisk}. 
 
 En cuanto a los descriptores, a lo largo de los años se han publicado numerosos desarrollos. Para trabajar con imágenes, alguno de los más utilizados
-son SIFT\parencite{lowe2004distinctive} y FREAK\parencite{alahi2012freak}. Por lo general, cada descriptor se utiliza en conjunto a un detector
-específico. En lo referente a videos, suelen utilizarse descriptores que se basan en los de imágenes e incorporan el factor temporal,
+son SIFT\parencite{lowe2004distinctive}, SURF\parencite{bay2006surf}, BRISK\parencite{leutenegger2011brisk} y FREAK\parencite{alahi2012freak}.
+Por lo general, cada descriptor se utiliza en acompañado de un detector específico.
+En lo referente a videos, suelen utilizarse descriptores que se basan en los de imágenes e incorporan el factor temporal,
 como MoSIFT\parencite{chen2009mosift} y MoFREAK\parencite{whiten2013mofreak}.
 
 Una vez que se completa el proceso de obtención de información de los objetos a clasificar y construimos nuestro \textit{Bag of Visual
@@ -38,7 +40,7 @@ Words}, se llega a la etapa de clasificación propiamente dicha. Para completar 
 actualmente es \textit{Support Vector Machine} (SVM).
 
 Se han hecho diversas pruebas en videos utilizando la idea de \textit{Bag of Visual Words}, algunas con
-datasets de videos específicos, con movimientos y escenas acotados, creados para el uso académico como los datasets KTH y HMDB51
-\parencite{schuldt2004recognizing, kuehne2011hmdb, whiten2013mofreak} y otros con clips pertenecientes a películas y deportes
+datasets de videos específicos, con movimientos y escenas acotados, creados para el uso académico como los datasets KTH\parencite{schuldt2004recognizing}
+y HMDB51\parencite{kuehne2011hmdb}\parencite{whiten2013mofreak} y otros con clips pertenecientes a películas y deportes
 \parencite{chen2011violence, nievas2011violence, deniz2014fast}. En ambos casos, los resultados fueron alentadores, mostrando el
 potencial de esta manera de abordar la detección y clasificación.

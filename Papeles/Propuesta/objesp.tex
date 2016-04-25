@@ -1,13 +1,15 @@
 \section{Objetivos específicos}
 %Enuncie de manera clara las metas concretas a alcanzar en el marco de la tesina.
 Proponemos desarrollar una herramienta que nos permita identificar acciones específicas en videos correspondientes a partidos de Rugby.
-Nos interesa diferenciar \textit{lines} y \textit{scrums} del resto de los \textit{momentos de juego}.
 
-Para lograrlo nos basaremos en el método de \textit{Bag-of-Words} junto a descriptores de imágenes y videos
-(en este trabajo el audio del video no será tenido en cuenta).
+Trabajaremos con un dataset compuesto por numerosos clips de corta duración, los cuales fueron obtenidos a partir de filmaciones de partidos
+de Rugby. Los videos varían mucho entre sí, ya que se utilizaron tanto filmaciones amateur como transmiciones de televisión.
 
-También se analisará la \textit{performance} de los métodos de detección usados y se compararán los
-resultados obtenidos con los alcanzados utilizando otros métodos.
+Éstos clips se clasifican en tres clases diferentes: \textit{line}, \textit{scrum} y \textit{juego}. Nuestro objetivo es poder automatizar su
+reconocimiento y clasificación.
+
+Para lograrlo nos basaremos en el modelo de \textit{Bag-of-Words}. Estudiaremos distintos detectores y descriptores con el fin de encontrar
+los más adecuados para el dataset con el que estamos trabajando. También analisaremos y compararemos el costo computacional de ellos.
 
 \iffalse
   \item[Desarrollo de sintaxis:] Se buscar\'a desarrollar una nueva sintaxis para
