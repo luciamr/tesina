@@ -4,11 +4,15 @@
 
 %biblatex
 %\usepackage[url=false, doi=false, style=authoryear, uniquename=false]{biblatex}
-%\usepackage[style=authoryear, uniquename=false]{biblatex}
-\usepackage{natbib}
-%\bibliography{cites}   
+\usepackage[backend=biber, style=numeric, uniquename=false]{biblatex}
+%style=authoryear
+%\bibliographystyle{abbrv}
+\bibliography{cites}   
 %\renewcommand*{\bibfont}{\footnotesize}
 %\renewcommand*{\bibfont}{\small}
+
+%natbib
+%\usepackage{natbib}
 
 \usepackage[spanish,activeacute]{babel}
 \usepackage[utf8]{inputenc}
@@ -29,13 +33,13 @@
   \item[Codirector:] Larese, Mónica
 \end{description}
 
-\section{Situación del postulante}
-Actualmente me resta aprobar las materias Sistemas Operativos, Inteligencia Artificial y Compiladores,
-las que planeo completar durante el primer cuatrimestre del próximo año.
+%\section{Situación del postulante}
+%Actualmente me resta aprobar las materias Sistemas Operativos, Inteligencia Artificial y Compiladores,
+%las que planeo completar durante el primer cuatrimestre del próximo año.
 
-En relación a otras actividades académicas, me estoy desempeñando como docente en las materias Programación I y Programación II.
+%En relación a otras actividades académicas, me estoy desempeñando como docente en las materias Programación I y Programación II.
 
-Proyecto dedicar al menos 25 hs. semanales al desarrollo de esta Tesina.
+%Proyecto dedicar al menos 25 hs. semanales al desarrollo de esta Tesina.
 
 %\section{Título}
 %Detección de eventos en videos: análisis de partidos de Rugby.
@@ -47,9 +51,12 @@ Proyecto dedicar al menos 25 hs. semanales al desarrollo de esta Tesina.
 \input{objesp.tex}
 \input{plantrab.tex}
 
-%\printbibliography
-\bibliographystyle{abbrv} %siam
-\nocite{*}
-\bibliography{cites}
+%biblatex
+\printbibliography
+
+%natbib
+%\bibliographystyle{abbrv} %siam
+%\nocite{*}
+%\bibliography{cites}
 
 \end{document}

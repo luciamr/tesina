@@ -3,9 +3,9 @@
 Escriba una breve introducción general al tema y cite y comente las mayores
 contribuciones en el tema específico, incluyendo bibliografıa actualizada.
 \fi
-La clasificación de imágenes o videos en categorías semánticas en un problema de interés tanto para la actividad científica como
+La clasificación de imágenes o videos en categorías semánticas es un problema de interés tanto para la comunidad científica como
 para la industria. La detección de diferentes tipos de escenas por lo general se basa en vectores de características que describen
-el color y la textura entre otras propiedades visuales de las imágenes.
+el color y la textura de las imágenes entre otras propiedades visuales.
 
 Hace ya más de una década, comenzó a verse una tendencia a usar \textit{keypoints} y puntos de interés local en la recuperación y
 clasificación de la información contendida en la imágenes. ***** Los \textit{keypoints} son zonas destacadas de las imágenes, que contienen
@@ -13,28 +13,32 @@ abundante información local acerca de la misma, los cuales pueden ser identific
 por diversos descriptores.***
 
 Una vez que los \textit{keypoints} son obtenidos, éstos son distribuidos en una gran cantidad de \textit{clusters}, asignando a un mismo
-\textit{cluster} aquellos de características similares. Cada \textit{cluster} es considerado una \textit{\textquotedblleft visual word\textquotedblright}
+\textit{cluster} aquellos de características similares. Cada \textit{cluster} es considerado una \textit{visual word}
 que representa el patrón local específico compartido por todos los \textit{keypoints} de ese \textit{cluster}, ésto permite obtener un
-vocabulario de \textit{\textquotedblleft visual words\textquotedblright} que describe todos los patrones locales de las imágenes. A partir
-de ésto, una imagen puede respresentarse como una \textit{\textquotedblleft bag of visual words\textquotedblright}, un vector que contiene
-la cantidad de veces que cada \textit{\textquotedblleft visual word\textquotedblright} aparece en la imagen, el cual es usado como vector
+vocabulario de \textit{visual words} que describe todos los patrones locales de las imágenes. A partir
+de ésto, una imagen puede respresentarse como una \textit{Bag of Visual Words}, un vector que contiene
+la cantidad de veces que cada \textit{visual word} aparece en la imagen, el cual es usado como vector
 de características durante la clasificación.
 
-Ésta representación es análoga a la de \textquotedblleft bag of words\textquotedblright, utilizada en textos para describir tanto la forma
+Ésta representación es análoga a la de Bag of Words utilizada en textos para describir tanto la forma
 como la semántica. Ésto permite que muchas de las técnicas ya desarrolladas y usadas para el análisis de textos hayan podido ser aplicadas
 al trabajo con imágenes.
 
-Uno de los métodos más utilizados para la detección de \textit{keypoints} es la Diferencia Gaussiana (DoG) .... Los \textit{keypoints} suelen
-encontrarse en los ángulos y bordes de los objetos presentes en las imágenes. BRISK ver
+Los \textit{keypoints} suelen encontrarse en los ángulos y bordes de los objetos presentes en las imágenes.
+Uno de los métodos más utilizados para la detección de los \textit{keypoints} es la Diferencia Gaussiana (DoG), sin embargo existen otros como
+Harris corner detector, Fast Hessian detector, AGAST y multi-scale AGAST. 
 
 En cuanto a los descriptores, a lo largo de los años se han publicado numerosos desarrollos. Para trabajar con imágenes, alguno de los más utilizados
-son SIFT y FREAK. En lo referente a videos, suelen utilizarse descriptores que se basan en los de imágenes e incorporan el factor temporal,
-como MoSIFT y MoFREAK.
+son SIFT\parencite{lowe2004distinctive} y FREAK\parencite{alahi2012freak}. Por lo general, cada descriptor se utiliza en conjunto a un detector
+específico. En lo referente a videos, suelen utilizarse descriptores que se basan en los de imágenes e incorporan el factor temporal,
+como MoSIFT\parencite{chen2009mosift} y MoFREAK\parencite{whiten2013mofreak}.
 
-Una vez que se completa el proceso de obtención de información de los objetos a clasificar y construimos nuestro \textit{\textquotedblleft bag of visual
-words\textquotedblright}, se llega a la etapa de clasificación propiamente dicha. Para completar esta última etapa uno de los métodos más utilizado
+Una vez que se completa el proceso de obtención de información de los objetos a clasificar y construimos nuestro \textit{Bag of Visual
+Words}, se llega a la etapa de clasificación propiamente dicha. Para completar esta última etapa uno de los métodos más utilizado
 actualmente es \textit{Support Vector Machine} (SVM).
 
-Se han hecho diversas pruebas en videos utilizando la idea de \textit{\textquotedblleft bag of visual words\textquotedblright}, algunas con
-datasets de videos específicos, con movimientos y escenas acotados, creados para el uso académico *** y otros con clips pertenecientes a películas
-y deportes.*** En ambos casos, los resultados fueron alentadores, mostrando el potencial de esta manera de abordar la detección y clasificación.
+Se han hecho diversas pruebas en videos utilizando la idea de \textit{Bag of Visual Words}, algunas con
+datasets de videos específicos, con movimientos y escenas acotados, creados para el uso académico como los datasets KTH y HMDB51
+\parencite{schuldt2004recognizing, kuehne2011hmdb, whiten2013mofreak} y otros con clips pertenecientes a películas y deportes
+\parencite{chen2011violence, nievas2011violence, deniz2014fast}. En ambos casos, los resultados fueron alentadores, mostrando el
+potencial de esta manera de abordar la detección y clasificación.

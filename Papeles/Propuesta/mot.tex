@@ -8,7 +8,8 @@ que se realizarán (para eso, ver Objetivos específicos).
 \fi
 
 %Análisis de videos
-El desarrollo de nuevas tecnologías, acompañado de la reducción de costo de las mismas, ha hecho que el acceso a medios para la 
+\iffalse
+El desarrollo de nuevas tecnologías, acompañado de la reducción en el costo de las mismas, ha hecho que el acceso a medios para la 
 producción de material audio-visual se haya masificado, cambiando rotundamente la forma en que se trabajaba con videos y generando nuevas
 herramientas, así como nuevos desafíos y necesidades.
 
@@ -24,40 +25,41 @@ Puesto que éstos no son otra cosa que secuencias de imágenes con sonido incorp
 se basa en la utilización de los métodos ya desarrollados para imágenes con la incorporación del factor temporal, el cual puede
 aportar nueva información. Si bien el sonido presente también puede ayudar en el estudio, muchas veces es descartado durante el análisis,
 basándose éste solamente en los aspectos visuales.
+\fi
 
-La producción de material audiovisual ha sufrido importantes cambios en las últimas décadas. La reducción de cosotos junto con la aparición de nuevas
+La producción de material audiovisual ha sufrido importantes cambios en las últimas décadas. La reducción de costos junto con la aparición de nuevas
 tecnologías permitieron masificar el acceso a medios de grabación y almacenamiento, modificando rotundamente la forma en que se trabajaba con videos y
 generando tanto nuevas herramientas como desafíos y necesidades.
 
-Con todos estos cambios las cámaras de video que originalmente habían sido concebidas para la producción de contenidos de entretenimientos pasaron a
+Con todos estos cambios, las cámaras de video que originalmente habían sido concebidas para la producción de contenidos de entretenimientos pasaron a
 formar parte de la vida cotidiana.
 
 Ya sea a través de videograbadoras o usando cámaras integradas en otros dispositivos como celulares, computadoras o cámaras de fotos, los videos
 comenzaron a utilizarse con nuevos fines, incluídos monitoreo, control de seguridad, comunicación, medicina, almacenamiento de recuerdos personales,
 y educación entre otros.
 
-Esto trajo aparejado un incremento exponencial en la cantidad de información generada día a día, haciendo cada vez más inviable el análisis manual de
-las imágenes obtenidas. Como consecuencia de ésto, los esfuerzos por automatizar la detección de eventos en videos crecieron, ya que abrían un abanico
-de nuevas posibles aplicaciones, tanto diferidas como en tiempo real.
+Ésto trajo aparejado un incremento exponencial en la cantidad de información generada día a día, haciendo inviable el reconocimiento manual de las
+imágenes obtenidas. Como consecuencia de ésto, los esfuerzos por automatizar la detección de eventos en videos crecieron, ya que abrían un abanico
+de nuevas posibles aplicaciones, tanto para videos obtenidos previamente como para el análisis en tiempo real.
 
-En este contexto, el estudio del movimiento humano tuvo un lugar muy importante. Esta tarea no es simple ya que hay importantes variaciones en los
-movimientos, disparidades entre los distintos escenarios y grandes diferencias entre individuos. Para superar estas dificultades, se ha trabajado
-desde distintos enfoques y con distintos algoritmos, buscando el equilibrio entre precisión y costo computacional.
+En este contexto, el estudio del movimiento humano tuvo un lugar muy importante. Sin embargo, esta tarea no es simple ya que hay importantes disparidades
+en los movimientos, variaciones entre los distintos escenarios y grandes diferencias entre individuos. Para superar estas dificultades, se ha trabajado
+desde distintos enfoques y con distintos algoritmos, siempre buscando el balance entre precisión y costo computacional.
 
 Los primeros trabajos fueron realizados con videos especialmente creados para este fin, donde había un único individuo realizando movimientos repetitivos
 frente a la cámara y el fondo era prácticamente liso para que no interfiriera en el análisis,  como KTH ***. Una vez que hubo más avances, se empezaron a
 estudiar conjuntos de videos más complejos, donde entraban en juego nuevos desafíos, como cambios de cámara, escenarios cambiantes, multiples objetos por
-imágen, diferencias de luz y escala, entre otros. Algunos de ellos fueron ***.
+cuadro, diferencias de luz y escala, entre otros. Algunos de ellos fueron ***.
 
-Los resultados obtenidos en estos trabajos confirman los avances que hubo en las areas de reconocimiento y clasificación en las últimas décadas.
-
-
+Los resultados obtenidos en estos trabajos confirman los avances que hubo en las áreas de reconocimiento y clasificación en las últimas décadas.
 
 
-EL reconocimiento de acciones humanas basado en visión consiste en el
-proceso de etiquetado de secuencias con la acción correspondiente. *** En 
 
 
+%EL reconocimiento de acciones humanas basado en visión consiste en el
+%proceso de etiquetado de secuencias con la acción correspondiente. *** En 
+
+\iffalse
 %Utilización de descriptores
 Un método común y que ha resultado ser eficiente para obtener información a partir de imágenes es la utilización de descriptores.
 Estos descriptores informan acerca de las características visuales de la imagen, describiendo características elementales como la forma, el color,
@@ -65,3 +67,4 @@ la textura y la ubicación de elementos dentro de la misma.
 Para extender esta idea al plano de los videos, lo que se hace es desglosar el video en las imágenes que lo componen (frames), para luego analizar por separado
 cada una de ellas. Con esta información ya disponible se incorpora el factor temporal, siendo éste el eje en la relación entre los distintos frames, permitiendo,
 por ejemplo, analizar variaciones de un frame a otro.
+\fi
