@@ -35,7 +35,7 @@ scf(0);
 plot(t, Y(1, :), "c"); //desplazamiento vertical
 xlabel("Tiempo (s)", 'fontsize', 2);
 ylabel("Desplazamiento (m)", 'fontsize', 2);
-title("Historia del Desplazamiento", 'fontsize', 5);
+title("Historia del Desplazamiento", 'fontsize', 4);
 
 //Parte 1.b
 maxDesp = max(abs(Y(1, :)));
@@ -49,7 +49,6 @@ pasoVelos = 5*1000/3600;
 velos = vi:pasoVelos:vf; //velocidades
 velMax = [];
 
-
 for i = 1:length(velos)
     Yi = ode("rk", X0, ti, t, list(f, velos(i)));
     maxDesp = max(abs(Yi(1, :)));
@@ -60,4 +59,4 @@ scf(1);
 plot(velos*3600/1000, velMax, '--b.');
 xlabel("Velocidad (km/h)", 'fontsize', 2);
 ylabel("Máximo Desplazamiento (m)", 'fontsize', 2);
-title("Valor Máximo del Desplazamiento", 'fontsize', 5);
+title("Valor Máximo del Desplazamiento", 'fontsize', 4);
