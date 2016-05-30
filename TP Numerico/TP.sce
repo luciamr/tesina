@@ -49,6 +49,7 @@ pasoVelos = 5*1000/3600;
 velos = vi:pasoVelos:vf; //velocidades
 velMax = [];
 
+
 for i = 1:length(velos)
     Yi = ode("rk", X0, ti, t, list(f, velos(i)));
     maxDesp = max(abs(Yi(1, :)));
