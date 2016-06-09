@@ -1,0 +1,858 @@
+Groups: 8
+Clusters: 50
+Here are the videos: /home/lucia/data/rugby/videos/
+MoFREAK files will go here: /home/lucia/data/rugby/mofreak/
+Motion bytes: 8
+Appearance bytes: 8
+action: line
+action video path: /home/lucia/data/rugby/videos//line
+filename: 4_line_5_vlc-record-2015-03-28-19h59m04s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line4_line_5_vlc-record-2015-03-28-19h59m04s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/4_line_5_vlc-record-2015-03-28-19h59m04s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_line_17_vlc-record-2015-04-04-23h02m10s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_17_vlc-record-2015-04-04-23h02m10s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_17_vlc-record-2015-04-04-23h02m10s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_line_19_vlc-record-2015-04-04-23h08m39s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_19_vlc-record-2015-04-04-23h08m39s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_19_vlc-record-2015-04-04-23h08m39s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_line_21_vlc-record-2015-04-04-23h20m23s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_21_vlc-record-2015-04-04-23h20m23s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_21_vlc-record-2015-04-04-23h20m23s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_line_22_vlc-record-2015-04-04-23h23m32s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_22_vlc-record-2015-04-04-23h23m32s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_22_vlc-record-2015-04-04-23h23m32s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_line_7_vlc-record-2015-03-25-15h21m21s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_7_vlc-record-2015-03-25-15h21m21s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_7_vlc-record-2015-03-25-15h21m21s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_line_1_vlc-record-2015-04-04-21h11m47s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_1_vlc-record-2015-04-04-21h11m47s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_1_vlc-record-2015-04-04-21h11m47s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 6_line_7_vlc-record-2015-04-07-08h59m35s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//line6_line_7_vlc-record-2015-04-07-08h59m35s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/6_line_7_vlc-record-2015-04-07-08h59m35s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/6_line_7_vlc-record-2015-04-07-08h59m35s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 3_line_1_vlc-record-2015-03-25-11h17m56s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_1_vlc-record-2015-03-25-11h17m56s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_1_vlc-record-2015-03-25-11h17m56s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 4_line_2_vlc-record-2015-03-27-13h55m18s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line4_line_2_vlc-record-2015-03-27-13h55m18s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/4_line_2_vlc-record-2015-03-27-13h55m18s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_line_5_vlc-record-2015-03-25-15h06m47s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_5_vlc-record-2015-03-25-15h06m47s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_5_vlc-record-2015-03-25-15h06m47s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/3_line_5_vlc-record-2015-03-25-15h06m47s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+filename: 5_line_24_vlc-record-2015-04-04-23h27m17s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_24_vlc-record-2015-04-04-23h27m17s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_24_vlc-record-2015-04-04-23h27m17s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 6_line_11_vlc-record-2015-04-07-09h40m04s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//line6_line_11_vlc-record-2015-04-07-09h40m04s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/6_line_11_vlc-record-2015-04-07-09h40m04s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/6_line_11_vlc-record-2015-04-07-09h40m04s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 6_line_2_vlc-record-2015-04-07-08h37m36s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//line6_line_2_vlc-record-2015-04-07-08h37m36s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/6_line_2_vlc-record-2015-04-07-08h37m36s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/6_line_2_vlc-record-2015-04-07-08h37m36s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 3_line_8_vlc-record-2015-03-25-15h21m21s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_8_vlc-record-2015-03-25-15h21m21s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_8_vlc-record-2015-03-25-15h21m21s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/3_line_8_vlc-record-2015-03-25-15h21m21s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+filename: 8_line_9_vlc-record-2015-04-15-14h13m36s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line8_line_9_vlc-record-2015-04-15-14h13m36s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/8_line_9_vlc-record-2015-04-15-14h13m36s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/8_line_9_vlc-record-2015-04-15-14h13m36s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 3_line_9_vlc-record-2015-03-25-15h25m20s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_9_vlc-record-2015-03-25-15h25m20s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_9_vlc-record-2015-03-25-15h25m20s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/3_line_9_vlc-record-2015-03-25-15h25m20s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+filename: 7_line_1_Line.mp4
+FILE: /home/lucia/data/rugby/videos//line7_line_1_Line.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/7_line_1_Line.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/7_line_1_Line.mp4.mofreak
+filename: 5_line_7_vlc-record-2015-04-04-21h34m27s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_7_vlc-record-2015-04-04-21h34m27s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_7_vlc-record-2015-04-04-21h34m27s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_line_7_vlc-record-2015-03-25-15h18m10s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_7_vlc-record-2015-03-25-15h18m10s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_7_vlc-record-2015-03-25-15h18m10s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/3_line_7_vlc-record-2015-03-25-15h18m10s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+filename: 5_line_6_vlc-record-2015-04-04-21h32m31s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_6_vlc-record-2015-04-04-21h32m31s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_6_vlc-record-2015-04-04-21h32m31s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 8_line_4_vlc-record-2015-04-15-13h54m35s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line8_line_4_vlc-record-2015-04-15-13h54m35s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/8_line_4_vlc-record-2015-04-15-13h54m35s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/8_line_4_vlc-record-2015-04-15-13h54m35s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 6_line_1_vlc-record-2015-04-07-08h34m33s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//line6_line_1_vlc-record-2015-04-07-08h34m33s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/6_line_1_vlc-record-2015-04-07-08h34m33s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/6_line_1_vlc-record-2015-04-07-08h34m33s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 6_line_8_vlc-record-2015-04-07-09h11m37s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//line6_line_8_vlc-record-2015-04-07-09h11m37s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/6_line_8_vlc-record-2015-04-07-09h11m37s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/6_line_8_vlc-record-2015-04-07-09h11m37s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 5_line_9_vlc-record-2015-04-04-21h40m55s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_9_vlc-record-2015-04-04-21h40m55s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_9_vlc-record-2015-04-04-21h40m55s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 8_line_5_vlc-record-2015-04-15-13h55m55s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line8_line_5_vlc-record-2015-04-15-13h55m55s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/8_line_5_vlc-record-2015-04-15-13h55m55s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/8_line_5_vlc-record-2015-04-15-13h55m55s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 1_line_1_vlc-record-2015-03-10-14h46m41s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+FILE: /home/lucia/data/rugby/videos//line1_line_1_vlc-record-2015-03-10-14h46m41s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/1_line_1_vlc-record-2015-03-10-14h46m41s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4.mofreak
+MoFREAK already computed
+filename: 8_line_1_vlc-record-2015-04-15-13h47m41s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line8_line_1_vlc-record-2015-04-15-13h47m41s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/8_line_1_vlc-record-2015-04-15-13h47m41s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/8_line_1_vlc-record-2015-04-15-13h47m41s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 4_line_4_vlc-record-2015-03-27-14h00m30s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line4_line_4_vlc-record-2015-03-27-14h00m30s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/4_line_4_vlc-record-2015-03-27-14h00m30s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_line_12_vlc-record-2015-04-04-22h41m40s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_12_vlc-record-2015-04-04-22h41m40s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_12_vlc-record-2015-04-04-22h41m40s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_line_10_vlc-record-2015-03-25-15h33m34s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_10_vlc-record-2015-03-25-15h33m34s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_10_vlc-record-2015-03-25-15h33m34s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_line_9_vlc-record-2015-03-25-15h32m13s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_9_vlc-record-2015-03-25-15h32m13s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_9_vlc-record-2015-03-25-15h32m13s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_line_18_vlc-record-2015-04-04-23h05m48s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_18_vlc-record-2015-04-04-23h05m48s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_18_vlc-record-2015-04-04-23h05m48s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 2_line_2_vlc-record-2015-03-20-15h46m21s-urr2014_urrvssta fe.mp4-muxed.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line2_line_2_vlc-record-2015-03-20-15h46m21s-urr2014_urrvssta fe.mp4-muxed.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/2_line_2_vlc-record-2015-03-20-15h46m21s-urr2014_urrvssta fe.mp4-muxed.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 6_line_4_vlc-record-2015-04-07-08h42m06s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//line6_line_4_vlc-record-2015-04-07-08h42m06s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/6_line_4_vlc-record-2015-04-07-08h42m06s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/6_line_4_vlc-record-2015-04-07-08h42m06s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 5_line_3_vlc-record-2015-04-04-21h18m40s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_3_vlc-record-2015-04-04-21h18m40s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_3_vlc-record-2015-04-04-21h18m40s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_line_6_vlc-record-2015-03-25-15h11m44s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_6_vlc-record-2015-03-25-15h11m44s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_6_vlc-record-2015-03-25-15h11m44s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/3_line_6_vlc-record-2015-03-25-15h11m44s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+filename: 8_line_7_vlc-record-2015-04-15-14h02m16s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line8_line_7_vlc-record-2015-04-15-14h02m16s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/8_line_7_vlc-record-2015-04-15-14h02m16s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/8_line_7_vlc-record-2015-04-15-14h02m16s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 5_line_10_vlc-record-2015-04-04-22h39m12s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_10_vlc-record-2015-04-04-22h39m12s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_10_vlc-record-2015-04-04-22h39m12s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_line_5_vlc-record-2015-04-04-21h23m29s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_5_vlc-record-2015-04-04-21h23m29s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_5_vlc-record-2015-04-04-21h23m29s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_line_5_vlc-record-2015-03-25-15h11m44s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_5_vlc-record-2015-03-25-15h11m44s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_5_vlc-record-2015-03-25-15h11m44s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 4_line_3_vlc-record-2015-03-27-13h58m23s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line4_line_3_vlc-record-2015-03-27-13h58m23s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/4_line_3_vlc-record-2015-03-27-13h58m23s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_line_4_vlc-record-2015-04-04-21h21m10s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_4_vlc-record-2015-04-04-21h21m10s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_4_vlc-record-2015-04-04-21h21m10s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 1_line_2_vlc-record-2015-03-20-09h57m20s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+FILE: /home/lucia/data/rugby/videos//line1_line_2_vlc-record-2015-03-20-09h57m20s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/1_line_2_vlc-record-2015-03-20-09h57m20s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4.mofreak
+MoFREAK already computed
+filename: 5_line_13_vlc-record-2015-04-04-22h42m26s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_13_vlc-record-2015-04-04-22h42m26s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_13_vlc-record-2015-04-04-22h42m26s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 8_line_6_vlc-record-2015-04-15-13h59m30s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line8_line_6_vlc-record-2015-04-15-13h59m30s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/8_line_6_vlc-record-2015-04-15-13h59m30s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/8_line_6_vlc-record-2015-04-15-13h59m30s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 3_line_10_vlc-record-2015-03-25-15h32m13s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_10_vlc-record-2015-03-25-15h32m13s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_10_vlc-record-2015-03-25-15h32m13s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/3_line_10_vlc-record-2015-03-25-15h32m13s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+filename: 3_line_11_vlc-record-2015-03-25-15h33m34s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_11_vlc-record-2015-03-25-15h33m34s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_11_vlc-record-2015-03-25-15h33m34s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/3_line_11_vlc-record-2015-03-25-15h33m34s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+filename: 6_line_13_vlc-record-2015-04-07-09h47m52s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//line6_line_13_vlc-record-2015-04-07-09h47m52s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/6_line_13_vlc-record-2015-04-07-09h47m52s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/6_line_13_vlc-record-2015-04-07-09h47m52s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 6_line_3_vlc-record-2015-04-07-08h39m12s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//line6_line_3_vlc-record-2015-04-07-08h39m12s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/6_line_3_vlc-record-2015-04-07-08h39m12s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/6_line_3_vlc-record-2015-04-07-08h39m12s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 3_line_2_vlc-record-2015-03-25-11h20m00s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_2_vlc-record-2015-03-25-11h20m00s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_2_vlc-record-2015-03-25-11h20m00s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 8_line_8_vlc-record-2015-04-15-14h04m39s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line8_line_8_vlc-record-2015-04-15-14h04m39s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/8_line_8_vlc-record-2015-04-15-14h04m39s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/8_line_8_vlc-record-2015-04-15-14h04m39s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 5_line_11_vlc-record-2015-04-04-22h40m52s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_11_vlc-record-2015-04-04-22h40m52s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_11_vlc-record-2015-04-04-22h40m52s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 2_line_1_vlc-record-2015-03-20-15h43m35s-urr2014_urrvssta fe.mp4-muxed.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line2_line_1_vlc-record-2015-03-20-15h43m35s-urr2014_urrvssta fe.mp4-muxed.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/2_line_1_vlc-record-2015-03-20-15h43m35s-urr2014_urrvssta fe.mp4-muxed.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 7_line_2_Line Ataque.mp4
+FILE: /home/lucia/data/rugby/videos//line7_line_2_Line Ataque.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/7_line_2_Line Ataque.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/7_line_2_Line Ataque.mp4.mofreak
+filename: 5_line_16_vlc-record-2015-04-04-23h00m08s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_16_vlc-record-2015-04-04-23h00m08s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_16_vlc-record-2015-04-04-23h00m08s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_line_6_vlc-record-2015-03-25-15h18m10s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_6_vlc-record-2015-03-25-15h18m10s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_6_vlc-record-2015-03-25-15h18m10s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 7_line_3_Line Perdido.mp4
+FILE: /home/lucia/data/rugby/videos//line7_line_3_Line Perdido.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/7_line_3_Line Perdido.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/7_line_3_Line Perdido.mp4.mofreak
+filename: 4_line_1_vlc-record-2015-03-27-11h45m10s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line4_line_1_vlc-record-2015-03-27-11h45m10s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/4_line_1_vlc-record-2015-03-27-11h45m10s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_line_15_vlc-record-2015-04-04-22h50m47s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_15_vlc-record-2015-04-04-22h50m47s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_15_vlc-record-2015-04-04-22h50m47s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 8_line_2_vlc-record-2015-04-15-13h50m35s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line8_line_2_vlc-record-2015-04-15-13h50m35s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/8_line_2_vlc-record-2015-04-15-13h50m35s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/8_line_2_vlc-record-2015-04-15-13h50m35s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 3_line_4_vlc-record-2015-03-25-14h59m54s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_4_vlc-record-2015-03-25-14h59m54s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_4_vlc-record-2015-03-25-14h59m54s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 6_line_6_vlc-record-2015-04-07-08h58m21s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//line6_line_6_vlc-record-2015-04-07-08h58m21s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/6_line_6_vlc-record-2015-04-07-08h58m21s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/6_line_6_vlc-record-2015-04-07-08h58m21s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 6_line_5_vlc-record-2015-04-07-08h56m55s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//line6_line_5_vlc-record-2015-04-07-08h56m55s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/6_line_5_vlc-record-2015-04-07-08h56m55s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/6_line_5_vlc-record-2015-04-07-08h56m55s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 3_line_8_vlc-record-2015-03-25-15h25m20s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_8_vlc-record-2015-03-25-15h25m20s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_8_vlc-record-2015-03-25-15h25m20s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_line_23_vlc-record-2015-04-04-23h24m01s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_23_vlc-record-2015-04-04-23h24m01s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_23_vlc-record-2015-04-04-23h24m01s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_line_2_vlc-record-2015-04-04-21h15m46s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_2_vlc-record-2015-04-04-21h15m46s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_2_vlc-record-2015-04-04-21h15m46s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_line_3_vlc-record-2015-03-25-14h51m16s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line3_line_3_vlc-record-2015-03-25-14h51m16s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/3_line_3_vlc-record-2015-03-25-14h51m16s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_line_8_vlc-record-2015-04-04-21h36m50s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_8_vlc-record-2015-04-04-21h36m50s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_8_vlc-record-2015-04-04-21h36m50s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_line_14_vlc-record-2015-04-04-22h46m22s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_14_vlc-record-2015-04-04-22h46m22s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_14_vlc-record-2015-04-04-22h46m22s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 6_line_9_vlc-record-2015-04-07-09h23m51s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//line6_line_9_vlc-record-2015-04-07-09h23m51s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/6_line_9_vlc-record-2015-04-07-09h23m51s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/6_line_9_vlc-record-2015-04-07-09h23m51s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 5_line_20_vlc-record-2015-04-04-23h15m45s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line5_line_20_vlc-record-2015-04-04-23h15m45s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/5_line_20_vlc-record-2015-04-04-23h15m45s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 6_line_12_vlc-record-2015-04-07-09h42m23s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//line6_line_12_vlc-record-2015-04-07-09h42m23s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/6_line_12_vlc-record-2015-04-07-09h42m23s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/6_line_12_vlc-record-2015-04-07-09h42m23s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 6_line_10_vlc-record-2015-04-07-09h26m18s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//line6_line_10_vlc-record-2015-04-07-09h26m18s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/6_line_10_vlc-record-2015-04-07-09h26m18s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/6_line_10_vlc-record-2015-04-07-09h26m18s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 8_line_3_vlc-record-2015-04-15-13h53m06s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//line8_line_3_vlc-record-2015-04-15-13h53m06s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//line/8_line_3_vlc-record-2015-04-15-13h53m06s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//line/8_line_3_vlc-record-2015-04-15-13h53m06s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+action: juego
+action video path: /home/lucia/data/rugby/videos//juego
+filename: 1_juego_1_vlc-record-2015-03-18-11h35m00s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+FILE: /home/lucia/data/rugby/videos//juego1_juego_1_vlc-record-2015-03-18-11h35m00s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/1_juego_1_vlc-record-2015-03-18-11h35m00s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4.mofreak
+MoFREAK already computed
+filename: 5_juego_2_vlc-record-2015-04-04-21h42m38s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego5_juego_2_vlc-record-2015-04-04-21h42m38s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/5_juego_2_vlc-record-2015-04-04-21h42m38s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 7_juego_5_Quiebres Ofensivos.mp4
+FILE: /home/lucia/data/rugby/videos//juego7_juego_5_Quiebres Ofensivos.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/7_juego_5_Quiebres Ofensivos.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/7_juego_5_Quiebres Ofensivos.mp4.mofreak
+filename: 8_juego_4_vlc-record-2015-04-15-13h58m42s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego8_juego_4_vlc-record-2015-04-15-13h58m42s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/8_juego_4_vlc-record-2015-04-15-13h58m42s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/8_juego_4_vlc-record-2015-04-15-13h58m42s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 7_juego_6_Tackle Errado.mp4
+FILE: /home/lucia/data/rugby/videos//juego7_juego_6_Tackle Errado.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/7_juego_6_Tackle Errado.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/7_juego_6_Tackle Errado.mp4.mofreak
+filename: 8_juego_6_vlc-record-2015-04-15-14h24m01s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego8_juego_6_vlc-record-2015-04-15-14h24m01s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/8_juego_6_vlc-record-2015-04-15-14h24m01s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/8_juego_6_vlc-record-2015-04-15-14h24m01s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 6_juego_8_vlc-record-2015-04-07-09h25m31s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//juego6_juego_8_vlc-record-2015-04-07-09h25m31s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/6_juego_8_vlc-record-2015-04-07-09h25m31s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/6_juego_8_vlc-record-2015-04-07-09h25m31s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 5_juego_9_vlc-record-2015-04-04-23h14m30s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego5_juego_9_vlc-record-2015-04-04-23h14m30s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/5_juego_9_vlc-record-2015-04-04-23h14m30s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 4_juego_4_vlc-record-2015-03-27-11h46m07s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego4_juego_4_vlc-record-2015-03-27-11h46m07s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/4_juego_4_vlc-record-2015-03-27-11h46m07s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 1_juego_3_vlc-record-2015-03-20-09h28m32s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+FILE: /home/lucia/data/rugby/videos//juego1_juego_3_vlc-record-2015-03-20-09h28m32s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/1_juego_3_vlc-record-2015-03-20-09h28m32s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4.mofreak
+MoFREAK already computed
+filename: 5_juego_7_vlc-record-2015-04-04-22h56m18s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego5_juego_7_vlc-record-2015-04-04-22h56m18s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/5_juego_7_vlc-record-2015-04-04-22h56m18s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 7_juego_1_Kick Off Rival.mp4
+FILE: /home/lucia/data/rugby/videos//juego7_juego_1_Kick Off Rival.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/7_juego_1_Kick Off Rival.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/7_juego_1_Kick Off Rival.mp4.mofreak
+filename: 7_juego_7_Tackle.mp4
+FILE: /home/lucia/data/rugby/videos//juego7_juego_7_Tackle.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/7_juego_7_Tackle.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/7_juego_7_Tackle.mp4.mofreak
+filename: 5_juego_5_vlc-record-2015-04-04-22h45m11s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego5_juego_5_vlc-record-2015-04-04-22h45m11s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/5_juego_5_vlc-record-2015-04-04-22h45m11s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_juego_3_vlc-record-2015-04-04-22h39m59s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego5_juego_3_vlc-record-2015-04-04-22h39m59s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/5_juego_3_vlc-record-2015-04-04-22h39m59s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_juego_1_vlc-record-2015-03-25-14h46m46s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego3_juego_1_vlc-record-2015-03-25-14h46m46s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/3_juego_1_vlc-record-2015-03-25-14h46m46s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 6_juego_3_vlc-record-2015-04-07-08h59m03s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//juego6_juego_3_vlc-record-2015-04-07-08h59m03s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/6_juego_3_vlc-record-2015-04-07-08h59m03s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/6_juego_3_vlc-record-2015-04-07-08h59m03s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 8_juego_8_vlc-record-2015-04-15-14h35m18s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego8_juego_8_vlc-record-2015-04-15-14h35m18s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/8_juego_8_vlc-record-2015-04-15-14h35m18s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/8_juego_8_vlc-record-2015-04-15-14h35m18s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 4_juego_3_vlc-record-2015-03-27-11h23m43s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego4_juego_3_vlc-record-2015-03-27-11h23m43s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/4_juego_3_vlc-record-2015-03-27-11h23m43s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_juego_11_vlc-record-2015-04-04-23h22m20s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego5_juego_11_vlc-record-2015-04-04-23h22m20s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/5_juego_11_vlc-record-2015-04-04-23h22m20s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 8_juego_3_vlc-record-2015-04-15-13h57m46s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego8_juego_3_vlc-record-2015-04-15-13h57m46s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/8_juego_3_vlc-record-2015-04-15-13h57m46s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/8_juego_3_vlc-record-2015-04-15-13h57m46s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 6_juego_5_vlc-record-2015-04-07-09h16m56s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//juego6_juego_5_vlc-record-2015-04-07-09h16m56s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/6_juego_5_vlc-record-2015-04-07-09h16m56s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/6_juego_5_vlc-record-2015-04-07-09h16m56s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 5_juego_1_vlc-record-2015-04-04-21h14m46s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego5_juego_1_vlc-record-2015-04-04-21h14m46s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/5_juego_1_vlc-record-2015-04-04-21h14m46s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 6_juego_9_vlc-record-2015-04-07-09h38m27s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//juego6_juego_9_vlc-record-2015-04-07-09h38m27s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/6_juego_9_vlc-record-2015-04-07-09h38m27s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/6_juego_9_vlc-record-2015-04-07-09h38m27s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 5_juego_6_vlc-record-2015-04-04-22h52m52s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego5_juego_6_vlc-record-2015-04-04-22h52m52s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/5_juego_6_vlc-record-2015-04-04-22h52m52s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 4_juego_1_vlc-record-2015-03-27-11h20m48s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego4_juego_1_vlc-record-2015-03-27-11h20m48s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/4_juego_1_vlc-record-2015-03-27-11h20m48s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 8_juego_1_vlc-record-2015-04-15-13h47m58s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego8_juego_1_vlc-record-2015-04-15-13h47m58s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/8_juego_1_vlc-record-2015-04-15-13h47m58s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/8_juego_1_vlc-record-2015-04-15-13h47m58s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 6_juego_6_vlc-record-2015-04-07-09h17m40s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//juego6_juego_6_vlc-record-2015-04-07-09h17m40s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/6_juego_6_vlc-record-2015-04-07-09h17m40s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/6_juego_6_vlc-record-2015-04-07-09h17m40s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 1_juego_7_vlc-record-2015-03-20-09h45m32s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+FILE: /home/lucia/data/rugby/videos//juego1_juego_7_vlc-record-2015-03-20-09h45m32s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/1_juego_7_vlc-record-2015-03-20-09h45m32s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4.mofreak
+MoFREAK already computed
+filename: 7_juego_2_Kick Off.mp4
+FILE: /home/lucia/data/rugby/videos//juego7_juego_2_Kick Off.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/7_juego_2_Kick Off.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/7_juego_2_Kick Off.mp4.mofreak
+filename: 5_juego_8_vlc-record-2015-04-04-22h58m54s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego5_juego_8_vlc-record-2015-04-04-22h58m54s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/5_juego_8_vlc-record-2015-04-04-22h58m54s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 2_juego_1_vlc-record-2015-03-20-15h38m06s-urr2014_urrvssta fe.mp4-muxed.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego2_juego_1_vlc-record-2015-03-20-15h38m06s-urr2014_urrvssta fe.mp4-muxed.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/2_juego_1_vlc-record-2015-03-20-15h38m06s-urr2014_urrvssta fe.mp4-muxed.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 1_juego_4_vlc-record-2015-03-20-09h40m37s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+FILE: /home/lucia/data/rugby/videos//juego1_juego_4_vlc-record-2015-03-20-09h40m37s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/1_juego_4_vlc-record-2015-03-20-09h40m37s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4.mofreak
+MoFREAK already computed
+filename: 1_juego_2_vlc-record-2015-03-18-11h35m09s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+FILE: /home/lucia/data/rugby/videos//juego1_juego_2_vlc-record-2015-03-18-11h35m09s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/1_juego_2_vlc-record-2015-03-18-11h35m09s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4.mofreak
+MoFREAK already computed
+filename: 5_juego_10_vlc-record-2015-04-04-23h19m17s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego5_juego_10_vlc-record-2015-04-04-23h19m17s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/5_juego_10_vlc-record-2015-04-04-23h19m17s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 1_juego_6_vlc-record-2015-03-20-09h44m34s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+FILE: /home/lucia/data/rugby/videos//juego1_juego_6_vlc-record-2015-03-20-09h44m34s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/1_juego_6_vlc-record-2015-03-20-09h44m34s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4.mofreak
+MoFREAK already computed
+filename: 6_juego_2_vlc-record-2015-04-07-08h33m30s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//juego6_juego_2_vlc-record-2015-04-07-08h33m30s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/6_juego_2_vlc-record-2015-04-07-08h33m30s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/6_juego_2_vlc-record-2015-04-07-08h33m30s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 8_juego_7_vlc-record-2015-04-15-14h24m45s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego8_juego_7_vlc-record-2015-04-15-14h24m45s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/8_juego_7_vlc-record-2015-04-15-14h24m45s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/8_juego_7_vlc-record-2015-04-15-14h24m45s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 7_juego_3_Pelota Recuperada.mp4
+FILE: /home/lucia/data/rugby/videos//juego7_juego_3_Pelota Recuperada.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/7_juego_3_Pelota Recuperada.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/7_juego_3_Pelota Recuperada.mp4.mofreak
+filename: 1_juego_5_vlc-record-2015-03-20-09h42m34s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+FILE: /home/lucia/data/rugby/videos//juego1_juego_5_vlc-record-2015-03-20-09h42m34s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/1_juego_5_vlc-record-2015-03-20-09h42m34s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4.mofreak
+MoFREAK already computed
+filename: 5_juego_4_vlc-record-2015-04-04-22h44m15s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego5_juego_4_vlc-record-2015-04-04-22h44m15s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/5_juego_4_vlc-record-2015-04-04-22h44m15s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 8_juego_5_vlc-record-2015-04-15-14h22m38s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego8_juego_5_vlc-record-2015-04-15-14h22m38s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/8_juego_5_vlc-record-2015-04-15-14h22m38s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/8_juego_5_vlc-record-2015-04-15-14h22m38s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 7_juego_4_Quiebres defensivos.mp4
+FILE: /home/lucia/data/rugby/videos//juego7_juego_4_Quiebres defensivos.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/7_juego_4_Quiebres defensivos.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/7_juego_4_Quiebres defensivos.mp4.mofreak
+filename: 6_juego_7_vlc-record-2015-04-07-09h19m23s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//juego6_juego_7_vlc-record-2015-04-07-09h19m23s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/6_juego_7_vlc-record-2015-04-07-09h19m23s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/6_juego_7_vlc-record-2015-04-07-09h19m23s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 6_juego_1_vlc-record-2015-04-07-08h32m05s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//juego6_juego_1_vlc-record-2015-04-07-08h32m05s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/6_juego_1_vlc-record-2015-04-07-08h32m05s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/6_juego_1_vlc-record-2015-04-07-08h32m05s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 8_juego_2_vlc-record-2015-04-15-13h53m56s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego8_juego_2_vlc-record-2015-04-15-13h53m56s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/8_juego_2_vlc-record-2015-04-15-13h53m56s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/8_juego_2_vlc-record-2015-04-15-13h53m56s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 6_juego_4_vlc-record-2015-04-07-09h07m46s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//juego6_juego_4_vlc-record-2015-04-07-09h07m46s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/6_juego_4_vlc-record-2015-04-07-09h07m46s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//juego/6_juego_4_vlc-record-2015-04-07-09h07m46s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 4_juego_2_vlc-record-2015-03-27-11h22m43s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//juego4_juego_2_vlc-record-2015-03-27-11h22m43s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//juego/4_juego_2_vlc-record-2015-03-27-11h22m43s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4.mofreak
+MoFREAK already computed
+action: scrum
+action video path: /home/lucia/data/rugby/videos//scrum
+filename: 5_scrum_16_vlc-record-2015-04-04-23h18m58s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_16_vlc-record-2015-04-04-23h18m58s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_16_vlc-record-2015-04-04-23h18m58s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 1_scrum_3_vlc-record-2015-03-20-09h39m24s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum1_scrum_3_vlc-record-2015-03-20-09h39m24s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/1_scrum_3_vlc-record-2015-03-20-09h39m24s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4.mofreak
+MoFREAK already computed
+filename: 5_scrum_18_vlc-record-2015-04-04-23h25m27s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_18_vlc-record-2015-04-04-23h25m27s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_18_vlc-record-2015-04-04-23h25m27s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 6_scrum_4_vlc-record-2015-04-07-08h56m12s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum6_scrum_4_vlc-record-2015-04-07-08h56m12s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/6_scrum_4_vlc-record-2015-04-07-08h56m12s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/6_scrum_4_vlc-record-2015-04-07-08h56m12s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 3_scrum_6_vlc-record-2015-03-25-14h52m09s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum3_scrum_6_vlc-record-2015-03-25-14h52m09s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/3_scrum_6_vlc-record-2015-03-25-14h52m09s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 6_scrum_9_vlc-record-2015-04-07-09h23m51s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum6_scrum_9_vlc-record-2015-04-07-09h23m51s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/6_scrum_9_vlc-record-2015-04-07-09h23m51s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/6_scrum_9_vlc-record-2015-04-07-09h23m51s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 5_scrum_15_vlc-record-2015-04-04-23h18m00s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_15_vlc-record-2015-04-04-23h18m00s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_15_vlc-record-2015-04-04-23h18m00s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_scrum_7_vlc-record-2015-03-25-14h52m48s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum3_scrum_7_vlc-record-2015-03-25-14h52m48s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/3_scrum_7_vlc-record-2015-03-25-14h52m48s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 4_scrum_2_vlc-record-2015-03-28-19h55m58s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum4_scrum_2_vlc-record-2015-03-28-19h55m58s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/4_scrum_2_vlc-record-2015-03-28-19h55m58s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 7_scrum_1_Scrum Ataque.mp4
+FILE: /home/lucia/data/rugby/videos//scrum7_scrum_1_Scrum Ataque.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/7_scrum_1_Scrum Ataque.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/7_scrum_1_Scrum Ataque.mp4.mofreak
+filename: 8_scrum_6_vlc-record-2015-04-15-14h00m24s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum8_scrum_6_vlc-record-2015-04-15-14h00m24s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/8_scrum_6_vlc-record-2015-04-15-14h00m24s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/8_scrum_6_vlc-record-2015-04-15-14h00m24s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 3_scrum_10_vlc-record-2015-03-25-15h19m43s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum3_scrum_10_vlc-record-2015-03-25-15h19m43s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/3_scrum_10_vlc-record-2015-03-25-15h19m43s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_scrum_14_vlc-record-2015-04-04-23h17m39s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_14_vlc-record-2015-04-04-23h17m39s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_14_vlc-record-2015-04-04-23h17m39s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_scrum_4_vlc-record-2015-04-04-21h41m39s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_4_vlc-record-2015-04-04-21h41m39s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_4_vlc-record-2015-04-04-21h41m39s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_scrum_1_vlc-record-2015-03-25-09h53m00s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum3_scrum_1_vlc-record-2015-03-25-09h53m00s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/3_scrum_1_vlc-record-2015-03-25-09h53m00s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 6_scrum_6_vlc-record-2015-04-07-09h02m29s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum6_scrum_6_vlc-record-2015-04-07-09h02m29s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/6_scrum_6_vlc-record-2015-04-07-09h02m29s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/6_scrum_6_vlc-record-2015-04-07-09h02m29s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 2_scrum_1_vlc-record-2015-03-20-15h41m01s-urr2014_urrvssta fe.mp4-muxed.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum2_scrum_1_vlc-record-2015-03-20-15h41m01s-urr2014_urrvssta fe.mp4-muxed.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/2_scrum_1_vlc-record-2015-03-20-15h41m01s-urr2014_urrvssta fe.mp4-muxed.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_scrum_9_vlc-record-2015-03-25-15h06m47s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum3_scrum_9_vlc-record-2015-03-25-15h06m47s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/3_scrum_9_vlc-record-2015-03-25-15h06m47s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_scrum_9_vlc-record-2015-04-04-23h05m08s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_9_vlc-record-2015-04-04-23h05m08s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_9_vlc-record-2015-04-04-23h05m08s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 6_scrum_5_vlc-record-2015-04-07-09h01m22s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum6_scrum_5_vlc-record-2015-04-07-09h01m22s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/6_scrum_5_vlc-record-2015-04-07-09h01m22s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/6_scrum_5_vlc-record-2015-04-07-09h01m22s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 1_scrum_2_vlc-record-2015-03-10-14h40m49s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum1_scrum_2_vlc-record-2015-03-10-14h40m49s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/1_scrum_2_vlc-record-2015-03-10-14h40m49s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4.mofreak
+MoFREAK already computed
+filename: 8_scrum_2_vlc-record-2015-04-15-13h40m12s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum8_scrum_2_vlc-record-2015-04-15-13h40m12s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/8_scrum_2_vlc-record-2015-04-15-13h40m12s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/8_scrum_2_vlc-record-2015-04-15-13h40m12s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 6_scrum_3_vlc-record-2015-04-07-08h55m42s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum6_scrum_3_vlc-record-2015-04-07-08h55m42s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/6_scrum_3_vlc-record-2015-04-07-08h55m42s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/6_scrum_3_vlc-record-2015-04-07-08h55m42s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 4_scrum_3_vlc-record-2015-03-28-19h56m24s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum4_scrum_3_vlc-record-2015-03-28-19h56m24s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/4_scrum_3_vlc-record-2015-03-28-19h56m24s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 8_scrum_5_vlc-record-2015-04-15-13h52m14s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum8_scrum_5_vlc-record-2015-04-15-13h52m14s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/8_scrum_5_vlc-record-2015-04-15-13h52m14s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/8_scrum_5_vlc-record-2015-04-15-13h52m14s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 6_scrum_1_vlc-record-2015-04-07-08h38m31s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum6_scrum_1_vlc-record-2015-04-07-08h38m31s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/6_scrum_1_vlc-record-2015-04-07-08h38m31s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/6_scrum_1_vlc-record-2015-04-07-08h38m31s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 3_scrum_4_vlc-record-2015-03-25-11h21m43s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum3_scrum_4_vlc-record-2015-03-25-11h21m43s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/3_scrum_4_vlc-record-2015-03-25-11h21m43s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 6_scrum_2_vlc-record-2015-04-07-08h55m25s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum6_scrum_2_vlc-record-2015-04-07-08h55m25s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/6_scrum_2_vlc-record-2015-04-07-08h55m25s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/6_scrum_2_vlc-record-2015-04-07-08h55m25s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 6_scrum_10_vlc-record-2015-04-07-09h50m10s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum6_scrum_10_vlc-record-2015-04-07-09h50m10s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/6_scrum_10_vlc-record-2015-04-07-09h50m10s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/6_scrum_10_vlc-record-2015-04-07-09h50m10s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 5_scrum_1_vlc-record-2015-04-04-21h16m28s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_1_vlc-record-2015-04-04-21h16m28s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_1_vlc-record-2015-04-04-21h16m28s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_scrum_17_vlc-record-2015-04-04-23h22m42s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_17_vlc-record-2015-04-04-23h22m42s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_17_vlc-record-2015-04-04-23h22m42s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_scrum_7_vlc-record-2015-04-04-22h49m01s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_7_vlc-record-2015-04-04-22h49m01s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_7_vlc-record-2015-04-04-22h49m01s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 8_scrum_7_vlc-record-2015-04-15-14h05m17s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum8_scrum_7_vlc-record-2015-04-15-14h05m17s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/8_scrum_7_vlc-record-2015-04-15-14h05m17s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/8_scrum_7_vlc-record-2015-04-15-14h05m17s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 5_scrum_8_vlc-record-2015-04-04-22h53m49s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_8_vlc-record-2015-04-04-22h53m49s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_8_vlc-record-2015-04-04-22h53m49s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_scrum_10_vlc-record-2015-04-04-23h10m48s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_10_vlc-record-2015-04-04-23h10m48s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_10_vlc-record-2015-04-04-23h10m48s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_scrum_12_vlc-record-2015-04-04-23h13m05s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_12_vlc-record-2015-04-04-23h13m05s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_12_vlc-record-2015-04-04-23h13m05s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 8_scrum_8_vlc-record-2015-04-15-14h07m15s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum8_scrum_8_vlc-record-2015-04-15-14h07m15s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/8_scrum_8_vlc-record-2015-04-15-14h07m15s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/8_scrum_8_vlc-record-2015-04-15-14h07m15s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 5_scrum_5_vlc-record-2015-04-04-22h47m17s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_5_vlc-record-2015-04-04-22h47m17s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_5_vlc-record-2015-04-04-22h47m17s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_scrum_8_vlc-record-2015-03-25-15h02m02s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum3_scrum_8_vlc-record-2015-03-25-15h02m02s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/3_scrum_8_vlc-record-2015-03-25-15h02m02s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_scrum_2_vlc-record-2015-04-04-21h30m43s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_2_vlc-record-2015-04-04-21h30m43s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_2_vlc-record-2015-04-04-21h30m43s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 1_scrum_4_vlc-record-2015-03-20-09h43m41s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum1_scrum_4_vlc-record-2015-03-20-09h43m41s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/1_scrum_4_vlc-record-2015-03-20-09h43m41s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4.mofreak
+MoFREAK already computed
+filename: 3_scrum_2_vlc-record-2015-03-25-09h54m16s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum3_scrum_2_vlc-record-2015-03-25-09h54m16s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/3_scrum_2_vlc-record-2015-03-25-09h54m16s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_scrum_5_vlc-record-2015-03-25-11h23m05s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum3_scrum_5_vlc-record-2015-03-25-11h23m05s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/3_scrum_5_vlc-record-2015-03-25-11h23m05s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_scrum_6_vlc-record-2015-04-04-22h48m31s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_6_vlc-record-2015-04-04-22h48m31s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_6_vlc-record-2015-04-04-22h48m31s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 7_scrum_2_Scrum Defensa.mp4
+FILE: /home/lucia/data/rugby/videos//scrum7_scrum_2_Scrum Defensa.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/7_scrum_2_Scrum Defensa.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/7_scrum_2_Scrum Defensa.mp4.mofreak
+filename: 6_scrum_7_vlc-record-2015-04-07-09h10m23s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum6_scrum_7_vlc-record-2015-04-07-09h10m23s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/6_scrum_7_vlc-record-2015-04-07-09h10m23s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/6_scrum_7_vlc-record-2015-04-07-09h10m23s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 8_scrum_3_vlc-record-2015-04-15-13h45m24s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum8_scrum_3_vlc-record-2015-04-15-13h45m24s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/8_scrum_3_vlc-record-2015-04-15-13h45m24s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/8_scrum_3_vlc-record-2015-04-15-13h45m24s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 8_scrum_4_vlc-record-2015-04-15-13h51m26s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum8_scrum_4_vlc-record-2015-04-15-13h51m26s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/8_scrum_4_vlc-record-2015-04-15-13h51m26s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/8_scrum_4_vlc-record-2015-04-15-13h51m26s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 7_scrum_3_Scrum Rival.mp4
+FILE: /home/lucia/data/rugby/videos//scrum7_scrum_3_Scrum Rival.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/7_scrum_3_Scrum Rival.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/7_scrum_3_Scrum Rival.mp4.mofreak
+filename: 4_scrum_1_vlc-record-2015-03-27-14h01m35s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum4_scrum_1_vlc-record-2015-03-27-14h01m35s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/4_scrum_1_vlc-record-2015-03-27-14h01m35s-Amistoso 2015 - DRC - Loga 07 03 2015.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 3_scrum_3_vlc-record-2015-03-25-11h16m31s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum3_scrum_3_vlc-record-2015-03-25-11h16m31s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/3_scrum_3_vlc-record-2015-03-25-11h16m31s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_scrum_3_vlc-record-2015-04-04-21h31m17s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_3_vlc-record-2015-04-04-21h31m17s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_3_vlc-record-2015-04-04-21h31m17s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_scrum_13_vlc-record-2015-04-04-23h17m16s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_13_vlc-record-2015-04-04-23h17m16s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_13_vlc-record-2015-04-04-23h17m16s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 1_scrum_1_vlc-record-2015-03-10-14h40m06s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum1_scrum_1_vlc-record-2015-03-10-14h40m06s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/1_scrum_1_vlc-record-2015-03-10-14h40m06s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4.mofreak
+MoFREAK already computed
+filename: 2_scrum_2_vlc-record-2015-03-20-15h42m00s-urr2014_urrvssta fe.mp4-muxed.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum2_scrum_2_vlc-record-2015-03-20-15h42m00s-urr2014_urrvssta fe.mp4-muxed.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/2_scrum_2_vlc-record-2015-03-20-15h42m00s-urr2014_urrvssta fe.mp4-muxed.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 8_scrum_1_vlc-record-2015-04-15-13h38m34s-TIB15_F2_CLR_HUI.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum8_scrum_1_vlc-record-2015-04-15-13h38m34s-TIB15_F2_CLR_HUI.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/8_scrum_1_vlc-record-2015-04-15-13h38m34s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/8_scrum_1_vlc-record-2015-04-15-13h38m34s-TIB15_F2_CLR_HUI.mp4-.mp4.mofreak
+filename: 3_scrum_11_vlc-record-2015-03-25-15h27m00s-21032015 GER vs LOGA(Primera).mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum3_scrum_11_vlc-record-2015-03-25-15h27m00s-21032015 GER vs LOGA(Primera).mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/3_scrum_11_vlc-record-2015-03-25-15h27m00s-21032015 GER vs LOGA(Primera).mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 5_scrum_11_vlc-record-2015-04-04-23h11m49s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum5_scrum_11_vlc-record-2015-04-04-23h11m49s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/5_scrum_11_vlc-record-2015-04-04-23h11m49s-final four 2014 - fecha 3 - trl 2014 - drc 61 - uni r 12.mp4-.mp4.mofreak
+MoFREAK already computed
+filename: 6_scrum_8_vlc-record-2015-04-07-09h21m48s-PLB_CLR_Int15.mov-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum6_scrum_8_vlc-record-2015-04-07-09h21m48s-PLB_CLR_Int15.mov-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/6_scrum_8_vlc-record-2015-04-07-09h21m48s-PLB_CLR_Int15.mov-.mp4.mofreak
+Writing this mofreak file: /home/lucia/data/rugby/mofreak//scrum/6_scrum_8_vlc-record-2015-04-07-09h21m48s-PLB_CLR_Int15.mov-.mp4.mofreak
+filename: 1_scrum_5_vlc-record-2015-03-20-09h48m40s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+FILE: /home/lucia/data/rugby/videos//scrum1_scrum_5_vlc-record-2015-03-20-09h48m40s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4
+mofreak path: /home/lucia/data/rugby/mofreak//scrum/1_scrum_5_vlc-record-2015-03-20-09h48m40s-Heineken Cup 2013-14 QF Toulon v Leinster-.mp4.mofreak
+MoFREAK already computed
+cluster()
+Gathering MoFREAK Features...
+action: line
+Building data.
+allocating data_pts in builddatafrommofreaK: 4950
+allocated
+converted into matrix of pts
+Random clustering
+Sampling 16
+Current center row:0
+action: juego
+Building data.
+allocating data_pts in builddatafrommofreaK: 4992
+allocated
+converted into matrix of pts
+Random clustering
+Sampling 16
+Current center row:16
+action: scrum
+Building data.
+allocating data_pts in builddatafrommofreaK: 4980
+allocated
+converted into matrix of pts
+Random clustering
+Sampling 16
+Current center row:32
+writing
+computeBOWRepresentation()
+Gathering MoFREAK files from /home/lucia/data/rugby/mofreak/
+action: line
+action: juego
+action: scrum
+number of training features: 169
+number of testing features: 14
+number of training features: 178
+number of testing features: 5
+number of training features: 154
+number of testing features: 29
+number of training features: 171
+number of testing features: 12
+number of training features: 130
+number of testing features: 53
+number of training features: 151
+number of testing features: 32
+number of training features: 170
+number of testing features: 13
+number of training features: 158
+number of testing features: 25
+Finished writing to cross-validation files.
+Closed all cross-validation files. 
+Completed printing bag-of-words representation to files
+in eval
+Eval SVM...
+confusion matrix NUM_CLASSES 3
+New loop iteration
+Cross validation set 1
+training model
+Model trained.
+deleting..error msg 
+Accuracy = 21.4286% (3/14) (classification)
+New loop iteration
+Cross validation set 2
+training model
+Model trained.
+deleting..error msg 
+Accuracy = 68% (17/25) (classification)
+New loop iteration
+Cross validation set 3
+training model
+Model trained.
+deleting..error msg 
+Accuracy = 23.0769% (3/13) (classification)
+New loop iteration
+Cross validation set 4
+training model
+Model trained.
+deleting..error msg 
+Accuracy = 60% (3/5) (classification)
+New loop iteration
+Cross validation set 5
+training model
+Model trained.
+deleting..error msg 
+Accuracy = 66.0377% (35/53) (classification)
+New loop iteration
+Cross validation set 6
+training model
+Model trained.
+deleting..error msg 
+Accuracy = 82.7586% (24/29) (classification)
+New loop iteration
+Cross validation set 7
+training model
+Model trained.
+deleting..error msg 
+Accuracy = 65.625% (21/32) (classification)
+New loop iteration
+Cross validation set 8
+training model
+Model trained.
+deleting..error msg 
+Accuracy = 58.3333% (7/12) (classification)
+Confusion matrix
+---------------------
+   88.00,     4.00,     8.00, 
+
+   40.00,    60.00,     0.00, 
+
+   75.00,     2.08,    22.92, 
+
+Averaged accuracy: 55.66%
+Took this long: 7020.25 seconds! 
+All done.  Press any key to continue...
+Dumping memory leak info
