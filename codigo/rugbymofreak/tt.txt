@@ -1,0 +1,27 @@
+dir: juego
+Video: h264 (Main), yuv420p, 640x360 [PAR 1:1 DAR 16:9], 838 kb/s, 29.97 fps, 29.97 tbr, 1000k tbn, 180k tbc Metadata: creation_time : 2015-03-18 14:35:04
+Video: h264 (High), yuv420p, 960x536 [PAR 1:1 DAR 120:67], 1186 kb/s, 29.91 fps, 30 tbr, 1000k tbn, 60 tbc Metadata: creation_time : 2015-03-20 18:38:21
+Video: h264 (High), yuv420p, 960x536 [PAR 1:1 DAR 120:67], 962 kb/s, 29.94 fps, 30 tbr, 1000k tbn, 60 tbc Metadata: creation_time : 2015-03-25 17:47:04
+Video: h264 (Main), yuv420p, 1280x720 [PAR 1:1 DAR 16:9], 1020 kb/s, 25 fps, 25 tbr, 1000k tbn, 50 tbc Metadata: creation_time : 2015-03-27 14:20:57
+Video: h264 (Main), yuv420p, 1280x720 [PAR 1:1 DAR 16:9], 1005 kb/s, 25 fps, 25 tbr, 1000k tbn, 50 tbc Metadata: creation_time : 2015-04-05 00:15:06
+Video: h264 (High), yuv420p, 720x576 [PAR 16:15 DAR 4:3], 5770 kb/s, 24 fps, 24 tbr, 1000k tbn, 48 tbc Metadata: creation_time : 2015-04-07 11:32:56
+Video: mpeg4 (Simple Profile), yuv420p, 640x480 [PAR 4:3 DAR 16:9], 1978 kb/s, 29.61 fps, 30 tbr, 30 tbn, 30 tbc Metadata: creation_time : 2015-03-20 14:52:19 Stream #0.1(und): Audio: aac, 44100 Hz, stereo, s16, 95 kb/s Metadata: creation_time : 2015-03-20 14:52:19
+Video: h264 (Main), yuv420p, 1280x720 [PAR 1:1 DAR 16:9], 1496 kb/s, 25 fps, 25 tbr, 1000k tbn, 50 tbc Metadata: creation_time : 2015-04-15 16:48:37
+dir: line
+Video: h264 (Main), yuv420p, 640x360 [PAR 1:1 DAR 16:9], 979 kb/s, 29.97 fps, 29.97 tbr, 1000k tbn, 180k tbc Metadata: creation_time : 2015-03-10 17:46:48
+Video: h264 (High), yuv420p, 960x536 [PAR 1:1 DAR 120:67], 989 kb/s, 29.60 fps, 30 tbr, 1000k tbn, 60 tbc Metadata: creation_time : 2015-03-20 18:43:45
+Video: h264 (High), yuv420p, 960x536 [PAR 1:1 DAR 120:67], 1223 kb/s, 29.82 fps, 30 tbr, 1000k tbn, 60 tbc Metadata: creation_time : 2015-03-25 14:18:09
+Video: h264 (Main), yuv420p, 1280x720 [PAR 1:1 DAR 16:9], 1013 kb/s, 25 fps, 25 tbr, 1000k tbn, 50 tbc Metadata: creation_time : 2015-03-27 14:45:19
+Video: h264 (Main), yuv420p, 1280x720 [PAR 1:1 DAR 16:9], 1406 kb/s, 25 fps, 25 tbr, 1000k tbn, 50 tbc Metadata: creation_time : 2015-04-05 00:11:53
+Video: h264 (High), yuv420p, 720x576 [PAR 16:15 DAR 4:3], 3191 kb/s, 24 fps, 24 tbr, 1000k tbn, 48 tbc Metadata: creation_time : 2015-04-07 11:34:47
+Video: mpeg4 (Simple Profile), yuv420p, 640x480 [PAR 4:3 DAR 16:9], 2004 kb/s, 29.86 fps, 30 tbr, 30 tbn, 30 tbc Metadata: creation_time : 2015-03-20 14:50:24
+Video: h264 (Main), yuv420p, 1280x720 [PAR 1:1 DAR 16:9], 1505 kb/s, 25 fps, 25 tbr, 1000k tbn, 50 tbc Metadata: creation_time : 2015-04-15 16:47:58
+dir: scrum
+Video: h264 (Main), yuv420p, 640x360 [PAR 1:1 DAR 16:9], 613 kb/s, 29.97 fps, 29.97 tbr, 1000k tbn, 180k tbc Metadata: creation_time : 2015-03-10 17:40:22
+Video: h264 (High), yuv420p, 960x536 [PAR 1:1 DAR 120:67], 598 kb/s, 29.92 fps, 30 tbr, 1000k tbn, 60 tbc Metadata: creation_time : 2015-03-20 18:41:23
+Video: h264 (High), yuv420p, 960x536 [PAR 1:1 DAR 120:67], 1024 kb/s, 29.91 fps, 30 tbr, 1000k tbn, 60 tbc Metadata: creation_time : 2015-03-25 12:53:12
+Video: h264 (Main), yuv420p, 1280x720 [PAR 1:1 DAR 16:9], 997 kb/s, 25 fps, 25 tbr, 1000k tbn, 50 tbc Metadata: creation_time : 2015-03-27 17:02:12
+Video: h264 (Main), yuv420p, 1280x720 [PAR 1:1 DAR 16:9], 996 kb/s, 25 fps, 25 tbr, 1000k tbn, 50 tbc Metadata: creation_time : 2015-04-05 00:16:48 Stream #0.1(eng): Audio: aac, 48000 Hz, stereo, s16, 189 kb/s Metadata: creation_time : 2015-04-05 00:16:48
+Video: h264 (High), yuv420p, 720x576 [PAR 16:15 DAR 4:3], 4106 kb/s, 24 fps, 24 tbr, 1000k tbn, 48 tbc Metadata: creation_time : 2015-04-07 11:38:44
+Video: mpeg4 (Simple Profile), yuv420p, 640x480 [PAR 4:3 DAR 16:9], 1995 kb/s, 29.98 fps, 30 tbr, 30 tbn, 30 tbc Metadata: creation_time : 2015-03-20 14:48:22
+Video: h264 (Main), yuv420p, 1280x720 [PAR 1:1 DAR 16:9], 1518 kb/s, 25 fps, 25 tbr, 1000k tbn, 50 tbc Metadata: creation_time : 2015-04-15 16:38:47
