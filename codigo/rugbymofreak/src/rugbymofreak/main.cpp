@@ -81,10 +81,10 @@ void setParameters()
         }
 
         // structural folder info.
-        MOSIFT_DIR = "/home/lucia/data/rugby/mosift/";
-        MOFREAK_PATH = "/home/lucia/data/rugby/mofreak/";
-        VIDEO_PATH = "/home/lucia/data/rugby/videos/";
-        SVM_PATH = "/home/lucia/data/rugby/svm/";
+        MOSIFT_DIR = "/home/lucia/Documentos/data/mosift/";
+        MOFREAK_PATH = "/home/lucia/Documentos/data/mofreak/";
+        VIDEO_PATH = "/home/lucia/Documentos/data/videos/";
+        SVM_PATH = "/home/lucia/Documentos/data/svm/";
         METADATA_PATH = "";
     }
 
