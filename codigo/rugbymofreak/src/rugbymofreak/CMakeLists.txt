@@ -5,18 +5,32 @@ SET(CMAKE_BUILD_TYPE Debug)
 SET (this_target RugbyMoFREAK)
 PROJECT(${this_target})
 
-OPTION (USE_OpenMP "Use OpenMP" ON)
-IF(USE_OpenMP)
-  FIND_PACKAGE(OpenMP)
-  IF(OPENMP_FOUND)
-    SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
-    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
-  ENDIF()
-ENDIF()
+#OPTION (USE_OpenMP "Use OpenMP" ON) 
+#IF(USE_OpenMP)
+#  FIND_PACKAGE(OpenMP)
+#  IF(OPENMP_FOUND)
+#    SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
+#    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
+#  ENDIF()
+#ENDIF()
 
+SET("OpenCV_DIR" "/home/lucia/libs/opencv-2.4.2/release/installed")
+SET("OpenCV_INCLUDE_DIR" "${OpenCV_DIR}/include")
+SET("OpenCV_LIBRARIES_PATH" "${OpenCV_DIR}/lib")
+SET("OpenCV_LIBRARIES" "${OpenCV_LIBRARIES_PATH}/libopencv_video.so" "${OpenCV_LIBRARIES_PATH}/libopencv_nonfree.so"
+"${OpenCV_LIBRARIES_PATH}/libopencv_features2d.so"
+"${OpenCV_LIBRARIES_PATH}/libopencv_imgproc.so"
+"${OpenCV_LIBRARIES_PATH}/libopencv_highgui.so"
+"${OpenCV_LIBRARIES_PATH}/libopencv_calib3d.so"
+"${OpenCV_LIBRARIES_PATH}/libopencv_core.so"
+"${OpenCV_LIBRARIES_PATH}/libopencv_videostab.so")
 
 FIND_PACKAGE(Boost REQUIRED COMPONENTS system filesystem)
-FIND_PACKAGE(OpenCV REQUIRED COMPONENTS core calib3d highgui imgproc features2d nonfree video)
+#FIND_PACKAGE(OpenCV REQUIRED COMPONENTS core calib3d highgui imgproc features2d nonfree video)
+
+message(STATUS "OpenCV_DIR: " ${OpenCV_DIR})
+message(STATUS "OpenCV_INCLUDE_DIR: " ${OpenCV_INCLUDE_DIR})
+message(STATUS "OpenCV_LIBRARIES: " ${OpenCV_LIBRARIES})
 
 ## section: include directory
 INCLUDE_DIRECTORIES(

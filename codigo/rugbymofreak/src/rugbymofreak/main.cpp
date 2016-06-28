@@ -15,20 +15,20 @@
 #include "BagOfWordsRepresentation.h"
 #include "SVMInterface.h"
 
-// for debugging the heap (memory leaks, etc)
-//#define _CRTDBG_MAP_ALLOC
 #include <stdlib.h>
 #include <iomanip>
-//#include <crtdbg.h>
 
 #include <omp.h>
 
 using namespace std;
 using namespace boost::filesystem;
 
+string DATA_DIR_RUGBY = "/home/lucia/Documentos/data/";
+string DATA_DIR_KTH = "/home/lucia/Documentos/data/";
+
 bool DISTRIBUTED = false;
 
-string MOSIFT_DIR, MOFREAK_PATH, VIDEO_PATH, SVM_PATH, METADATA_PATH; // for file structure
+string MOSIFT_DIR, MOFREAK_PATH, VIDEO_PATH, SVM_PATH, METADATA_PATH; //se setean en setParameters()
 string MOFREAK_NEG_PATH, MOFREAK_POS_PATH; // these are TRECVID exclusive
 
 unsigned int NUM_MOTION_BYTES = 8;
@@ -37,15 +37,15 @@ unsigned int FEATURE_DIMENSIONALITY = NUM_MOTION_BYTES + NUM_APPEARANCE_BYTES;
 unsigned int NUM_CLUSTERS, NUMBER_OF_GROUPS, NUM_CLASSES, ALPHA;
 
 vector<int> possible_classes;
-std::deque<MoFREAKFeature> mofreak_ftrs;
+deque<MoFREAKFeature> mofreak_ftrs;
 
 enum states {DETECT_MOFREAK, DETECTION_TO_CLASSIFICATION, // standard recognition states
 	PICK_CLUSTERS, COMPUTE_BOW_HISTOGRAMS, DETECT, TRAIN, GET_SVM_RESPONSES,}; // these states are exclusive to TRECVID
 
 enum datasets {RUGBY, KTH};
 
-int dataset = RUGBY; //KTH; //UCF101; //HMDB51;
-int state = DETECTION_TO_CLASSIFICATION; //DETECT_MOFREAK;
+int dataset = RUGBY; //KTH;
+int state = DETECT_MOFREAK; //DETECTION_TO_CLASSIFICATION;
 
 MoFREAKUtilities *mofreak;
 SVMInterface svm_interface;
@@ -64,31 +64,32 @@ struct Detection
 	};
 };
 
-// set up some hard-coded parameters that are specific to individual datasets.
-// these parameters include things like the number of classes and input/output locations.
+
+//setea los parametros necesarios para utilizar la herramiente de acuerdo al dataset con que se esté trabajando
+//NUM_CLUSTERS, NUM_GROUPS puede reescribirse pasándoselos desde línea de consola a main
 void setParameters()
 {
-    // RUGBY
+    //RUGBY
     if (dataset == RUGBY)
     {
         NUM_CLUSTERS = 1000; //probar
         NUM_CLASSES = 3; //line, scrum, juego
-        NUMBER_OF_GROUPS = 8; //no tenemos groups
+        NUMBER_OF_GROUPS = 8; //no tenemos groups, lo usamos para la cantidad de partidos
 
         for (unsigned i = 0; i < NUM_CLASSES; ++i)
         {
             possible_classes.push_back(i);
         }
 
-        // structural folder info.
-        MOSIFT_DIR = "/home/lucia/Documentos/data/mosift/";
-        MOFREAK_PATH = "/home/lucia/Documentos/data/mofreak/";
-        VIDEO_PATH = "/home/lucia/Documentos/data/videos/";
-        SVM_PATH = "/home/lucia/Documentos/data/svm/";
+        //data a procesar y directorios para guardar resultados
+        MOSIFT_DIR = DATA_DIR_RUGBY + "mosift/";
+        MOFREAK_PATH = DATA_DIR_RUGBY + "mofreak/";
+        VIDEO_PATH = DATA_DIR_RUGBY + "videos/";
+        SVM_PATH = DATA_DIR_RUGBY + "svm/";
         METADATA_PATH = "";
     }
 
-    // KTH
+    //KTH
 	else if (dataset == KTH)
 	{
         NUM_CLUSTERS = 10;
@@ -100,14 +101,13 @@ void setParameters()
 			possible_classes.push_back(i);
 		}
 
-		// structural folder info.
-		MOSIFT_DIR = "/home/lucia/data/kth/mosift/";
-		MOFREAK_PATH = "/home/lucia/data/kth/mofreak/"; 
-		VIDEO_PATH = "/home/lucia/data/kth/videos/";
-		SVM_PATH = "/home/lucia/data/kth/svm/";
-		METADATA_PATH = "";
+        //data a procesar y directorios para guardar resultados
+        MOSIFT_DIR = DATA_DIR_KTH + "mosift/";
+        MOFREAK_PATH = DATA_DIR_KTH + "mofreak/";
+        VIDEO_PATH = DATA_DIR_KTH + "videos/";
+        SVM_PATH = DATA_DIR_KTH + "svm/";
+        METADATA_PATH = "";
 	}
-
 }
 
 // cluster MoFREAK points to select codewords for a bag-of-words representation.
@@ -457,7 +457,6 @@ void computeBOWHistograms(bool positive_examples)
 
 	// for each file....
 	// slide window of length alpha and use those pts to create a BOW feature.
-#pragma omp parallel for
 	for (int i = 0; i < mofreak_files.size(); ++i)
 	{
 		cout << "Computing on " << mofreak_files[i] << endl;
@@ -690,8 +689,9 @@ void computeSVMResponses()
 	}
 }
 
-// given a collection of videos, generate a single mofreak file per video,
-// containing the descriptor data for that video.
+
+//genera un archivo mofreak por cada video que se encuentra en VIDEO_PATH
+//los archivos mofreak contienen la información de los descriptores
 void computeMoFREAKFiles()
 {
 	directory_iterator end_iter;
@@ -701,70 +701,66 @@ void computeMoFREAKFiles()
 	cout << "Motion bytes: " << NUM_MOTION_BYTES << endl;
     cout << "Appearance bytes: " << NUM_APPEARANCE_BYTES << endl;
 
-
-//#pragma omp parallel
-//{
-//#pragma omp for private(mofreak)
     for (directory_iterator dir_iter(VIDEO_PATH); dir_iter != end_iter; ++dir_iter)
 	{
-
 		if (is_regular_file(dir_iter->status()))
 		{
-			// parse mosift files so first x characters gets us the video name.
-			path current_file = dir_iter->path();
+            path current_file = dir_iter->path();
 			string video_path = current_file.generic_string();
 			string video_filename = current_file.filename().generic_string();
 
+            //checkea que el video sea .mp4
             if ((video_filename.substr(video_filename.length() - 3, 3) == "mp4")) //avi"))
 			{
-//#pragma omp single
-                cout << "FILE: " << VIDEO_PATH << "/" << video_filename << endl;
-
-				string video = VIDEO_PATH + "/" + video_filename;
+                string video = VIDEO_PATH + "/" + video_filename;
+                cout << "FILE: " << video << endl;
 				string mofreak_path = MOFREAK_PATH + "/" + video_filename + ".mofreak";
 
 				ifstream f(mofreak_path);
 				if (f.good()) {
 					f.close();
-//#pragma omp single
 					cout << "MoFREAK already computed" << endl;
 				}
 				else {
 					f.close();
-
+		    /*
                     cv::VideoCapture capture;
                     capture.open(video);
 
                     if (!capture.isOpened())
                     {
-//#pragma omp single
                         cout << "Could not open file: " << video << endl;
                     }
 
-                    mofreak->computeMoFREAKFromFile(video, capture, mofreak_path, true);
-
-                    //mofreak->computeMoFREAKFromFile(video, mofreak_path, true);
+                    //mofreak->computeMoFREAKFromFile(video, capture, mofreak_path, true);
+		    */
+                    mofreak->computeMoFREAKFromFile(video, mofreak_path, true);
 				}
 			}
 		}
 		else if (is_directory(dir_iter->status()))
 		{
-			// get folder name.
+            //lee el nombre de la carpeta y lo usa para mostrar que tipo de acción es
 			string video_action = dir_iter->path().filename().generic_string();
-//#pragma omp single
 			cout << "action: " << video_action << endl;
 
-			// set the mofreak object's action to that folder name.
+            //setea la acción para mofreak
 			mofreak->setCurrentAction(video_action);
 
-			// compute mofreak on all files on that folder.
-			string action_video_path = VIDEO_PATH + "/" + video_action;
-//#pragma omp single
-			cout << "action video path: " << action_video_path << endl;
+            string action_video_path = VIDEO_PATH + video_action;
+            cout << "action video path: " << action_video_path << endl;
 
-#pragma omp parallel
-{
-#pragma omp single nowait
+            //genera directorio dentro de MOFREAK_PATH para mantener separadas las distintas acciones
+            boost::filesystem::path dir_to_create(MOFREAK_PATH + "/" + video_action + "/");
+            boost::system::error_code returned_error;
+            boost::filesystem::create_directories(dir_to_create, returned_error);
+            if (returned_error)
+            {
+                std::cout << "Could not make directory " << dir_to_create.string() << std::endl;
+                exit(1);
+            }
+
+            //calcula mofreak para todos los videos que se encuentran en ese directorio
             for (directory_iterator video_iter(action_video_path); video_iter != end_iter; ++video_iter)
 			{
 				if (is_regular_file(video_iter->status()))
@@ -772,44 +768,32 @@ void computeMoFREAKFiles()
 					string video_filename = video_iter->path().filename().generic_string();
                     if (video_filename.substr(video_filename.length() - 3, 3) == "mp4") //"avi")
 					{
-                        cout << "filename: " << video_filename << endl;
-                        cout << "FILE: " << action_video_path << video_filename << endl;
+                        cout << "FILE: " << action_video_path << "/" << video_filename << endl;
 						string mofreak_path = MOFREAK_PATH + "/" + video_action + "/" + video_filename + ".mofreak";
 
-						// create the corresponding directories, then go ahead and compute the mofreak files.
-						boost::filesystem::path dir_to_create(MOFREAK_PATH + "/" + video_action + "/");
-						boost::system::error_code returned_error;
-						boost::filesystem::create_directories(dir_to_create, returned_error);
-						if (returned_error)
-						{
-							std::cout << "Could not make directory " << dir_to_create.string() << std::endl;
-							exit(1);
-						}
-
-                            cout << "mofreak path: " << mofreak_path << endl;
-                            //printf("num_threads = %d\n", omp_get_num_threads());
+                        cout << "mofreak path: " << mofreak_path << endl;
+                        //printf("num_threads = %d\n", omp_get_num_threads());
 						
 						ifstream f(mofreak_path);
-						if (f.good()) {
+
+                        if (f.good()) {
 							f.close();
 							cout << "MoFREAK already computed" << endl;
 						}	
 						else {
 							f.close();
 
+                            /*
                             cv::VideoCapture capture;
                             capture.open(action_video_path + "/" + video_filename);
 
                             if (!capture.isOpened())
                                 cout << "Could not open file: " << action_video_path << "/" << video_filename << endl;
-
-//#pragma omp task private(action_video_path, video_filename, capture)
-//{
                             //printf("Thread: %d\n", omp_get_thread_num());
                             mofreak->computeMoFREAKFromFile(action_video_path + "/" + video_filename, capture, mofreak_path, true);
-//}
+                            */
 
-                            //mofreak->computeMoFREAKFromFile(action_video_path + "/" + video_filename, mofreak_path, true);
+                            mofreak->computeMoFREAKFromFile(action_video_path + "/" + video_filename, mofreak_path, true);
 						}
 					}
 				}
@@ -817,11 +801,11 @@ void computeMoFREAKFiles()
         }
     }
 }
-}
 
 int main(int argc, char* argv[])
 {
-    setParameters(); //setea NUM_CLUSTERS
+    setParameters();
+    //NUMBER_OF_GROUPS y NUM_CLUSTERS pueden sobreescribirse pasándolos por línea de comando
     if (argc > 1)
         NUMBER_OF_GROUPS = (unsigned int) atoi(argv[1]);
     if (argc > 2)
@@ -832,6 +816,7 @@ int main(int argc, char* argv[])
     time_t startI, endI;
 	mofreak = new MoFREAKUtilities(dataset);
 
+    //solamente genera los archivos MoFREAK
 	if (state == DETECT_MOFREAK)
 	{
 		start = clock();
@@ -839,16 +824,14 @@ int main(int argc, char* argv[])
 		end = clock();
 	}
 
-	// This is the most commonly used scenario.
-	// Compute MoFREAK descriptors across the dataset,
-	// cluster them,
-	// compute the bag-of-words representation,
-	// and classify.
+    //genera los archivos MoFREAK
+    //arma los clusters y la representación del Bag-of-Words
+    //clasifica usando SVM
 	else if (state == DETECTION_TO_CLASSIFICATION)
 	{
 		start = clock();
         startI = time(NULL);
-        //computeMoFREAKFiles();
+        computeMoFREAKFiles();
         endI = time(NULL);
         cout << "COMPUTE MOFREAK FILES: " << (endI - startI)/(double)60 << " minutos! " << endl;
 
@@ -856,7 +839,7 @@ int main(int argc, char* argv[])
 		{	
 			cout << "cluster()" << endl;
             startI = time(NULL);
-            //cluster();
+            cluster();
             endI = time(NULL);
             cout << "CLUSTER FILES: " << (endI - startI)/(double)60 << " minutos! " << endl;
             cout << "computeBOWRepresentation()" << endl;
@@ -875,46 +858,7 @@ int main(int argc, char* argv[])
 		//cout << "deleted" << endl;
 		end = clock();
 	}
-	// TRECVID cases
-	else if (state == PICK_CLUSTERS)
-	{
-		start = clock();
-    //	pickClusters();
-		end = clock();
-	}
-	else if (state == COMPUTE_BOW_HISTOGRAMS)
-	{
-		start = clock();
-		const bool POSITIVE_EXAMPLES = false;
-		computeBOWHistograms(POSITIVE_EXAMPLES);
-		end = clock();
-	}
-	else if (state == DETECT)
-	{
-		start = clock();
-		detectEvents();
-		end = clock();
-	}
 
-	else if (state == TRAIN)
-	{
-		start = clock();
-        //trainTRECVID();
-		end = clock();
-	}
-
-	else if (state == GET_SVM_RESPONSES)
-    {	{
-            start = clock();
-            computeSVMResponses();
-            end = clock();
-        }
-		start = clock();
-		computeSVMResponses();
-		end = clock();
-	}
-
-    cout << "Took this long: " << (end - start)/((double)CLOCKS_PER_SEC * 60) << " seconds! " << endl;
-	cout << "All done.  Press any key to continue..." << endl;
-	cout << "Dumping memory leak info" << endl;
+    cout << "Tiempo total: " << (end - start)/((double)CLOCKS_PER_SEC * 60) << " minutos" << endl;
+    cout << "Completo" << endl;
 }

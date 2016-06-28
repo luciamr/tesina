@@ -371,15 +371,16 @@ bool MoFREAKUtilities::sufficientMotion(cv::Mat &diff_integral_img, float &x, fl
 	return (motion > MOTION_THRESHOLD);
 }
 
-//void MoFREAKUtilities::computeMoFREAKFromFile(std::string video_filename, std::string mofreak_filename, bool clear_features_after_computation)
-void MoFREAKUtilities::computeMoFREAKFromFile(std::string video_filename, cv::VideoCapture capture, std::string mofreak_filename, bool clear_features_after_computation)
+void MoFREAKUtilities::computeMoFREAKFromFile(std::string video_filename, std::string mofreak_filename, bool clear_features_after_computation)
+//void MoFREAKUtilities::computeMoFREAKFromFile(std::string video_filename, cv::VideoCapture capture, std::string mofreak_filename, bool clear_features_after_computation)
 
 {
     //std::string debug_filename = video_filename;
 	// ignore the first frames because we can't compute the frame difference with them.
 	const int GAP_FOR_FRAME_DIFFERENCE = 5;
 
-    /*
+    cout << "Video filename: " << video_filename << endl;
+    ////
     cv::VideoCapture capture;
     capture.open(video_filename);
 
@@ -387,7 +388,7 @@ void MoFREAKUtilities::computeMoFREAKFromFile(std::string video_filename, cv::Vi
 	{
 		cout << "Could not open file: " << video_filename << endl;
 	}
-    */
+    ////
 
 	cv::Mat current_frame;
 	cv::Mat prev_frame;
