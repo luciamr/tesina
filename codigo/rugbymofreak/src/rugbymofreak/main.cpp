@@ -45,7 +45,7 @@ enum states {DETECT_MOFREAK, DETECTION_TO_CLASSIFICATION, // standard recognitio
 enum datasets {RUGBY, KTH};
 
 int dataset = RUGBY; //KTH;
-int state = DETECT_MOFREAK; //DETECTION_TO_CLASSIFICATION;
+int state = DETECTION_TO_CLASSIFICATION; //DETECT_MOFREAK;
 
 MoFREAKUtilities *mofreak;
 SVMInterface svm_interface;
@@ -118,11 +118,11 @@ void cluster()
 	clustering.setAppearanceDescriptor(NUM_APPEARANCE_BYTES, true);
 	clustering.setMotionDescriptor(NUM_MOTION_BYTES, true);
 
-    //for each group (partido)
+    //por cada grupo (RUGBY -> grupo = match)
     for (int group = 1; group <= NUMBER_OF_GROUPS; group++)
     {
         clustering.center_row = 0;
-        // for each class
+        //por cada clase
         directory_iterator end_iter;
         for (directory_iterator dir_iter(MOFREAK_PATH); dir_iter != end_iter; ++dir_iter)
         {
@@ -143,7 +143,7 @@ void cluster()
                 {
                     if (is_regular_file(file_counter->status())) {
                         std::string path = file_counter->path().string();
-                        std::string path_group = path.substr(path.find_last_of('//') + 1, 1);
+                        std::string path_group = path.substr(path.find_last_of('_') - 4, 4);
                         if (group != atoi(path_group.c_str()))
                             file_count++;
                     }
@@ -160,7 +160,7 @@ void cluster()
                     if (is_regular_file(mofreak_iter->status()))
                     {
                         std::string path = mofreak_iter->path().string();
-                        std::string path_group = path.substr(path.find_last_of('//') + 1, 1);
+                        std::string path_group = path.substr(path.find_last_of('_') - 4, 4);
                         if (group != atoi(path_group.c_str()))
                             mofreak->readMoFREAKFeatures(path, features_per_file);
                         //mofreak->readMoFREAKFeatures(mofreak_iter->path().string(), features_per_file);
@@ -248,7 +248,6 @@ void computeBOWRepresentation()
             bow_features.push_back(mat);
         }
 
-        #pragma omp num_thread(4)
         #pragma omp parallel for
         for (int i = 0; i < mofreak_files.size(); i++)
         {
@@ -420,7 +419,7 @@ double classify()
 }
 
 
-
+/*sacar
 // so, this function will give us sliding window BOW features.
 // We can also use this to get our SVM responses to mean-shift away.
 // ***********
@@ -470,7 +469,9 @@ void computeBOWHistograms(bool positive_examples)
 		cout << "Done " << mofreak_files[i] << endl;
 	}
 }
+*/
 
+/*sacar
 void detectEvents()
 {
 	vector<std::string> response_files;
@@ -657,7 +658,9 @@ void detectEvents()
 		cout << "-----------------------------------" << endl << endl;
 	}
 }
+*/
 
+/*sacar
 // For TRECVID detections
 void computeSVMResponses()
 {
@@ -688,7 +691,7 @@ void computeSVMResponses()
 		}
 	}
 }
-
+*/
 
 //genera un archivo mofreak por cada video que se encuentra en VIDEO_PATH
 //los archivos mofreak contienen la información de los descriptores
@@ -723,7 +726,7 @@ void computeMoFREAKFiles()
 				}
 				else {
 					f.close();
-		    /*
+
                     cv::VideoCapture capture;
                     capture.open(video);
 
@@ -732,9 +735,8 @@ void computeMoFREAKFiles()
                         cout << "Could not open file: " << video << endl;
                     }
 
-                    //mofreak->computeMoFREAKFromFile(video, capture, mofreak_path, true);
-		    */
-                    mofreak->computeMoFREAKFromFile(video, mofreak_path, true);
+                    mofreak->computeMoFREAKFromFile(video, capture, mofreak_path, true);
+                    //mofreak->computeMoFREAKFromFile(video, mofreak_path, true);
 				}
 			}
 		}
@@ -783,17 +785,15 @@ void computeMoFREAKFiles()
 						else {
 							f.close();
 
-                            /*
                             cv::VideoCapture capture;
                             capture.open(action_video_path + "/" + video_filename);
 
                             if (!capture.isOpened())
                                 cout << "Could not open file: " << action_video_path << "/" << video_filename << endl;
                             //printf("Thread: %d\n", omp_get_thread_num());
-                            mofreak->computeMoFREAKFromFile(action_video_path + "/" + video_filename, capture, mofreak_path, true);
-                            */
 
-                            mofreak->computeMoFREAKFromFile(action_video_path + "/" + video_filename, mofreak_path, true);
+                            mofreak->computeMoFREAKFromFile(action_video_path + "/" + video_filename, capture, mofreak_path, true);
+                            //mofreak->computeMoFREAKFromFile(action_video_path + "/" + video_filename, mofreak_path, true);
 						}
 					}
 				}
@@ -810,11 +810,20 @@ int main(int argc, char* argv[])
         NUMBER_OF_GROUPS = (unsigned int) atoi(argv[1]);
     if (argc > 2)
         NUM_CLUSTERS = (unsigned int) atoi(argv[2]);
+    cout << "Dataset: " << (dataset == RUGBY? "RUGBY" : "KTH") << endl;
+    cout << "Classes: " << NUM_CLASSES << endl;
     cout << "Groups: " << NUMBER_OF_GROUPS << endl;
     cout << "Clusters: " << NUM_CLUSTERS << endl;
 	clock_t start, end;
     time_t startI, endI;
 	mofreak = new MoFREAKUtilities(dataset);
+
+    #pragma omp parallel
+    {
+      int ID = omp_get_thread_num();
+      cout << "hello(" << ID << ")" << endl;
+      cout << "world(" << ID << ")" << endl;
+    }
 
     //solamente genera los archivos MoFREAK
 	if (state == DETECT_MOFREAK)

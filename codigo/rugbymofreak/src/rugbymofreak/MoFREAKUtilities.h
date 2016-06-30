@@ -62,8 +62,8 @@ public:
 
 	void buildMoFREAKFeaturesFromMoSIFT(std::string mosift_file, string video_path, string mofreak_path);
 	void writeMoFREAKFeaturesToFile(string output_file);
-    //void computeMoFREAKFromFile(std::string video_filename, cv::VideoCapture capture, std::string mofreak_filename, bool clear_features_after_computation);
-    void computeMoFREAKFromFile(std::string video_filename, std::string mofreak_filename, bool clear_features_after_computation);
+    void computeMoFREAKFromFile(std::string video_filename, cv::VideoCapture capture, std::string mofreak_filename, bool clear_features_after_computation);
+    //void computeMoFREAKFromFile(std::string video_filename, std::string mofreak_filename, bool clear_features_after_computation);
 	void setAllFeaturesToLabel(int label);
 
 	void setCurrentAction(string folder_name);

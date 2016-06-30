@@ -371,8 +371,8 @@ bool MoFREAKUtilities::sufficientMotion(cv::Mat &diff_integral_img, float &x, fl
 	return (motion > MOTION_THRESHOLD);
 }
 
-void MoFREAKUtilities::computeMoFREAKFromFile(std::string video_filename, std::string mofreak_filename, bool clear_features_after_computation)
-//void MoFREAKUtilities::computeMoFREAKFromFile(std::string video_filename, cv::VideoCapture capture, std::string mofreak_filename, bool clear_features_after_computation)
+//void MoFREAKUtilities::computeMoFREAKFromFile(std::string video_filename, std::string mofreak_filename, bool clear_features_after_computation)
+void MoFREAKUtilities::computeMoFREAKFromFile(std::string video_filename, cv::VideoCapture capture, std::string mofreak_filename, bool clear_features_after_computation)
 
 {
     //std::string debug_filename = video_filename;
@@ -380,7 +380,7 @@ void MoFREAKUtilities::computeMoFREAKFromFile(std::string video_filename, std::s
 	const int GAP_FOR_FRAME_DIFFERENCE = 5;
 
     cout << "Video filename: " << video_filename << endl;
-    ////
+    /*
     cv::VideoCapture capture;
     capture.open(video_filename);
 
@@ -388,7 +388,7 @@ void MoFREAKUtilities::computeMoFREAKFromFile(std::string video_filename, std::s
 	{
 		cout << "Could not open file: " << video_filename << endl;
 	}
-    ////
+    */
 
 	cv::Mat current_frame;
 	cv::Mat prev_frame;
@@ -397,7 +397,8 @@ void MoFREAKUtilities::computeMoFREAKFromFile(std::string video_filename, std::s
 	for (unsigned int i = 0; i < GAP_FOR_FRAME_DIFFERENCE; ++i)
 	{
 		capture >> prev_frame; // ignore first 'GAP_FOR_FRAME_DIFFERENCE' frames.  Read them in and carry on.
-        std::cerr << "image chans : " << prev_frame.channels() << std::endl;
+        //si todo está ok channels() devuelve 3, si no se pudo abrir retorna 1
+        //std::cerr << "image chans : " << prev_frame.channels() << std::endl;
 		cv::cvtColor(prev_frame, prev_frame, CV_BGR2GRAY);
 		frame_queue.push(prev_frame.clone());
 	}
@@ -435,7 +436,7 @@ void MoFREAKUtilities::computeMoFREAKFromFile(std::string video_filename, std::s
 		//cout << "--------------------------------" << keypoints.size() << " detected features" << endl;
 		
 
-		// for each detected keypoint
+        //por cada keypoint
 		vector<cv::KeyPoint> current_frame_keypts;
 		unsigned char *pointer_to_descriptor_row = 0;
 		unsigned int keypoint_row = 0;
@@ -1071,7 +1072,20 @@ void MoFREAKUtilities::readMetadata(std::string filename, int &action, int &vide
 	boost::filesystem::path file_name = file_path.filename();
 	std::string file_name_str = file_name.generic_string();
 
-    if (dataset == HMDB51)
+    if (dataset == RUGBY) {
+
+        if (boost::contains(file_path.generic_string(), "line")) { action = 1; }
+        else if (boost::contains(file_path.generic_string(), "scrum")) { action = 2; }
+        else if (boost::contains(file_path.generic_string(), "juego")) { action = 3; }
+        else {
+            std::cout << "Didn't find action" << std::endl;
+            exit(1);
+        }
+        video_number = atoi(file_name_str.substr(14, 4).c_str());
+        person = atoi(file_name_str.substr(5, 4).c_str()) - 1; //group = match
+
+    }
+    else if (dataset == HMDB51)
 	{
 		video_number = 0;
 		person = 0;
@@ -1133,14 +1147,6 @@ void MoFREAKUtilities::readMoFREAKFeatures(std::string filename, int num_to_samp
 			stream >> a;
 			ftr.motion[i] = a;
 		}
-
-		// TEMP.  THIS IS FOR AN EXPERIMENT.  DELETE LATER. [TODO]
-		/*for (unsigned i = 0; i < 64 - NUMBER_OF_BYTES_FOR_MOTION; ++i)
-		{
-			unsigned int a;
-			stream >> a;
-		}*/
-
 
 		// metadata
 		ftr.action = action;
