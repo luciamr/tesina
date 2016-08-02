@@ -29,12 +29,12 @@ string DATA_DIR_KTH = "/home/lucia/Documentos/data/";
 bool DISTRIBUTED = false;
 
 string MOSIFT_DIR, MOFREAK_PATH, VIDEO_PATH, SVM_PATH, METADATA_PATH; //se setean en setParameters()
-string MOFREAK_NEG_PATH, MOFREAK_POS_PATH; // these are TRECVID exclusive
 
 unsigned int NUM_MOTION_BYTES = 8;
 unsigned int NUM_APPEARANCE_BYTES = 8;
 unsigned int FEATURE_DIMENSIONALITY = NUM_MOTION_BYTES + NUM_APPEARANCE_BYTES;
-unsigned int NUM_CLUSTERS, NUMBER_OF_GROUPS, NUM_CLASSES, ALPHA;
+unsigned int NUM_CLUSTERS, NUMBER_OF_GROUPS, NUM_CLASSES;
+unsigned int MAX_FEATURES_PER_FILE = 100; //cota de features a leer por cada mofreak file
 
 vector<int> possible_classes;
 deque<MoFREAKFeature> mofreak_ftrs;
@@ -121,6 +121,7 @@ void cluster()
     //por cada grupo (RUGBY -> grupo = match)
     for (int group = 1; group <= NUMBER_OF_GROUPS; group++)
     {
+        std::cout << "Gathering MoFREAK Features from match " << group << std::endl;
         clustering.center_row = 0;
         //por cada clase
         directory_iterator end_iter;
@@ -149,9 +150,11 @@ void cluster()
                     }
                 }
 
+                std::cout << "Number of mofreak files: " << file_count << std::endl;
+
                 // maximum number of features to read from each file,
                 // to avoid reading in too many mofreak features.
-                unsigned int features_per_file = 5000/file_count; //original 50000
+                unsigned int features_per_file = MAX_FEATURES_PER_FILE; //original 50000/file_count
 
                 for (directory_iterator mofreak_iter(action_mofreak_path);
                     mofreak_iter != end_iter; ++mofreak_iter)
@@ -418,280 +421,6 @@ double classify()
 	return average_accuracy;
 }
 
-
-/*sacar
-// so, this function will give us sliding window BOW features.
-// We can also use this to get our SVM responses to mean-shift away.
-// ***********
-// Exclusively used for the TRECVID scenario now,
-// any remaining examples are deprecated. [TODO]
-void computeBOWHistograms(bool positive_examples)
-{
-	// gather all files int vector<string> mofreak_files
-	cout << "Gathering MoFREAK Features..." << endl;
-	vector<std::string> mofreak_files;
-	directory_iterator end_iter;
-
-	if (DISTRIBUTED)
-	{
-		MOFREAK_PATH = "mosift/";
-	}
-
-	for (directory_iterator dir_iter(MOFREAK_PATH); dir_iter != end_iter; ++dir_iter)
-	{
-		if (is_regular_file(dir_iter->status()))
-		{
-			path current_file = dir_iter->path();
-			string filename = current_file.filename().generic_string();
-			if (filename.substr(filename.length() - 7, 7) == "mofreak")
-			{
-				mofreak_files.push_back(current_file.string());
-			}
-		}
-	}
-	cout << "MoFREAK features gathered." << endl;
-
-	// load clusters.
-	BagOfWordsRepresentation bow_rep(NUM_CLUSTERS, FEATURE_DIMENSIONALITY, SVM_PATH, NUMBER_OF_GROUPS, dataset);
-
-	// for each file....
-	// slide window of length alpha and use those pts to create a BOW feature.
-	for (int i = 0; i < mofreak_files.size(); ++i)
-	{
-		cout << "Computing on " << mofreak_files[i] << endl;
-		std::string bow_file = mofreak_files[i];
-		bow_file.append(".test");
-		ofstream bow_out(bow_file);
-
-		int label = positive_examples ? 1 : -1;
-		bow_rep.computeSlidingBagOfWords(mofreak_files[i], ALPHA, label, bow_out);
-		bow_out.close();
-		cout << "Done " << mofreak_files[i] << endl;
-	}
-}
-*/
-
-/*sacar
-void detectEvents()
-{
-	vector<std::string> response_files;
-	directory_iterator end_iter;
-
-	for (directory_iterator dir_iter(SVM_PATH); dir_iter != end_iter; ++dir_iter)
-	{
-		if (is_regular_file(dir_iter->status()))
-		{
-			path current_file = dir_iter->path();
-			string filename = current_file.filename().generic_string();
-			if (filename.length() > 9)
-			{
-				if (filename.substr(filename.length() - 13, 13) == "responses.txt")
-				{
-					response_files.push_back(current_file.string());
-				}
-			}
-		}
-	}
-
-	for (auto it = response_files.begin(); it != response_files.end(); ++it)
-	{
-		cout << "filename: " << *it << endl;
-		// read in libsvm output.
-		ifstream svm_in(*it);
-
-		// store each value in a list that we can reference.
-		vector<float> svm_responses;
-		while (!svm_in.eof())
-		{
-			float response;
-			svm_in >> response;
-			svm_responses.push_back(response);
-		}
-
-		cout << svm_responses.size() << " total SVM responses." << endl;
-
-
-		// get peaks. [val(x) > val(x - 1) & val(x) > val(x + 1)]
-		vector<int> peak_indices;
-		for (unsigned int i = 1; i < svm_responses.size() - 1; ++i)
-		{
-			float response_x = svm_responses[i];
-			float response_x_minus_1 = svm_responses[i - 1];
-			float response_x_plus_1 = svm_responses[i + 1];
-
-			if ((response_x > response_x_minus_1) && (response_x > response_x_plus_1))
-			{
-				peak_indices.push_back(i);
-			}
-		}
-
-		cout << peak_indices.size() << " total detected peaks" << endl;
-
-		// For each of those peaks, run the meanshift-like process to determine if its a window-wise local maxima in the response space.
-		// that is, check the alpha/2 points before it and alpha/2 points after it.  If it is the largest value in that window,
-		// then this is a candidate detection.
-		vector<int> candidate_indices;
-		for (auto peak = peak_indices.begin(); peak != peak_indices.end(); ++peak)
-		{
-			double value = svm_responses[*peak];
-			int start_index = max((*peak) - (int)ALPHA, 0);
-			int end_index = min((*peak) + (int)ALPHA, (int)svm_responses.size() - 1);
-			bool is_local_max = true;
-
-			for (int i = start_index; i < end_index; ++i)
-			{
-				if (svm_responses[i] > value)
-				{
-					is_local_max = false;
-					break;
-				}
-			}
-
-			if (is_local_max)
-			{
-				candidate_indices.push_back(*peak);
-			}
-		}
-
-		cout << candidate_indices.size() << " detected candidates" << endl;
-
-
-		// finally, if the detection's response is above our defined threshold, it's a real detection.
-		float THRESHOLD = 0;
-		unsigned int MAX_DETECTIONS = 30;
-		unsigned int MIN_DETECTIONS = 1;
-		float STEP = 0.05;
-		bool PREVIOUSLY_LOWERED = true;
-		bool FIRST_TRY = true;
-		// trying an optimization metric for the THRESHOLD.  Say...we want 50 detections per video,
-		// we will optimize until that's right.
-		
-		vector<Detection> detections;
-		while (true)
-		{
-			for (auto candidate = candidate_indices.begin(); candidate != candidate_indices.end(); ++candidate)
-			{
-				if (svm_responses[*candidate] > THRESHOLD)
-				{
-					// the BOW feature stretches from the root point (*it) to alpha away.  So if alpha is 10 and it's the first response,
-					// it would be keyframes 0 to 10 (or frames 0 to 50).
-					int end_index = (*candidate) + ALPHA;
-				
-					Detection detection;
-					detection.start_frame = (*candidate) * 5;
-					detection.end_frame = end_index * 5;
-					detection.score = svm_responses[*candidate];
-					detection.video_name = "GenericVideoName.mpg"; // [TODO]
-
-					detections.push_back(detection);
-				}
-			}
-
-			unsigned int num_detections = detections.size();
-			cout << num_detections << " detections" << endl;
-
-			if (num_detections < MIN_DETECTIONS)
-			{
-				// maybe there aren't enough candidates.
-				if (candidate_indices.size() < MIN_DETECTIONS)
-				{
-					break;
-					//MIN_DETECTIONS = 3 * candidate_indices.size()/4;
-				}
-				// too few detections, lower the threshold to allow for more.
-				if (FIRST_TRY || PREVIOUSLY_LOWERED)
-				{
-					THRESHOLD -= STEP;
-					PREVIOUSLY_LOWERED = true;
-					FIRST_TRY = false;
-				}
-				else
-				{
-					// we raised it last time to allow less, but not not enough.
-					// shrink the step size to get a finer grain.
-					STEP -= 0.005;
-					THRESHOLD -= STEP;
-					PREVIOUSLY_LOWERED = true;
-				}
-				cout << "STEP: " << STEP << ", THRESHOLD: " << THRESHOLD << endl;
-				detections.clear();
-			}
-			else if (num_detections > MAX_DETECTIONS)
-			{
-				// too many detections, raise threshold to allow less.
-				if (FIRST_TRY || !PREVIOUSLY_LOWERED)
-				{
-					THRESHOLD += STEP;
-					FIRST_TRY = false;
-					PREVIOUSLY_LOWERED = false;
-				}
-				else
-				{
-					// we lowered it last time to allow more, but now we have too many.
-					// shrink the step size grain for finer detail and raise the threshold by this new amount.
-					STEP += 0.005;
-					THRESHOLD += STEP;
-					PREVIOUSLY_LOWERED = false;
-				}
-				detections.clear();
-				cout << "STEP:" << STEP << ", THRESHOLD: " << THRESHOLD << endl;
-			}
-			else
-			{
-				// we are in the desired detection range.
-				// now we can sort and print them.
-				cout << "Accepting a threshold of " << THRESHOLD << " that permits " << num_detections << " events." << endl;
-				break;
-			}
-		}
-		// sort by likelihood
-		std::sort(detections.begin(), detections.end());
-		std::reverse(detections.begin(), detections.end());
-
-		// print to file
-		ofstream detection_stream(*it + ".detections");
-		for (auto det = detections.begin(); det != detections.end(); ++det)
-		{
-			detection_stream << *it << ", " << det->start_frame << ", " << det->end_frame << ", " << det->score << endl;
-		}
-		detection_stream.close();
-		cout << "-----------------------------------" << endl << endl;
-	}
-}
-*/
-
-/*sacar
-// For TRECVID detections
-void computeSVMResponses()
-{
-	SVMInterface svm;
-	directory_iterator end_iter;
-	string model_file = SVM_PATH + "/model.svm";
-
-	if (DISTRIBUTED)
-	{
-		SVM_PATH = "mosift/";
-		model_file = "/home/lucia/data/model.svm";
-	}
-
-	cout << "SVM_PATH: " << SVM_PATH << endl;
-
-	for (directory_iterator dir_iter(SVM_PATH); dir_iter != end_iter; ++dir_iter)
-	{
-		if (is_regular_file(dir_iter->status()))
-		{
-			path current_file = dir_iter->path();
-			string filename = current_file.filename().generic_string();
-			if (filename.substr(filename.length() - 4, 4) == "test")
-			{
-				string test_file = SVM_PATH + "/" + filename;
-				cout << "Testing SVM with file " << test_file << " with model " << model_file << endl;
-				svm.testModelTRECVID(test_file,  model_file);
-			}
-		}
-	}
-}
-*/
 
 //genera un archivo mofreak por cada video que se encuentra en VIDEO_PATH
 //los archivos mofreak contienen la información de los descriptores

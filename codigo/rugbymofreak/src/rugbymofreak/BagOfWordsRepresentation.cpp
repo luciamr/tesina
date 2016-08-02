@@ -120,10 +120,8 @@ cv::Mat BagOfWordsRepresentation::buildHistogram(int group, std::string &file, b
 
 	}
 
-    int j = 5;
     if (input_file.is_open()) {
-        int k = 5;
-        //input_file.close();
+        input_file.close();
     }
 
 	if (!success)
@@ -445,6 +443,8 @@ void BagOfWordsRepresentation::extractMetadata(std::string filename, int &action
 	}
     else if (dataset == RUGBY) {
 
+
+        /* vieja denominacion de videos
         std::vector<std::string> filename_parts = split(filename, '_');
 
         // extract action.
@@ -475,6 +475,39 @@ void BagOfWordsRepresentation::extractMetadata(std::string filename, int &action
 
         // extract clip number.
         std::string parsed_clip = filename_parts[2]; //filename_parts[3].substr(2, 2);
+        std::stringstream(parsed_clip) >> clip_number;
+        */
+
+        std::vector<std::string> filename_parts = split(filename, '_');
+
+        // extract action.
+        std::string parsed_action = filename_parts[0];
+
+        // get the action.
+        if (boost::contains(parsed_action, "line"))
+        {
+            action = 1;
+        }
+        else if (boost::contains(parsed_action, "scrum"))
+        {
+            action = 2;
+        }
+        else if (boost::contains(parsed_action, "juego"))
+        {
+            action = 3;
+        }
+        else
+        {
+            std::cout << "Didn't find action: " << parsed_action << std::endl;
+            exit(1);
+        }
+
+        // extract group
+        std::stringstream(filename_parts[1].substr(5, 4)) >> group;
+        group--; // group indices start at 0, not 1, so decrement.
+
+        // extract clip number.
+        std::string parsed_clip = filename_parts[2].substr(4, 4);
         std::stringstream(parsed_clip) >> clip_number;
 
     }
@@ -514,11 +547,11 @@ void BagOfWordsRepresentation::convertFileToBOWFeature(int group, std::string fi
 	boost::filesystem::path file_name = file_path.filename();
 	std::string file_name_str = file_name.generic_string();
 
-    std::cout << "thread: " << omp_get_thread_num() << " file: " << file.substr(file.find_last_of('//') + 1, 10) << endl;
+    std::cout << "thread: " << omp_get_thread_num() << " file: " << file << endl;
 
     // extract the metadata from this file, such as the group and action performed.
-    //int action, video_group, video_number;
-    //extractMetadata(file_name_str, action, group, video_number);
+    int action, video_group, video_number;
+    extractMetadata(file_name_str, action, group, video_number);
 
     //for (int g = 1; g <= NUMBER_OF_GROUPS; g++)
     //{
