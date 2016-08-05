@@ -120,7 +120,12 @@ cv::Mat BagOfWordsRepresentation::buildHistogram(int group, std::string &file, b
 
 	}
 
+    if (input_file.eof()) { std::cout << "EOFBIT!!!" << endl;}
+    if (input_file.bad()) { std::cout << "BADBIT!!!" << endl;}
+    if (input_file.fail()) { std::cout << "FAILBIT!!!" << endl;}
+    if (!input_file.is_open()) { std::cout << "no está abierto" << endl;}
     if (input_file.is_open()) {
+        std::cout << "está abierto, se va a cerrar" << endl;
         input_file.close();
     }
 

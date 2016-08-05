@@ -40,7 +40,7 @@ vector<int> possible_classes;
 deque<MoFREAKFeature> mofreak_ftrs;
 
 enum states {DETECT_MOFREAK, DETECTION_TO_CLASSIFICATION, // standard recognition states
-	PICK_CLUSTERS, COMPUTE_BOW_HISTOGRAMS, DETECT, TRAIN, GET_SVM_RESPONSES,}; // these states are exclusive to TRECVID
+    PICK_CLUSTERS, COMPUTE_BOW_HISTOGRAMS, DETECT, TRAIN, GET_SVM_RESPONSES,}; // these states are exclusive to TRECVID
 
 enum datasets {RUGBY, KTH};
 
@@ -251,7 +251,7 @@ void computeBOWRepresentation()
             bow_features.push_back(mat);
         }
 
-        #pragma omp parallel for
+        //#pragma omp parallel for
         for (int i = 0; i < mofreak_files.size(); i++)
         {
             bow_rep.convertFileToBOWFeature(g, mofreak_files[i], bow_features, i);
