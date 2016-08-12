@@ -247,7 +247,12 @@
         output_file.open(cluster_filepath.str());
 	 }
 
-	for (int i = 0; i < NUMBER_OF_CLUSTERS; ++i)
+
+
+    //reemplazo NUMBER_OF_CLUSTERS por center->rows,
+    //si bien debería ser el mismo valor, me aseguro
+    //que los indices sean correctos
+    for (int i = 0; i < centers->rows; ++i)
 	{
 		for (unsigned j = 0; j < centers->cols; ++j)
 		{
