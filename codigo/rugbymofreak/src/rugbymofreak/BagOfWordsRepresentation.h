@@ -40,7 +40,7 @@ public:
 private:
 	void extractMetadata(std::string filename, int &action, int &group, int &clip_number);
 
-    cv::Mat buildHistogram(int group, std::string &file, bool &success);
+    cv::Mat buildHistogram(std::string &file, bool &success);
 	int actionStringToActionInt(string act);
 
 	unsigned int hammingDistance(unsigned char a, unsigned char b);

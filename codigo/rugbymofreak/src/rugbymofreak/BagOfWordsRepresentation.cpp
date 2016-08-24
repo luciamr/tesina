@@ -73,7 +73,7 @@ unsigned int BagOfWordsRepresentation::hammingDistance(unsigned char a, unsigned
 	return hamming_distance;
 }
 
-cv::Mat BagOfWordsRepresentation::buildHistogram(int group, std::string &file, bool &success)
+cv::Mat BagOfWordsRepresentation::buildHistogram(std::string &file, bool &success)
 {
 	success = false;
 
@@ -87,6 +87,7 @@ cv::Mat BagOfWordsRepresentation::buildHistogram(int group, std::string &file, b
 
 	while (std::getline(input_file, line))
 	{
+        //cout << "line: " << line << endl;
 		// discard first 6 values.
 		std::istringstream iss(line);
 		double discard;
@@ -110,7 +111,7 @@ cv::Mat BagOfWordsRepresentation::buildHistogram(int group, std::string &file, b
 		// brute force match each mofreak point against all clusters to find best match.
 		//std::vector<cv::DMatch> matches;
 		//bf_matcher->match(feature_vector, matches);
-		int best_match = bruteForceMatch(feature_vector);
+        int best_match = bruteForceMatch(feature_vector);
 
 		// + 1 to that codeword
 		//histogram.at<float>(0, matches[0].imgIdx) = histogram.at<float>(0, matches[0].imgIdx) + 1;
@@ -120,6 +121,7 @@ cv::Mat BagOfWordsRepresentation::buildHistogram(int group, std::string &file, b
 
 	}
 
+    /* debug file info
     if (input_file.eof()) { std::cout << "EOFBIT!!!" << endl;}
     if (input_file.bad()) { std::cout << "BADBIT!!!" << endl;}
     if (input_file.fail()) { std::cout << "FAILBIT!!!" << endl;}
@@ -128,6 +130,8 @@ cv::Mat BagOfWordsRepresentation::buildHistogram(int group, std::string &file, b
         std::cout << "está abierto, se va a cerrar" << endl;
         input_file.close();
     }
+    if (input_file.is_open()) { std::cout << "quedó abierto" << endl;}
+    */
 
 	if (!success)
 		return histogram;
@@ -143,13 +147,17 @@ cv::Mat BagOfWordsRepresentation::buildHistogram(int group, std::string &file, b
 	{
 		histogram.at<float>(0, col) = histogram.at<float>(0, col)/histogram_sum;
 	}
-	
+
 	return histogram;
 }
 
 void BagOfWordsRepresentation::loadClusters(int group)
 {
-	clusters = new cv::Mat(NUMBER_OF_CLUSTERS, FEATURE_DIMENSIONALITY, CV_8U);
+    //limpio los clusters del grupo anterior
+    bf_matcher->clear();
+    clusters_for_matching.clear();
+
+    clusters = new cv::Mat(NUMBER_OF_CLUSTERS, FEATURE_DIMENSIONALITY, CV_8U);
 
     string cluster_path = SVM_PATH + "/clusters" + std::to_string(group+1) + ".txt";
 
@@ -570,9 +578,12 @@ void BagOfWordsRepresentation::convertFileToBOWFeature(int group, std::string fi
         bool success;
         cv::Mat bow_feature;
 
-        try //usar el cluster que corresponde al grupo
+        //usa el cluster que corresponde al grupo
+        //al llamar a loadClusters limpia clusters_for_matching antes
+        //de cargar los del grupo correspondiente
+        try
         {
-            bow_feature = buildHistogram(group, file, success);
+            bow_feature = buildHistogram(file, success);
             bow_features[i] = bow_feature;
         }
         catch (cv::Exception &e)
