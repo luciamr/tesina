@@ -1,0 +1,323 @@
+\documentclass[10.5pt]{article}
+\usepackage{a4wide}
+%\usepackage[cm]{fullpage} si lo queremos mas ancho
+
+\usepackage[backend=biber, style=numeric, uniquename=false]{biblatex}
+%style=authoryear
+
+\usepackage[spanish,activeacute]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{todonotes}
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{stmaryrd}
+\usepackage{amsmath}
+\usepackage{systeme}
+
+
+\begin{document}
+\date{Septiembre de 2016}
+\title{Tramos Revestidos\\Trabajo Práctico}
+\author{Manuel F. Martín}
+
+\maketitle
+
+
+\section*{Tramo 1}
+
+
+\begin{equation*}
+  h = 1.42 m
+ \qquad
+  B_{f} = 5 m
+ \qquad
+  m = 1
+ \qquad
+  V_{max} = 5 m/s
+\end{equation*}
+
+\begin{equation*}
+  n = 0.016 m^3/s
+ \qquad
+  Q_{t} = 11.63
+ \qquad
+  I = 0.00785
+\end{equation*}
+
+\begin{equation*}
+ Q = \frac{1}{n} R^{2/3} I^{1/2} A
+ \qquad
+ R = \frac{A}{P}
+\end{equation*}
+
+\begin{equation*}
+  \begin{cases}
+    \dfrac{Q n}{I^{1/2}} = R^{2/3} A = \dfrac{A^{5/3}}{P^{2/3}} \\
+    A = B_{f}y + m y^{2} \\
+    P = B_{f} + 2 y \sqrt{1 + m^{2}}
+  \end{cases}
+\end{equation*}
+\begin{equation*}
+  \dfrac{Q n}{I^{1/2}} = \dfrac{A^{5/3}}{P^{2/3}} = \sqrt[3]{\dfrac{A^{5}}{P^{2}}}
+  \Rightarrow
+  \dfrac{Q n}{I^{1/2}}^{3} = \dfrac{A^{5}}{P^{2}}
+\end{equation*}
+
+\begin{equation*}
+  \dfrac{A^{5}}{P^{2}} = \dfrac{(5 y + y^{2})^{5}}{(5 + 2 \sqrt{2} y)^{2}} = 9.19
+  \Rightarrow
+  y_{1} = -5.7157 \vee y_{2} = 0.5955
+\end{equation*}
+
+
+Como el valor de $y$ no puede ser negativo, consideramos el valor de $y_{2}$
+
+\begin{equation*}
+  \begin{cases}
+    A = 5 y - y^{2} = 3.33 m^{2} \\
+    P = 5 + 2 \sqrt{2} y = 6.68 m
+  \end{cases}
+  \Rightarrow
+  R = 0.50 m
+  \Rightarrow
+  \tau = \gamma R \, S \, 0.97 = 3.81 kg/m^{2}
+\end{equation*}
+
+
+\subsection*{Verificación}
+
+\subsubsection*{Escurrimiento}
+
+\begin{itemize}
+ \item De la ecuación de continuidad obtenemos la velocidad media:
+    \begin{equation*}
+    V_{m} = \dfrac{Q}{A} = \dfrac{11.6}{3.93} = 2.95 m/s
+    \end{equation*}
+ \item Para obtener la $V_{min}$, sabiendo el tirante y el tipo de agua, poco limoso de limo fino, buscamos en
+ la tabla de velocidades mínimas y obtenemos $V_{min} = 0.36 m/s$.
+    \begin{equation*}
+      \begin{cases}
+      V_{min} = 0.36 m/s \\
+      V_{max} = 5 m/s
+      \end{cases}
+      \Longrightarrow \quad
+      V_{m} = 2.95 m/s
+      \qquad
+      VERIFICA
+    \end{equation*}
+\end{itemize}
+
+\subsubsection*{Desborde}
+
+\begin{equation*}
+ r = 20\%
+ \qquad
+ h_{disp} = 1.42 m
+\end{equation*}
+\begin{align*}
+ y + r &\leq h_{disp} \\
+ 0.5955 m + 0.2 \times 0.5955 m &\leq h_{disp} \\
+ 0.7146 m &\leq 1.42 m
+ \qquad
+ VERIFICA
+\end{align*}
+
+
+
+\section*{Tramo 2}
+
+
+\begin{equation*}
+  h = 1.82 m (progresiva 0.1 km)
+ \qquad
+  B_{f} = 5 m
+ \qquad
+  m = 1
+ \qquad
+  V_{max} = 5 m/s
+\end{equation*}
+
+\begin{equation*}
+  n = 0.016 m^3/s
+ \qquad
+  Q_{t} = 11.6 m^{3}
+ \qquad
+  I = 0.00113
+\end{equation*}
+
+\begin{equation*}
+ Q = \frac{1}{n} R^{2/3} I^{1/2} A
+ \qquad
+ R = \frac{A}{P}
+\end{equation*}
+
+\begin{equation*}
+  \begin{cases}
+    \dfrac{Q n}{I^{1/2}} = R^{2/3} A = \dfrac{A^{5/3}}{P^{2/3}} \\
+    A = B_{f}y + m y^{2} \\
+    P = B_{f} + 2 y \sqrt{1 + m^{2}}
+  \end{cases}
+\end{equation*}
+\begin{equation*}
+  \dfrac{Q n}{I^{1/2}} = \dfrac{A^{5/3}}{P^{2/3}} = \sqrt[3]{\dfrac{A^{5}}{P^{2}}}
+  \Rightarrow
+  \dfrac{Q n}{I^{1/2}}^{3} = \dfrac{A^{5}}{P^{2}}
+\end{equation*}
+
+\begin{equation*}
+  \dfrac{A^{5}}{P^{2}} = \dfrac{(5 y + y^{2})^{5}}{(5 + 2 \sqrt{2} y)^{2}} = 168.31 m
+  \Rightarrow
+  y_{1} = -6.2333 m \vee y_{2} = 1.0568 m
+\end{equation*}
+
+
+Como el valor de $y$ no puede ser negativo, consideramos el valor de $y_{2}$
+
+\begin{equation*}
+  \begin{cases}
+    A = 5 y - y^{2} = 6.40 m^{2} \\
+    P = 5 + 2 \sqrt{2} y = 7.99 m
+  \end{cases}
+  \Rightarrow
+  R = 0.80 m
+  \Rightarrow
+  \tau = \gamma R \, S \, 0.97 = 0.88 kg/m^{2}
+\end{equation*}
+
+
+\subsection*{Verificación}
+
+\subsubsection*{Escurrimiento}
+
+\begin{itemize}
+ \item De la ecuación de continuidad obtenemos la velocidad media:
+    \begin{equation*}
+    V_{m} = \dfrac{Q}{A} = \dfrac{11.6}{6.4} = 1.81 m/s
+    \end{equation*}
+ \item Para obtener la $V_{min}$, sabiendo el tirante y el tipo de agua, poco limoso de limo fino, buscamos en
+ la tabla de velocidades mínimas y obtenemos $V_{min} = 0.47 m/s$.
+    \begin{equation*}
+      \begin{cases}
+      V_{min} = 0.47 m/s \\
+      V_{max} = 5 m/s
+      \end{cases}
+      \Longrightarrow \quad
+      V_{m} = 1.81 m/s
+      \qquad
+      VERIFICA
+    \end{equation*}
+\end{itemize}
+
+\subsubsection*{Desborde}
+
+\begin{equation*}
+ r = 20\%
+ \qquad
+ h_{disp} = 1.82 m
+\end{equation*}
+\begin{align*}
+ y + r &\leq h_{disp} \\
+ 1.0568 m + 0.2 \times 1.0568 m &\leq h_{disp} \\
+ 1.27 m &\leq 1.82 m
+ \qquad
+ VERIFICA
+\end{align*}
+
+
+\section*{Conducto Circular}
+
+\subsection*{Dos Conductos}
+
+\begin{equation*}
+  D = 1 m
+ \qquad
+  I = 7 \textperthousand = 0.007
+ \qquad
+  n = 0.016 m^3/s
+\end{equation*}
+
+\begin{equation*}
+  Q_{1} = 2.75 m/s^{2}
+ \qquad
+  Q_{PC} = \dfrac{Q_{1}}{2} = 1.375 m^{3}/s
+\end{equation*}
+
+\begin{equation*}
+  \begin{cases}
+    Q = V A
+    \qquad
+    V = \dfrac{1}{n} R^{2/3} I^{1/2}
+  \end{cases}
+  \Longrightarrow \quad
+  Q = \dfrac{1}{n} R^{2/3} I^{1/2} A = \dfrac{1}{0.016} (\dfrac{1}{4})^{2/3} 0.007^{1/2} \dfrac{\pi D^{2}}{4} = 1.63 m^{3}/s
+\end{equation*}
+
+\begin{equation*}
+  R = \dfrac{A}{P} = \dfrac{\pi D^{2}}{4} \dfrac{1}{\pi D} = \dfrac{D}{4} = \dfrac{1}{4}
+\end{equation*}
+
+\begin{equation*}
+  \dfrac{Q}{Q_{0}} = \dfrac{1.375}{1.63} = 0.84
+  \Longrightarrow \quad
+  y = 0.7 m
+\end{equation*}
+
+\begin{equation*}
+  \begin{cases}
+    \dfrac{V}{V_{0}} = 1.13
+    \qquad
+    V_{0} = \dfrac{Q}{A} = \dfrac{1.375}{\pi D^{2}} 4 = 1.75 m/s
+  \end{cases}
+  \Longrightarrow \quad
+  V = 1.13 1.75 = 1.98 < V_{max} = 5 m/s
+  \qquad
+  VERIFICA
+\end{equation*}
+
+
+
+\subsection*{Verificación}
+
+\begin{equation*}
+V_{m} = \dfrac{Q}{A} = \dfrac{11.6}{3.93} = 2.95 m/s
+\end{equation*}
+
+\begin{itemize}
+ \item De la ecuación de continuidad obtenemos la velocidad media:
+    \begin{equation*}
+    V_{m} = \dfrac{Q}{A} = \dfrac{11.6}{3.93} = 2.95 m/s
+    \end{equation*}
+ \item Para obtener la $V_{min}$, sabiendo el tirante y el tipo de agua, poco limoso de limo fino, buscamos en
+ la tabla de velocidades mínimas y obtenemos $V_{min} = 0.36 m/s$.
+    \begin{equation*}
+      \begin{cases}
+      V_{min} = 0.36 m/s \\
+      V_{max} = 5 m/s
+      \end{cases}
+      \Longrightarrow \quad
+      V_{m} = 2.95 m/s
+      \qquad
+      VERIFICA
+    \end{equation*}
+\end{itemize}
+
+\subsubsection*{Desborde}
+
+\begin{equation*}
+ r = 20\%
+ \qquad
+ h_{disp} = 1.42 m
+\end{equation*}
+\begin{align*}
+ y + r &\leq h_{disp} \\
+ 0.5955 m + 0.2 \times 0.5955 m &\leq h_{disp} \\
+ 0.7146 m &\leq 1.42 m
+ \qquad
+ VERIFICA
+\end{align*}
+
+
+
+
+\end{document}
