@@ -11,13 +11,14 @@
 \usepackage{systeme}
 \usepackage{textcomp}
 \usepackage{tikz}
+\usepackage{float}
 \usetikzlibrary{shapes,arrows, decorations.markings, positioning}
 
 
 \begin{document}
-\date{Septiembre de 2016}
-\title{Tramos Revestidos\\Trabajo Práctico}
-\author{Manuel F. Martín}
+\date{14 de Septiembre de 2016}
+\title{Hidráulica de Canales Abiertos\\Trabajo Práctico Integrador}
+\author{Manuel Álvarez\\Manuel F. Martín}
 
 \maketitle
 
@@ -25,7 +26,9 @@
 \section*{Etapa 1}
 
 \begin{enumerate}[a)]
- \item Para trazar la rasante tuvimos en cuenta las siguientes pautas:
+ \item \underline{\bf Rasante}
+ 
+ Para trazar la rasante tuvimos en cuenta las siguientes pautas:
   \begin{itemize}
    \item Realizar exclusivamente excavaciones, lo que implica que la rasante se ubique por debajo de la cota del fondo existente o la supere
    en a lo sumo $20 cm$ en $200 m$, ya que realizar un relleno es muy dificil y costoso.
@@ -33,11 +36,7 @@
    de excavaciones posibles.
   \end{itemize}
   
- \item Dimensionamiento de los tramos de material erosionable
-  
-  La revancha que adoptamos es de un $20\%$. Si bien el valor de ésta no se calcula con un fórmula matemática, podemos tener en cuenta que 
-  en general, para canales de débil pendiente, se utilizan revanchas que oscilan entre el $5\%$ y el $30\%$. Para elegir el valor de la nuestra
-  consideramos la presencia de un camino y un alambrado cercanos.
+ \item \underline{\bf Dimensionamiento de los tramos de material erosionable}
     
   \underline{\bf Método de la velocidad máxima}
   
@@ -50,21 +49,33 @@
   Este método no es aplicable para estos casos en particular dados los datos disponibles.
   Para poder obtener soluciones reales podríamos bajar la $V_{max}$, sin embargo dejaría de ser el método de la velocidad máxima.
   Debido a ésto debemos utilizar el método de la fuerza tractiva para poder hacer el dimensionamiento en forma más precisa.
-
+  
   \underline{\bf Método de la fuerza tractiva}
   
   \input{1.tex}
   \input{2.tex}
   \input{3.tex}
  
- \item Diagrama de flujo del método de la fuerza tractiva
+ \item \underline{\bf Diagrama de flujo del método de la fuerza tractiva}
    
-   %\input{diagrama.tex}
+   \input{diagrama.tex}
    
- \item Determinación de tirantes en los tramos revestidos
+ \item \underline{\bf Determinación de tirantes en los tramos revestidos}
 
    \input{1r.tex}
    \input{2r.tex}
+   
+ \item \underline{\bf Conductos circulares}
+ 
+ Suponemos que el caudal $Q_1$ que se descarga en el canal, lo hace en partes iguale por ambos conductos.
+ 
+ \input{cond.tex}
+ 
+ \item \underline{\bf Revancha}
+   
+  La revancha que adoptamos es de un $20\%$. Si bien el valor de ésta no se calcula con un fórmula matemática, podemos tener en cuenta que 
+  en general, para canales de débil pendiente, se utilizan revanchas que oscilan entre el $5\%$ y el $30\%$. Para elegir el valor de la nuestra
+  consideramos la presencia de un camino y un alambrado cercanos.
 
 \end{enumerate}
 
