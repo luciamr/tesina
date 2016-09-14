@@ -1,0 +1,99 @@
+\section*{Tramo 1r}
+
+
+\begin{equation*}
+  h = 1.42 m
+ \qquad
+  B_{f} = 5 m
+ \qquad
+  m = 1
+ \qquad
+  V_{max} = 5 m/s
+\end{equation*}
+
+\begin{equation*}
+  n = 0.016 m^3/s
+ \qquad
+  Q_{t} = 11.63
+ \qquad
+  I = 0.00785
+\end{equation*}
+
+\begin{equation*}
+ Q = \frac{1}{n} R^{2/3} I^{1/2} A
+ \qquad
+ R = \frac{A}{P}
+\end{equation*}
+
+\begin{equation*}
+  \begin{cases}
+    \dfrac{Q n}{I^{1/2}} = R^{2/3} A = \dfrac{A^{5/3}}{P^{2/3}} \\
+    A = B_{f}y + m y^{2} \\
+    P = B_{f} + 2 y \sqrt{1 + m^{2}}
+  \end{cases}
+\end{equation*}
+
+\begin{equation*}
+  \dfrac{Q n}{I^{1/2}} = \dfrac{A^{5/3}}{P^{2/3}} = \sqrt[3]{\dfrac{A^{5}}{P^{2}}}
+  \Longrightarrow
+  \dfrac{Q n}{I^{1/2}}^{3} = \dfrac{A^{5}}{P^{2}}
+\end{equation*}
+
+\begin{equation*}
+  \dfrac{A^{5}}{P^{2}} = \dfrac{(5 y + y^{2})^{5}}{(5 + 2 \sqrt{2} y)^{2}} = 9.19
+  \Longrightarrow
+  y_{1} = -5.7157 \vee y_{2} = 0.5955
+\end{equation*}
+
+Como el valor de $y$ no puede ser negativo, consideramos el valor de $y_{2}$
+
+\begin{equation*}
+  \begin{cases}
+    A = 5 y - y^{2} = 3.33 m^{2} \\
+    P = 5 + 2 \sqrt{2} y = 6.68 m
+  \end{cases}
+  \Longrightarrow
+  R = 0.50 m
+  \Longrightarrow
+  \tau = \gamma R \, S \, 0.97 = 3.81 kg/m^{2}
+\end{equation*}
+
+
+\subsection*{Verificación}
+
+\subsubsection*{Escurrimiento}
+
+\begin{itemize}
+ \item De la ecuación de continuidad obtenemos la velocidad media:
+    \begin{equation*}
+    V_{m} = \dfrac{Q}{A} = \dfrac{11.6}{3.93} = 2.95 m/s
+    \end{equation*}
+ \item Para obtener la $V_{min}$, sabiendo el tirante y el tipo de agua, poco limoso de limo fino, buscamos en
+ la tabla de velocidades mínimas y obtenemos $V_{min} = 0.36 m/s$.
+    \begin{equation*}
+      \begin{cases}
+      V_{min} = 0.36 m/s \\
+      V_{max} = 5 m/s
+      \end{cases}
+      \Longrightarrow \quad
+      V_{m} = 2.95 m/s
+      \qquad
+      \therefore VERIFICA
+    \end{equation*}
+\end{itemize}
+
+\subsubsection*{Desborde}
+
+\begin{equation*}
+ r = 20\%
+ \qquad
+ h_{disp} = 1.42 m
+\end{equation*}
+\begin{align*}
+ y + r &\leq h_{disp} \\
+ 0.5955 m + 0.2 \times 0.5955 m &\leq h_{disp} \\
+ 0.7146 m &\leq 1.42 m
+ \qquad
+ \therefore VERIFICA
+\end{align*}
+

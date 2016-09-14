@@ -1,0 +1,157 @@
+\underline{\bf Tramo 2}
+
+
+\begin{equation*}
+  r = 20\%
+ \qquad
+  h_{disp} = 1.83 m \,\text{(en progresiva }4.1 km \text{)}
+ \qquad
+  I = 0.00105
+\end{equation*}
+
+\begin{equation*}
+  Q = 6.6 m^3/s
+ \qquad
+  V_{max} = 1.5 m/s
+ \qquad
+  n = 0.035
+ \qquad
+  m = 1
+\end{equation*}
+
+\begin{equation*}
+  \text{Relación de huecos: 0.3}
+  \qquad
+  \text{Agua: poco limosa, limo muy fino}
+\end{equation*}
+
+Suelo cohesivo:
+\begin{align*}
+ \tau_{resistente\,talud} &= \tau_{resistente\,fondo} \\
+ \tau_{act\,talud} = 0.75 \, \gamma \, y \, I &\leq \tau_{resistente\,talud} \\
+ \tau_{act\,fondo} = 0.97 \, \gamma \, y \, I &\leq \tau_{resistente\,fondo} \Longrightarrow \text{más condicionante}
+\end{align*}
+
+Con la relación de huecos y el tipo de suelo, buscamos en la tabla que vincula fuerza tractiva con relación de huecos y obtenemos
+el $\tau_{resistente\,fondo} = 0.38 lb/ft^2 = 1.855 kg/m^2$
+
+\begin{align*}
+ y &\leq \dfrac{\tau_{resistente\,fondo}}{0.97 \, \gamma \, I} \\
+ y &\leq 1.82 m
+\end{align*}
+
+A pesar de que la altura máxima disponible es de $1.83 m$, las características del suelo nos limitan la $h_{disp}$ a $1.82 m$.
+Considerando la revancha obtenemos $1.2 y = 1.82 m$, luego $y = 1.52 m$.
+
+\begin{equation*}
+  \begin{cases}
+    Q = V \, A \\
+    V =  \frac{1}{n} R^{2/3} I^{1/2}
+  \end{cases}
+  \Longrightarrow \quad
+  Q = \frac{1}{n} R^{2/3} I^{1/2} A
+\end{equation*}
+
+
+\begin{equation*}
+  \begin{cases}
+    Q = \frac{1}{n} R^{2/3} I^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = B_{f}y + m y^{2} \\
+    P = B_{f} + 2 y \sqrt{1 + m^{2}}
+  \end{cases}
+  \Longrightarrow \quad
+  \begin{cases}
+    Q = \frac{1}{0.035} R^{2/3} 0.00105^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = B_{f}1.52 m + (1.52 m)^2 \\
+    P = B_{f} + 2 \, 1.52 m \sqrt{2}
+  \end{cases}
+  \Longrightarrow \quad
+  B_{f} = 3.289 m
+\end{equation*}
+
+Ya que no se debe disminuir la sección aguas abajo, adoptamos $B_{f} = 4 m$, de modo que sea igual al utilizado en el tramo anterior.
+Luego, calculamos el tirante correspondiente para el $B_{f}$ adoptado.
+
+\begin{equation*}
+  \begin{cases}
+    Q = \frac{1}{n} R^{2/3} I^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = B_{f}y + m y^{2} \\
+    P = B_{f} + 2 y \sqrt{1 + m^{2}}
+  \end{cases}
+  \Longrightarrow \quad
+  \begin{cases}
+    Q = \frac{1}{0.035} R^{2/3} 0.00105^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = 4 m y + y^2 \\
+    P = 4 m + 2 y \sqrt{2}
+  \end{cases}
+  \Longrightarrow \quad
+  y = 1.38 m
+\end{equation*}
+
+Luego,
+\begin{equation*}
+  \begin{cases}
+    A = B_{f}y + m y^{2} \\
+    P = B_{f} + 2 y \sqrt{1 + m^{2}}
+  \end{cases}
+  \Longrightarrow
+  \begin{cases}
+    A = 7.42 m^2 \\
+    P = 7.90 m
+  \end{cases}
+  \Longrightarrow \quad
+  R = 0.94 m
+\end{equation*}
+
+
+\underline{Verificación}
+
+\begin{itemize}
+ \item Tensiones
+    \begin{align*}
+    0.97 \, \gamma \, R \, S &\leq \tau_{resistente\,fondo} \\
+    0.97 \, 1000 kg/m^3 \, 0.94 m \, 0.00105 &\leq \tau_{resistente\,fondo} \\
+    0.957 kg/m^2 &\leq 1.855 kg/m^2
+    \qquad
+    \therefore VERIFICA 
+    \end{align*}
+
+  \item Escurrimiento
+    \begin{itemize}
+    \item De la ecuación de continuidad obtenemos la velocidad media:
+	\begin{equation*}
+	V_{m} = \dfrac{Q}{A} = \dfrac{6.6 m^3/s}{7.42 m^2} = 0.89 m/s
+	\end{equation*}
+    \item Para obtener la $V_{min}$, sabiendo el tirante y el tipo de agua, poco limoso de limo fino, buscamos en
+    la tabla de velocidades mínimas y obtenemos $V_{min} = 0.53 m/s$.
+	\begin{equation*}
+	  \begin{cases}
+	  V_{min} = 0.53 m/s \\
+	  V_{max} = 1.5 m/s
+	  \end{cases}
+	  \Longrightarrow \quad
+	  V_{m} = 0.89 m/s
+	  \qquad
+	  \therefore VERIFICA
+	\end{equation*}
+    \end{itemize}
+
+ \item Desborde
+    \begin{equation*}
+    r = 20\%
+    \qquad
+    h_{disp} = 1.82 m
+    \end{equation*}
+    \begin{align*}
+    y + r &\leq h_{disp} \\
+    1.38 m + 0.2 \times 1.38 m &\leq h_{disp} \\
+    1.66 m &\leq 1.82 m
+    \qquad
+    \therefore VERIFICA
+    \end{align*}
+\end{itemize}
+

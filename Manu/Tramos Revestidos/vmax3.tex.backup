@@ -1,0 +1,52 @@
+\underline{\bf Tramo 3}
+
+
+\begin{equation*}
+  r = 20\%
+ \qquad
+  h_{disp} = 1.12 m \,\text{(en progresiva }2.5 km \text{)}
+ \qquad
+  I = 0.00147
+\end{equation*}
+
+\begin{equation*}
+  Q = 3.85 m^3/s
+ \qquad
+  V_{max} = 1.5 m/s
+ \qquad
+  n = 0.035
+ \qquad
+  m = 1
+\end{equation*}
+
+\begin{equation*}
+  \text{Relación de huecos: 0.3}
+  \qquad
+  \text{Agua: poco limosa, limo muy fino}
+\end{equation*}
+
+Calculamos el área estable
+
+\begin{equation*}
+ A_{e} = \dfrac{Q}{V_{max}} = \dfrac{11.6 m^3/s}{1.5 m/s} = 7.73 m^2
+\end{equation*}
+
+Luego, aplicando la ecuación de Chazy Manning
+\begin{equation*}
+ V_{max} =  \frac{1}{n} R^{2/3} I^{1/2}
+ \Longrightarrow \quad
+ R = 2.4 m
+\end{equation*}
+
+\begin{equation*}
+ P = \dfrac{A_{e}}{R} = \dfrac{7.73 m^2}{2.4 m} = 3.22 m
+\end{equation*}
+
+\begin{equation*}
+  \begin{cases}
+    A_e = B_{f}y + m y^{2} \\
+    P = B_{f} + 2 y \sqrt{1 + m^{2}}
+  \end{cases}
+  \Longrightarrow \quad
+  \text{sólo soluciones complejas}
+\end{equation*}
