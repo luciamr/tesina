@@ -16,9 +16,6 @@
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows, decorations.markings, positioning}
 
-\tikzset{
-    every node/.append style={concept, text width=, rectangle, minimum size=0cm, inner sep=2mm},
-}
 
 \begin{document}
 \date{Septiembre de 2016}
@@ -28,7 +25,7 @@
 \maketitle
 
 
-\section*{Tramo 1}
+\section*{Tramo 1r}
 
 
 \begin{equation*}
@@ -129,7 +126,7 @@ Como el valor de $y$ no puede ser negativo, consideramos el valor de $y_{2}$
 
 
 
-\section*{Tramo 2}
+\section*{Tramo 2r}
 
 
 \begin{equation*}
@@ -315,49 +312,505 @@ $\therefore ES\ CORRECTO$
 
 
 % Define block styles
-\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
-text width=6em, text badly centered, node distance=3cm, inner sep=0pt]
-\tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=28em, rounded corners, minimum height=3em]
-\tikzstyle{block2} = [rectangle, draw, fill=yellow!20, 
-text width=5em, text centered, rounded corners, minimum height=4em]
-\tikzstyle{line} = [draw, -latex']
+\tikzstyle{block5} = [rectangle, draw, fill=blue!20, text width=5em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{block13} = [rectangle, draw, fill=blue!20, text width=13em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{block24} = [rectangle, draw, fill=blue!20, text width=24em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{block28} = [rectangle, draw, fill=blue!20, text width=28em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, text width=6em, text centered, node distance=3cm, inner sep=0pt]
 \tikzstyle{vecArrow} = [draw=black, solid,line width=0.6mm, fill=black, shorten >= 1mm, preaction={-triangle 60,thin,draw, shorten >= 0mm}] 
-%[thick, decoration={markings,mark=at position 1 with {\arrow[semithick]{open triangle 60}}}, double distance=1.4pt, shorten >= 5.5pt, preaction = {decorate}, postaction = {draw,line width=1.4pt, black,shorten >= 4.5pt}]
-
-\tikzstyle{innerWhite} = [semithick, white,line width=1.4pt, shorten >= 4.5pt]
 
 \begin{figure}[!ht]
   \centering
   \hspace*{-80pt}
   \begin{tikzpicture}
     % nodes
-    \node (uno) at (0,0) {Suelo cohesivo \textrightarrow $\tau_{res fondo} = \tau_{res talud}$\\ + \\ Ecuación condicionante $\Longrightarrow \tau_{act fondo} = 0.97 \gamma y I < \tau_{res fondo}$};
-    %\node [block, below = 1cm of uno] (dos) {Según tabla y con relación de huecos $\Longrightarrow \tau_{res fondo}$};
-    %\node [block, below = 1cm of dos] (tres) {De la inecuación anterior, despejamos $y_{max}$ estable };
-    %\node [block, below = 1cm of tres] (cuatro) {Adoptamos $y = y_{max}$ si $y_{max} + r \leq h_{disp}$};
-    %\node [block, below = 1cm of cuatro] (cinco) {Ecuaci\'on de Chezy Manning};
-    %\node [block, below = 1cm of cinco] (seis) {Despejamos $B_{f}$};
-    %\node [block, below = 1cm of seis] (siete) {Calculamos $R = \dfrac{A}{P}$};
-    %\node [block, below = 1cm of siete] (ocho) {Verificamos: $\tau_{act fondo} = 0.97 \gamma R I < \tau_{res fondo}$ \\ Verificamos condiciones de escurrimiento: $V_{min} < V_{m} < V_{max}$ \\ donde $V_{min}$ es una funci\'on del tipo de agua y el tirante \\ Verificamos desbordes: $y + r \leq h_{disp}$};
-    %\node [block2, right = 2cm of ocho] (nueve) {FIN};
-    %\node [block, below = 1cm of ocho] (diez) {Adopto un $y$ menor y repito el procedimiento};
+    \node [block28] (uno) at (0,0) {Suelo cohesivo \textrightarrow $\tau_{res fondo} = \tau_{res talud}$\\ + \\ Ecuación condicionante $\Longrightarrow \tau_{act fondo} = 0.97 \gamma y I < \tau_{res fondo}$};
+    \node [block24, below = 1cm of uno] (dos) {Según tabla y con relación de huecos $\Longrightarrow \tau_{res fondo}$};
+    \node [block24, below = 1cm of dos] (tres) {De la inecuación anterior, despejamos $y_{max}$ estable };
+    \node [block24, below = 1cm of tres] (cuatro) {Adoptamos $y = y_{max}$ si $y_{max} + r \leq h_{disp}$};
+    \node [block13, below = 1cm of cuatro] (cinco) {Ecuaci\'on de Chezy Manning};
+    \node [block13, below = 1cm of cinco] (seis) {Despejamos $B_{f}$};
+    \node [block13, below = 1cm of seis] (siete) {Calculamos $R = \dfrac{A}{P}$};
+    \node [block28, below = 1cm of siete] (ocho) {Verificamos: $\tau_{act fondo} = 0.97 \gamma R I < \tau_{res fondo}$ \\ Verificamos condiciones de escurrimiento: $V_{min} < V_{m} < V_{max}$ \\ donde $V_{min}$ es una funci\'on del tipo de agua y el tirante \\ Verificamos desbordes: $y + r \leq h_{disp}$};
+    \node [block5, right = 2cm of ocho] (nueve) {FIN};
+    \node [block24, below = 1cm of ocho] (diez) {Adopto un $y$ menor y repito el procedimiento};
     % edges
-    %\draw [vecArrow] (uno) -- (dos);
-    %\draw [vecArrow] (dos) -- (tres);
-    %\draw [vecArrow] (tres) -- (cuatro);
-    %\draw [vecArrow] (cuatro) -- (cinco);
-    %\draw [vecArrow] (cinco) -- (seis);
-    %\draw [vecArrow] (seis) -- (siete);
-    %\draw [vecArrow] (siete) -- (ocho);
-    %\draw [vecArrow] (ocho) -- node {si verifica} (nueve);
-    %\draw [vecArrow] (ocho) -- node {si no verifica} (diez);
-    %\draw [vecArrow] (diez) |- (cuatro);
+    \draw [->] (uno) -- (dos);
+    \draw [->] (dos) -- (tres);
+    \draw [->] (tres) -- (cuatro);
+    \draw [->] (cuatro) -- (cinco);
+    \draw [->] (cinco) -- (seis);
+    \draw [->] (seis) -- (siete);
+    \draw [->] (siete) -- (ocho);
+    \draw [->] (ocho) -- node {si verifica} (nueve);
+    \draw [->] (ocho) -- node {si no verifica} (diez);
+    \draw [->] (diez.west) -- ++(-15mm, 0) |- (cuatro.west);
     %\path [line] (dos) [->] (tres);
   \end{tikzpicture}
 \end{figure}
+ 
 
 
+\section*{Tramo 3}
+
+
+\begin{equation*}
+  r = 20\%
+ \qquad
+  h_{disp} = 2.47 m (en progresiva 2.5 km)
+ \qquad
+  m = 1
+ \qquad
+  V_{max} = 1.5 m/s
+\end{equation*}
+
+\begin{equation*}
+  n = 0.035
+ \qquad
+  Q_{t} = 11.6 m^3/s
+ \qquad
+  I = 0.00086
+\end{equation*}
+
+\begin{equation*}
+  Relacion de huecos: 0.3
+  \qquad
+  Agua: poco limosa, limo muy fino
+\end{equation*}
+
+Suelo cohesivo $\Longrightarrow$
+\begin{align*}
+ \tau_{resistente talud} &= \tau_{resistente fondo} \\
+ \tau_{act talud} = 0.75 \gamma y I &\leq \tau_{resistente talud} \\
+ \tau_{act fondo} = 0.97 \gamma y I &\leq \tau_{resistente fondo} \textrightarrow \texttt{más condicionante}
+\end{align*}
+
+Con la relación de huecos y el tipo de suelo, buscamos en la tabla que vincula fuerza tractiva con relación de huecos y obtenemos
+el $\tau_{resistente fondo} = 0.38 lb/ ft^2 = 1.855 kg/m^2$
+
+\begin{align*}
+ y &\leq \dfrac{\tau_{resistente fondo}}{0.97 \gamma I} \\
+ y &\leq 2.21 m
+\end{align*}
+
+A pesar de que la altura máxima disponible es de $2.47 m$, las características del suelo nos limitan la $h_{disp}$ a $2.21 m$.
+Considerando la revancha obtenemos $1.2 y = 2.21 m$, luego $y = 1.84 m$.
+
+
+\begin{equation*}
+  \begin{cases}
+    Q = V A \\
+    V =  \frac{1}{n} R^{2/3} I^{1/2}
+  \end{cases}
+  \Longrightarrow \quad
+  Q = \frac{1}{n} R^{2/3} I^{1/2} A
+\end{equation*}
+
+
+\begin{equation*}
+  \begin{cases}
+    Q = \frac{1}{n} R^{2/3} I^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = B_{f}y + m y^{2} \\
+    P = B_{f} + 2 y \sqrt{1 + m^{2}}
+  \end{cases}
+  \Longrightarrow \quad
+  \begin{cases}
+    Q = \frac{1}{0.035} R^{2/3} 0.00086^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = B_{f}1.84 m + (1.84 m)^2 \\
+    P = B_{f} + 2 1.84 m \sqrt{2}
+  \end{cases}
+  \Longrightarrow \quad
+  B_{f} = 4.75 m
+\end{equation*}
+
+Debido a que la aprecición debe ser de $0.1 m$, adoptamos $B_{f} = 4.8 m$.
+
+Luego, calculamos el tirante correspondiente para el $B_{f}$ adoptado.
+
+\begin{equation*}
+  \begin{cases}
+    Q = \frac{1}{n} R^{2/3} I^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = B_{f}y + m y^{2} \\
+    P = B_{f} + 2 y \sqrt{1 + m^{2}}
+  \end{cases}
+  \Longrightarrow \quad
+  \begin{cases}
+    Q = \frac{1}{0.035} R^{2/3} 0.00086^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = 4.8 m y + y^2 \\
+    P = 4.8 m + 2 y \sqrt{2}
+  \end{cases}
+  \Longrightarrow \quad
+  y = 1.83 m
+  \Longrightarrow \newline
+  \begin{cases}
+    A = 12.13 m^2 \\
+    P = 9.98 m
+  \end{cases}
+  \Longrightarrow \quad
+  R = 1.22 m
+\end{equation*}
+
+
+\subsection*{Verificación}
+
+\subsubsection*{Tensiones}
+
+\begin{align*}
+ 0.97 \gamma R S &\leq \tau_{resistente fondo} \\
+ 0.97 1000 kg/m^3 1.22 m 0.00086 &\leq \tau_{resistente fondo} \\
+ 1.018 kg/m^2 &\leq 1.855 kg/m^2
+ \qquad
+ \therefore VERIFICA 
+\end{align*}
+
+
+\subsubsection*{Escurrimiento}
+
+\begin{itemize}
+ \item De la ecuación de continuidad obtenemos la velocidad media:
+    \begin{equation*}
+    V_{m} = \dfrac{Q}{A} = \dfrac{11.6 m^3/s}{12.13 m^2} = 0.95 m/s
+    \end{equation*}
+ \item Para obtener la $V_{min}$, sabiendo el tirante y el tipo de agua, poco limoso de limo fino, buscamos en
+ la tabla de velocidades mínimas y obtenemos $V_{min} = 0.63 m/s$.
+    \begin{equation*}
+      \begin{cases}
+      V_{min} = 0.63 m/s \\
+      V_{max} = 1.5 m/s
+      \end{cases}
+      \Longrightarrow \quad
+      V_{m} = 0.95 m/s
+      \qquad
+      \therefore VERIFICA
+    \end{equation*}
+\end{itemize}
+
+\subsubsection*{Desborde}
+
+\begin{equation*}
+ r = 20\%
+ \qquad
+ h_{disp} = 2.21 m
+\end{equation*}
+\begin{align*}
+ y + r &\leq h_{disp} \\
+ 1.83 m + 0.2 \times 1.83 m &\leq h_{disp} \\
+ 2.2 m &\leq 2.21 m
+ \qquad
+ \therefore VERIFICA
+\end{align*}
+
+
+
+\section*{Tramo 2}
+
+
+\begin{equation*}
+  r = 20\%
+ \qquad
+  h_{disp} = 1.83 m (en progresiva 2.5 km)
+ \qquad
+  m = 1
+ \qquad
+  V_{max} = 1.5 m/s
+\end{equation*}
+
+\begin{equation*}
+  n = 0.035
+ \qquad
+  Q_{t} = 6.6 m^3/s
+ \qquad
+  I = 0.00105
+\end{equation*}
+
+\begin{equation*}
+  Relacion de huecos: 0.3
+  \qquad
+  Agua: poco limosa, limo muy fino
+\end{equation*}
+
+Suelo cohesivo $\Longrightarrow$
+\begin{align*}
+ \tau_{resistente talud} &= \tau_{resistente fondo} \\
+ \tau_{act talud} = 0.75 \gamma y I &\leq \tau_{resistente talud} \\
+ \tau_{act fondo} = 0.97 \gamma y I &\leq \tau_{resistente fondo} \textrightarrow \texttt{más condicionante}
+\end{align*}
+
+Con la relación de huecos y el tipo de suelo, buscamos en la tabla que vincula fuerza tractiva con relación de huecos y obtenemos
+el $\tau_{resistente fondo} = 0.38 lb/ ft^2 = 1.855 kg/m^2$
+
+\begin{align*}
+ y &\leq \dfrac{\tau_{resistente fondo}}{0.97 \gamma I} \\
+ y &\leq 1.82 m
+\end{align*}
+
+A pesar de que la altura máxima disponible es de $1.83 m$, las características del suelo nos limitan la $h_{disp}$ a $1.82 m$.
+Considerando la revancha obtenemos $1.2 y = 1.82 m$, luego $y = 1.52 m$.
+
+
+\begin{equation*}
+  \begin{cases}
+    Q = V A \\
+    V =  \frac{1}{n} R^{2/3} I^{1/2}
+  \end{cases}
+  \Longrightarrow \quad
+  Q = \frac{1}{n} R^{2/3} I^{1/2} A
+\end{equation*}
+
+
+\begin{equation*}
+  \begin{cases}
+    Q = \frac{1}{n} R^{2/3} I^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = B_{f}y + m y^{2} \\
+    P = B_{f} + 2 y \sqrt{1 + m^{2}}
+  \end{cases}
+  \Longrightarrow \quad
+  \begin{cases}
+    Q = \frac{1}{0.035} R^{2/3} 0.00105^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = B_{f}1.52 m + (1.52 m)^2 \\
+    P = B_{f} + 2 1.52 m \sqrt{2}
+  \end{cases}
+  \Longrightarrow \quad
+  B_{f} = 3.289 m
+\end{equation*}
+
+Ya que no se debe disminuir la sección aguas abajo, adoptamos $B_{f} = 4 m$, de modo que sea igual al utilizado en el tramo anterior.
+
+Luego, calculamos el tirante correspondiente para el $B_{f}$ adoptado.
+
+\begin{equation*}
+  \begin{cases}
+    Q = \frac{1}{n} R^{2/3} I^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = B_{f}y + m y^{2} \\
+    P = B_{f} + 2 y \sqrt{1 + m^{2}}
+  \end{cases}
+  \Longrightarrow \quad
+  \begin{cases}
+    Q = \frac{1}{0.035} R^{2/3} 0.00105^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = 4 m y + y^2 \\
+    P = 4 m + 2 y \sqrt{2}
+  \end{cases}
+  \Longrightarrow \quad
+  y = 1.38 m
+  \Longrightarrow \newline
+  \begin{cases}
+    A = 7.42 m^2 \\
+    P = 7.90 m
+  \end{cases}
+  \Longrightarrow \quad
+  R = 0.94 m
+\end{equation*}
+
+
+\subsection*{Verificación}
+
+\subsubsection*{Tensiones}
+
+\begin{align*}
+ 0.97 \gamma R S &\leq \tau_{resistente fondo} \\
+ 0.97 1000 kg/m^3 0.94 m 0.00105 &\leq \tau_{resistente fondo} \\
+ 0.957 kg/m^2 &\leq 1.855 kg/m^2
+ \qquad
+ \therefore VERIFICA 
+\end{align*}
+
+\begin{itemize}
+ \item De la ecuación de continuidad obtenemos la velocidad media:
+    \begin{equation*}
+    V_{m} = \dfrac{Q}{A} = \dfrac{6.6 m^3/s}{7.42 m^2} = 0.89 m/s
+    \end{equation*}
+ \item Para obtener la $V_{min}$, sabiendo el tirante y el tipo de agua, poco limoso de limo fino, buscamos en
+ la tabla de velocidades mínimas y obtenemos $V_{min} = 0.53 m/s$.
+    \begin{equation*}
+      \begin{cases}
+      V_{min} = 0.53 m/s \\
+      V_{max} = 1.5 m/s
+      \end{cases}
+      \Longrightarrow \quad
+      V_{m} = 0.89 m/s
+      \qquad
+      \therefore VERIFICA
+    \end{equation*}
+\end{itemize}
+
+\subsubsection*{Desborde}
+
+\begin{equation*}
+ r = 20\%
+ \qquad
+ h_{disp} = 1.82 m
+\end{equation*}
+\begin{align*}
+ y + r &\leq h_{disp} \\
+ 1.38 m + 0.2 \times 1.38 m &\leq h_{disp} \\
+ 1.66 m &\leq 1.82 m
+ \qquad
+ \therefore VERIFICA
+\end{align*}
+
+\subsubsection*{Escurrimiento}
+
+
+\section*{Tramo 1}
+
+
+\begin{equation*}
+  r = 20\%
+ \qquad
+  h_{disp} = 1.12 m (en progresiva 2.5 km)
+ \qquad
+  m = 1
+ \qquad
+  V_{max} = 1.5 m/s
+\end{equation*}
+
+\begin{equation*}
+  n = 0.035
+ \qquad
+  Q_{t} = 3.85 m^3/s
+ \qquad
+  I = 0.00147
+\end{equation*}
+
+\begin{equation*}
+  Relacion de huecos: 0.3
+  \qquad
+  Agua: poco limosa, limo muy fino
+\end{equation*}
+
+Suelo cohesivo $\Longrightarrow$
+\begin{align*}
+ \tau_{resistente talud} &= \tau_{resistente fondo} \\
+ \tau_{act talud} = 0.75 \gamma y I &\leq \tau_{resistente talud} \\
+ \tau_{act fondo} = 0.97 \gamma y I &\leq \tau_{resistente fondo} \textrightarrow \texttt{más condicionante}
+\end{align*}
+
+Con la relación de huecos y el tipo de suelo, buscamos en la tabla que vincula fuerza tractiva con relación de huecos y obtenemos
+el $\tau_{resistente fondo} = 0.38 lb/ ft^2 = 1.855 kg/m^2$
+
+\begin{align*}
+ y &\leq \dfrac{\tau_{resistente fondo}}{0.97 \gamma I} \\
+ y &\leq 1.30 m
+\end{align*}
+
+A pesar de que el suelo podría soportar un tirante mayor a nuestra $h_{disp}$, en este caso la $h_{disp}$ sigue siendo $1.12 m$, ya que en caso de adoptar 
+un $h_{disp}$ mayor, el canal podría desbordarse.
+Considerando la revancha obtenemos $1.2 y = 1.12 m$, luego $y = 0.93 m$.
+
+
+\begin{equation*}
+  \begin{cases}
+    Q = V A \\
+    V =  \frac{1}{n} R^{2/3} I^{1/2}
+  \end{cases}
+  \Longrightarrow \quad
+  Q = \frac{1}{n} R^{2/3} I^{1/2} A
+\end{equation*}
+
+
+\begin{equation*}
+  \begin{cases}
+    Q = \frac{1}{n} R^{2/3} I^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = B_{f}y + m y^{2} \\
+    P = B_{f} + 2 y \sqrt{1 + m^{2}}
+  \end{cases}
+  \Longrightarrow \quad
+  \begin{cases}
+    Q = \frac{1}{0.035} R^{2/3} 0.00147^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = B_{f}0.93 m + (0.93 m)^2 \\
+    P = B_{f} + 2 0.93 m \sqrt{2}
+  \end{cases}
+  \Longrightarrow \quad
+  B_{f} = 3.92 m
+\end{equation*}
+
+Debido a que la aprecición debe ser de $0.1 m$, adoptamos $B_{f} = 4 m$.
+
+Luego, calculamos el tirante correspondiente para el $B_{f}$ adoptado.
+
+\begin{equation*}
+  \begin{cases}
+    Q = \frac{1}{n} R^{2/3} I^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = B_{f}y + m y^{2} \\
+    P = B_{f} + 2 y \sqrt{1 + m^{2}}
+  \end{cases}
+  \Longrightarrow \quad
+  \begin{cases}
+    Q = \frac{1}{0.035} R^{2/3} 0.00147^{1/2} A \\
+    R = \dfrac{A}{P} \\
+    A = 4 m y + y^2 \\
+    P = 4 m + 2 y \sqrt{2}
+  \end{cases}
+  \Longrightarrow \quad
+  y = 0.92 m
+  \Longrightarrow \newline
+  \begin{cases}
+    A = 4.53 m^2 \\
+    P = 6.60 m
+  \end{cases}
+  \Longrightarrow \quad
+  R = 0.69 m
+\end{equation*}
+
+
+\subsection*{Verificación}
+
+\subsubsection*{Tensiones}
+
+\begin{align*}
+ 0.97 \gamma R S &\leq \tau_{resistente fondo} \\
+ 0.97 1000 kg/m^3 0.69 m 0.00147 &\leq \tau_{resistente fondo} \\
+ 0.984 kg/m^2 &\leq 1.855 kg/m^2
+ \qquad
+ \therefore VERIFICA 
+\end{align*}
+
+\begin{itemize}
+ \item De la ecuación de continuidad obtenemos la velocidad media:
+    \begin{equation*}
+    V_{m} = \dfrac{Q}{A} = \dfrac{3.85 m^3/s}{4.53 m^2} = 0.85 m/s
+    \end{equation*}
+ \item Para obtener la $V_{min}$, sabiendo el tirante y el tipo de agua, poco limoso de limo fino, buscamos en
+ la tabla de velocidades mínimas y obtenemos $V_{min} = 0.44 m/s$.
+    \begin{equation*}
+      \begin{cases}
+      V_{min} = 0.44 m/s \\
+      V_{max} = 1.5 m/s
+      \end{cases}
+      \Longrightarrow \quad
+      V_{m} = 0.85 m/s
+      \qquad
+      \therefore VERIFICA
+    \end{equation*}
+\end{itemize}
+
+\subsubsection*{Desborde}
+
+\begin{equation*}
+ r = 20\%
+ \qquad
+ h_{disp} = 1.12 m
+\end{equation*}
+\begin{align*}
+ y + r &\leq h_{disp} \\
+ 0.92 m + 0.2 \times 0.92 m &\leq h_{disp} \\
+ 1.10 m &\leq 1.12 m
+ \qquad
+ \therefore VERIFICA
+\end{align*}
 
 
 
 \end{document}
+
