@@ -23,7 +23,9 @@
 \maketitle
 
 
-\section*{Etapa 1}
+\section{Etapa 1}
+
+\subsection{}
 
 \begin{enumerate}[a)]
  \item \underline{\bf Rasante}
@@ -56,6 +58,7 @@
   \input{2.tex}
   \input{3.tex}
  
+ \newpage
  \item \underline{\bf Diagrama de flujo del método de la fuerza tractiva}
    
    \input{diagrama.tex}
@@ -76,6 +79,28 @@
   La revancha que adoptamos es de un $20\%$. Si bien el valor de ésta no se calcula con un fórmula matemática, podemos tener en cuenta que 
   en general, para canales de débil pendiente, se utilizan revanchas que oscilan entre el $5\%$ y el $30\%$. Para elegir el valor de la nuestra
   consideramos la presencia de un camino y un alambrado cercanos.
+  
+  \item Tabla
+  
+   \begin{table}[H]
+    \large        %% not "\fontsize{12}{12}\selectfont"
+    \centering    %% not "\center{...}"
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    $Tramo$  &$Q_{dis}$  &$I$  &$y_{u}$  &$y_{disponible} - progresiva$  &$V_{calculo}$  &$\tau_{f\,actuante}$  &$y_{critico}$  &$nro$\\     %% no "&" at start of row
+    \hline
+    1&f&g&h\\
+    \hline
+    2&j&k&l\\
+    \hline
+    3&j&k&l\\
+    \hline
+    1r&j&k&l\\
+    \hline
+    2r&j&k&l\\
+    \hline        %% extra \hline at bottom of table
+    \end{tabular}
+  \end{table}
 
 \end{enumerate}
 

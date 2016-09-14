@@ -1,5 +1,6 @@
 \documentclass[10.5pt]{article}
-\usepackage{a4wide}
+%\usepackage{a4wide}
+\usepackage[left=2.50cm, right=2cm, top=3.50cm, bottom=2cm]{geometry}
 %\usepackage[cm]{fullpage} %si lo queremos mas ancho
 
 \usepackage[spanish, english, activeacute]{babel}
@@ -40,6 +41,7 @@
   
  \item \underline{\bf Dimensionamiento de los tramos de material erosionable}
     
+  \vspace{1em}
   \underline{\bf Método de la velocidad máxima}
   
   \input{vmax1.tex}
@@ -52,6 +54,7 @@
   Para poder obtener soluciones reales podríamos bajar la $V_{max}$, sin embargo dejaría de ser el método de la velocidad máxima.
   Debido a ésto debemos utilizar el método de la fuerza tractiva para poder hacer el dimensionamiento en forma más precisa.
   
+  \vspace{1em}
   \underline{\bf Método de la fuerza tractiva}
   
   \input{1.tex}
@@ -79,30 +82,35 @@
   La revancha que adoptamos es de un $20\%$. Si bien el valor de ésta no se calcula con un fórmula matemática, podemos tener en cuenta que 
   en general, para canales de débil pendiente, se utilizan revanchas que oscilan entre el $5\%$ y el $30\%$. Para elegir el valor de la nuestra
   consideramos la presencia de un camino y un alambrado cercanos.
+\end{enumerate}
   
-  \item Tabla
-  
+\subsection{}
+
+Se adjunta gráfico.
+
+\subsection{}
+ 
    \begin{table}[H]
     \large        %% not "\fontsize{12}{12}\selectfont"
     \centering    %% not "\center{...}"
-    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
     \hline
-    $Tramo$  &$Q_{dis}$  &$I$  &$y_{u}$  &$y_{disponible} - progresiva$  &$V_{calculo}$  &$\tau_{f\,actuante}$  &$y_{critico}$  &$nro$\\     %% no "&" at start of row
+    $Tramo$  	&$Q_{dis}$  	&$I$  			&$y_{u}$	&$B_{f}$	&$y_{disponible} (progresiva)$  	&$V_{calculo}$  &$\tau_{f\,actuante}$ \\     %% no "&" at start of row
+		&$[m³/s]$  	&[\textperthousand] 	&$[m]$		&$[m]$		&$[m\,(km)]$  				&$[m/s]$	&$[kg/m^2]$ \\     %% no "&" at start of row
     \hline
-    1&f&g&h\\
+    1		&3.85			&1.47	&0.92	  &4		&1.12 (5.6)			&0.85		&0.984\\
     \hline
-    2&j&k&l\\
+    2		&6.6			&1.05	&1.38	  &4		&1.83 (4.1)			&0.89		&0.957\\
     \hline
-    3&j&k&l\\
+    3		&11.6			&0.86	&1.83	  &5		&2.47 (2.5)			&0.95		&1.01\\
     \hline
-    1r&j&k&l\\
+    1r		&11.6			&7.85	&0.60	  &5		&1.42 (1)			&2.95		&3.81\\
     \hline
-    2r&j&k&l\\
+    2r		&11.6	&1.13	&1.06	  &5	&1.82 (0.1)	&1.81	&0.88\\
     \hline        %% extra \hline at bottom of table
     \end{tabular}
   \end{table}
 
-\end{enumerate}
 
 
 
