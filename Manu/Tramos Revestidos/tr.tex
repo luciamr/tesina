@@ -2,19 +2,20 @@
 \usepackage{a4wide}
 %\usepackage[cm]{fullpage} si lo queremos mas ancho
 
-\usepackage[backend=biber, style=numeric, uniquename=false]{biblatex}
+%\usepackage[backend=biber, style=numeric, uniquename=false]{biblatex}
 %style=authoryear
 
-\usepackage[spanish,activeacute]{babel}
+\usepackage[spanish, english, activeacute]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{enumerate}
-\usepackage{todonotes}
 \usepackage{listings}
-\usepackage{verbatim}
 \usepackage{stmaryrd}
 \usepackage{amsmath, amssymb}
 \usepackage{systeme}
 \usepackage{textcomp}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows, decorations.markings, positioning}
+
 
 \begin{document}
 \date{Septiembre de 2016}
@@ -104,7 +105,7 @@ Como el valor de $y$ no puede ser negativo, consideramos el valor de $y_{2}$
       \Longrightarrow \quad
       V_{m} = 2.95 m/s
       \qquad
-      VERIFICA
+      \therefore VERIFICA
     \end{equation*}
 \end{itemize}
 
@@ -120,7 +121,7 @@ Como el valor de $y$ no puede ser negativo, consideramos el valor de $y_{2}$
  0.5955 m + 0.2 \times 0.5955 m &\leq h_{disp} \\
  0.7146 m &\leq 1.42 m
  \qquad
- VERIFICA
+ \therefore VERIFICA
 \end{align*}
 
 
@@ -232,7 +233,7 @@ Como el valor de $y$ no puede ser negativo, consideramos el valor de $y_{2}$
 \begin{equation*}
   D = 1 m
  \qquad
-  I = 7 \textperthousand = 0.007
+ % I = 7 \textperthousand = 0.007
  \qquad
   n = 0.016 m^3/s
 \end{equation*}
@@ -289,7 +290,7 @@ Propongo: $y = 0.7 m$
 
 \begin{equation*}
   \begin{cases}
-    A = \dfrac{1}{8} (\theta - \sen{\theta}) D^{2} = 0.587 m^{2} \\
+    A = \dfrac{1}{8} (\theta - \sin{\theta}) D^{2} = 0.587 m^{2} \\
     P = \dfrac{1}{2} \theta D = 1.9825 m
   \end{cases}
   \Longrightarrow \quad
@@ -305,6 +306,49 @@ Propongo: $y = 0.7 m$
 \end{equation*}
 
 $\therefore ES\ CORRECTO$
+
+
+\section*{Diagrama de Flujo del método de la fuerza tractiva}
+
+
+% Define block styles
+\tikzstyle{block5} = [rectangle, draw, fill=blue!20, text width=5em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{block13} = [rectangle, draw, fill=blue!20, text width=13em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{block24} = [rectangle, draw, fill=blue!20, text width=24em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{block28} = [rectangle, draw, fill=blue!20, text width=28em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{vecArrow} = [draw=black, solid,line width=0.6mm, fill=black, shorten >= 1mm, preaction={-triangle 60,thin,draw, shorten >= 0mm}] 
+
+\begin{figure}[!ht]
+  \centering
+  \hspace*{-80pt}
+  \begin{tikzpicture}
+    % nodes
+    \node [block28] (uno) at (0,0) {Suelo cohesivo \textrightarrow $\tau_{res fondo} = \tau_{res talud}$\\ + \\ Ecuación condicionante $\Longrightarrow \tau_{act fondo} = 0.97 \gamma y I < \tau_{res fondo}$};
+    \node [block24, below = 1cm of uno] (dos) {Según tabla y con relación de huecos $\Longrightarrow \tau_{res fondo}$};
+    \node [block24, below = 1cm of dos] (tres) {De la inecuación anterior, despejamos $y_{max}$ estable };
+    \node [block24, below = 1cm of tres] (cuatro) {Adoptamos $y = y_{max}$ si $y_{max} + r \leq h_{disp}$};
+    \node [block13, below = 1cm of cuatro] (cinco) {Ecuaci\'on de Chezy Manning};
+    \node [block13, below = 1cm of cinco] (seis) {Despejamos $B_{f}$};
+    \node [block13, below = 1cm of seis] (siete) {Calculamos $R = \dfrac{A}{P}$};
+    \node [block28, below = 1cm of siete] (ocho) {Verificamos: $\tau_{act fondo} = 0.97 \gamma R I < \tau_{res fondo}$ \\ Verificamos condiciones de escurrimiento: $V_{min} < V_{m} < V_{max}$ \\ donde $V_{min}$ es una funci\'on del tipo de agua y el tirante \\ Verificamos desbordes: $y + r \leq h_{disp}$};
+    \node [block5, right = 2cm of ocho] (nueve) {FIN};
+    \node [block24, below = 1cm of ocho] (diez) {Adopto un $y$ menor y repito el procedimiento};
+    % edges
+    \draw [vecArrow] (uno) -- (dos);
+    \draw [vecArrow] (dos) -- (tres);
+    \draw [vecArrow] (tres) -- (cuatro);
+    \draw [vecArrow] (cuatro) -- (cinco);
+    \draw [vecArrow] (cinco) -- (seis);
+    \draw [vecArrow] (seis) -- (siete);
+    \draw [vecArrow] (siete) -- (ocho);
+    \draw [vecArrow] (ocho) -- node {si verifica} (nueve);
+    \draw [vecArrow] (ocho) -- node {si no verifica} (diez);
+    %\draw [vecArrow] (diez) |- (cuatro);
+    %\path [line] (dos) [->] (tres);
+  \end{tikzpicture}
+\end{figure}
+
 
 
 
