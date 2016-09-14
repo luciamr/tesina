@@ -1,36 +1,40 @@
-\section*{Conducto Circular}
-
-\subsection*{Dos Conductos}
-
 \begin{equation*}
   D = 1 m
  \qquad
- % I = 7 \textperthousand = 0.007
+ I = 0.007
  \qquad
-  n = 0.016 m^3/s
+  n = 0.016
 \end{equation*}
 
+Primero comprobamos si los conductos trabajan a sección llena o parcialmente llena.
+
 \begin{equation*}
-  Q_{1} = 2.75 m/s^{2}
+  Q_{1} = 2.75 m^3/s
  \qquad
   Q_{PC} = \dfrac{Q_{1}}{2} = 1.375 m^{3}/s
 \end{equation*}
 
 \begin{equation*}
   \begin{cases}
-    Q = V A \\
+    Q = V \, A \\
     V = \dfrac{1}{n} R^{2/3} I^{1/2}
   \end{cases}
   \Longrightarrow \quad
-  Q = \dfrac{1}{n} R^{2/3} I^{1/2} A = \dfrac{1}{0.016} (\dfrac{1}{4})^{2/3} 0.007^{1/2} \dfrac{\pi D^{2}}{4} = 1.63 m^{3}/s
+  Q = \dfrac{1}{n} R^{2/3} I^{1/2} A = \dfrac{1}{0.016} (\dfrac{1}{4}m)^{2/3} 0.007^{1/2} \dfrac{\pi \, (1 m)^2}{4} = 1.63 m^{3}/s
 \end{equation*}
 
+De ésto se desprende que los conductos trabajan a sección parcialmente llena.
+
 \begin{equation*}
-  R = \dfrac{A}{P} = \dfrac{\pi D^{2}}{4} \dfrac{1}{\pi D} = \dfrac{D}{4} = \dfrac{1}{4}
+  R = \dfrac{A}{P} = \dfrac{\pi \, (1 m)^{2}}{4} \dfrac{1}{\pi \, 1 m} = \dfrac{1}{4} m
 \end{equation*}
+
+A partir de la relación entre $Q_{PC}$ y $Q_0$ miramos la tabla de curvas adimensionales de elementos geométricos de una sección circular
+y obtenemos el valor de $y$. Teniendo en cuenta el $y$ obtenido hallamos la relación entre $V$ y $V_0$ para luego determinar la velocidad media.
 
 \begin{equation*}
   \dfrac{Q}{Q_{0}} = \dfrac{1.375}{1.63} = 0.84
+  \quad
   \Longrightarrow \quad
   y = 0.7 m
 \end{equation*}
@@ -41,14 +45,17 @@
     V_{0} = \dfrac{Q}{A} = \dfrac{1.375}{\pi D^{2}} 4 = 1.75 m/s
   \end{cases}
   \Longrightarrow \quad
-  V = 1.13 1.75 = 1.98 < V_{max} = 5 m/s
+  V = 1.13 \, 1.75 m/s = 1.98 m/s < V_{max} = 5 m/s
   \qquad
+  \therefore
   VERIFICA
 \end{equation*}
 
 
 
-\subsection*{Verificación}
+\underline{Verificación}
+
+Para llevar a cabo la verificación del resultado anteriormente obtenido, proponemos la resolución del mismo problema mediante otro método.
 
 \begin{equation*}
   \dfrac{Q_{m}}{I^{1/2}} = 0.263

@@ -15,9 +15,9 @@
 
 
 \begin{document}
-\date{Septiembre de 2016}
-\title{Tramos Revestidos\\Trabajo Práctico}
-\author{Manuel F. Martín}
+\date{14 de Septiembre de 2016}
+\title{Hidráulica de Canales Abiertos\\Trabajo Práctico Integrador}
+\author{Manuel Álvarez\\Manuel F. Martín}
 
 \maketitle
 
@@ -25,33 +25,55 @@
 \section*{Etapa 1}
 
 \begin{enumerate}[a)]
- \item Para trazar la rasante tuvimos en cuenta las siguientes pautas:
+ \item \underline{\bf Rasante}
+ 
+ Para trazar la rasante tuvimos en cuenta las siguientes pautas:
   \begin{itemize}
    \item Realizar exclusivamente excavaciones, lo que implica que la rasante se ubique por debajo de la cota del fondo existente o la supere
    en a lo sumo $20 cm$ en $200 m$, ya que realizar un relleno es muy dificil y costoso.
    \item Intentar que la misma se adapte de la mejor manera posible a la topografía existente, de manera tal que se realice la menor cantidad
    de excavaciones posibles.
   \end{itemize}
- \item Dimensionamiento de los tramos de material erosionable
+  
+ \item \underline{\bf Dimensionamiento de los tramos de material erosionable}
+  
+  La revancha que adoptamos es de un $20\%$. Si bien el valor de ésta no se calcula con un fórmula matemática, podemos tener en cuenta que 
+  en general, para canales de débil pendiente, se utilizan revanchas que oscilan entre el $5\%$ y el $30\%$. Para elegir el valor de la nuestra
+  consideramos la presencia de un camino y un alambrado cercanos.
+    
+  \underline{\bf Método de la velocidad máxima}
+  
+  \input{vmax1.tex}
+  \input{vmax2.tex}
+  \input{vmax3.tex}
+  
+  \underline{Conclusión}
+  
+  Este método no es aplicable para estos casos en particular dados los datos disponibles.
+  Para poder obtener soluciones reales podríamos bajar la $V_{max}$, sin embargo dejaría de ser el método de la velocidad máxima.
+  Debido a ésto debemos utilizar el método de la fuerza tractiva para poder hacer el dimensionamiento en forma más precisa.
+  
+  \underline{\bf Método de la fuerza tractiva}
+  
+  \input{1.tex}
+  \input{2.tex}
+  \input{3.tex}
  
- \underline{\bf Método de la velocidad máxima}
- 
- \input{vmax1.tex}
- \input{vmax2.tex}
- \input{vmax3.tex}
- 
- \underline{Conclusión}
- 
- Este método no es aplicable para estos casos en particular dados los datos disponibles.
- Para poder obtener soluciones reales podríamos bajar la $V_{max}$, sin embargo dejaría de ser el método de la velocidad máxima.
- Debido a ésto debemos utilizar el método de la fuerza tractiva para poder hacer el dimensionamiento en forma más precisa.
+ \item \underline{\bf Diagrama de flujo del método de la fuerza tractiva}
+   
+   %\input{diagrama.tex}
+   
+ \item \underline{\bf Determinación de tirantes en los tramos revestidos}
 
- \underline{\bf Método de la fuerza tractiva}
+   \input{1r.tex}
+   \input{2r.tex}
+   
+ \item \underline{\bf Conductos circulares}
  
- \input{1.tex}
- \input{2.tex}
- \input{3.tex}
+ Suponemos que el caudal $Q_1$ que se descarga en el canal, lo hace en partes iguale por ambos conductos.
  
+ \input{cond.tex}
+
 \end{enumerate}
 
 
@@ -77,48 +99,8 @@
 
 
 
-\section*{Diagrama de Flujo del método de la fuerza tractiva}
 
 
-% Define block styles
-\tikzstyle{block5} = [rectangle, draw, fill=blue!20, text width=5em, text centered, rounded corners, minimum height=3em]
-\tikzstyle{block13} = [rectangle, draw, fill=blue!20, text width=13em, text centered, rounded corners, minimum height=3em]
-\tikzstyle{block24} = [rectangle, draw, fill=blue!20, text width=24em, text centered, rounded corners, minimum height=3em]
-\tikzstyle{block28} = [rectangle, draw, fill=blue!20, text width=28em, text centered, rounded corners, minimum height=3em]
-\tikzstyle{decision} = [diamond, draw, fill=blue!20, text width=6em, text centered, node distance=3cm, inner sep=0pt]
-\tikzstyle{vecArrow} = [draw=black, solid,line width=0.6mm, fill=black, shorten >= 1mm, preaction={-triangle 60,thin,draw, shorten >= 0mm}] 
-
-\begin{figure}%[!ht]
-  \centering
-  \hspace*{-80pt}
-  \begin{tikzpicture}
-    % nodes
-    \node [block28] (uno) at (0,0) {Suelo cohesivo \textrightarrow $\tau_{res fondo} = \tau_{res talud}$\\ + \\ Ecuación condicionante $\Longrightarrow \tau_{act fondo} = 0.97 \gamma y I < \tau_{res fondo}$};
-    \node [block24, below = 1cm of uno] (dos) {Según tabla y con relación de huecos $\Longrightarrow \tau_{res fondo}$};
-    \node [block24, below = 1cm of dos] (tres) {De la inecuación anterior, despejamos $y_{max}$ estable };
-    \node [block24, below = 1cm of tres] (cuatro) {Adoptamos $y = y_{max}$ si $y_{max} + r \leq h_{disp}$};
-    \node [block13, below = 1cm of cuatro] (cinco) {Ecuaci\'on de Chezy Manning};
-    \node [block13, below = 1cm of cinco] (seis) {Despejamos $B_{f}$};
-    \node [block13, below = 1cm of seis] (siete) {Calculamos $R = \dfrac{A}{P}$};
-    \node [block28, below = 1cm of siete] (ocho) {Verificamos: $\tau_{act fondo} = 0.97 \gamma R I < \tau_{res fondo}$ \\ Verificamos condiciones de escurrimiento: $V_{min} < V_{m} < V_{max}$ \\ donde $V_{min}$ es una funci\'on del tipo de agua y el tirante \\ Verificamos desbordes: $y + r \leq h_{disp}$};
-    \node [decision, below = 1cm of ocho] (nueve) {\textquestiondown Verifica?};
-    \node [block5, right = 2cm of nueve] (diez) {FIN};
-    \node [block24, below = 1cm of nueve] (once) {Adopto un $y$ menor y repito el procedimiento};
-    % edges
-    \draw [->] (uno) -- (dos);
-    \draw [->] (dos) -- (tres);
-    \draw [->] (tres) -- (cuatro);
-    \draw [->] (cuatro) -- (cinco);
-    \draw [->] (cinco) -- (seis);
-    \draw [->] (seis) -- (siete);
-    \draw [->] (siete) -- (ocho);
-    \draw [->] (ocho) -- (nueve);
-    \draw [->] (nueve.east) -- node [yshift=0.75em] {si} (diez);
-    \draw [->] (nueve.south) -- node [xshift=-1em] {no} (once.north);
-    \draw [->] (once.west) -- ++(-15mm, 0) |- (cuatro.west);
-    %\path [line] (dos) [->] (tres);
-  \end{tikzpicture}
-\end{figure}
  
 
 
@@ -127,8 +109,6 @@
 
 
 
-\input{1r.tex}
-\input{2r.tex}
 
 \end{document}
 

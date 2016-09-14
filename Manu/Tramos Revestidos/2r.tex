@@ -1,22 +1,24 @@
-\section*{Tramo 2r}
+\underline{\bf Tramo 2r}
 
 
 \begin{equation*}
-  h = 1.82 m (progresiva 0.1 km)
+  r = 20\%
+  \quad
+  h_{disp} = 1.82 m (progresiva 0.1 km)
+ \qquad
+  I = 0.00113
  \qquad
   B_{f} = 5 m
- \qquad
-  m = 1
- \qquad
-  V_{max} = 5 m/s
 \end{equation*}
 
 \begin{equation*}
-  n = 0.016 m^3/s
- \qquad
   Q_{t} = 11.6 m^{3}
  \qquad
-  I = 0.00113
+  V_{max} = 5 m/s
+ \qquad
+  n = 0.016 m^3/s
+ \qquad
+  m = 1
 \end{equation*}
 
 \begin{equation*}
@@ -31,16 +33,16 @@
     A = B_{f}y + m y^{2} \\
     P = B_{f} + 2 y \sqrt{1 + m^{2}}
   \end{cases}
-\end{equation*}
-\begin{equation*}
-  \dfrac{Q n}{I^{1/2}} = \dfrac{A^{5/3}}{P^{2/3}} = \sqrt[3]{\dfrac{A^{5}}{P^{2}}}
   \Longrightarrow
-  \dfrac{Q n}{I^{1/2}}^{3} = \dfrac{A^{5}}{P^{2}}
+  (\dfrac{Q n}{I^{1/2}})^{3} = \dfrac{A^{5}}{P^{2}}
 \end{equation*}
 
+Luego,
 \begin{equation*}
   \dfrac{A^{5}}{P^{2}} = \dfrac{(5 y + y^{2})^{5}}{(5 + 2 \sqrt{2} y)^{2}} = 168.31 m
+  \quad
   \Longrightarrow
+  \quad
   y_{1} = -6.2333 m \vee y_{2} = 1.0568 m
 \end{equation*}
 
@@ -52,48 +54,54 @@ Como el valor de $y$ no puede ser negativo, consideramos el valor de $y_{2}$
     A = 5 y - y^{2} = 6.40 m^{2} \\
     P = 5 + 2 \sqrt{2} y = 7.99 m
   \end{cases}
+  \quad
   \Longrightarrow
+  \quad
   R = 0.80 m
+  \quad
   \Longrightarrow
+  \quad
   \tau = \gamma R \, S \, 0.97 = 0.88 kg/m^{2}
 \end{equation*}
 
 
-\subsection*{Verificación}
-
-\subsubsection*{Escurrimiento}
+\underline{\bf Verificación}
 
 \begin{itemize}
- \item De la ecuación de continuidad obtenemos la velocidad media:
+ \item Escurrimiento
+    \begin{itemize}
+    \item De la ecuación de continuidad obtenemos la velocidad media:
+	\begin{equation*}
+	V_{m} = \dfrac{Q}{A} = \dfrac{11.6}{6.4} = 1.81 m/s
+	\end{equation*}
+    \item Para obtener la $V_{min}$, sabiendo el tirante y el tipo de agua, poco limoso de limo fino, buscamos en
+    la tabla de velocidades mínimas y obtenemos $V_{min} = 0.47 m/s$.
+	\begin{equation*}
+	  \begin{cases}
+	  V_{min} = 0.47 m/s \\
+	  V_{max} = 5 m/s
+	  \end{cases}
+	  \Longrightarrow \quad
+	  V_{m} = 1.81 m/s
+	  \qquad
+	  \therefore
+	  VERIFICA
+	\end{equation*}
+    \end{itemize}
+ \item Desborde
     \begin{equation*}
-    V_{m} = \dfrac{Q}{A} = \dfrac{11.6}{6.4} = 1.81 m/s
+    r = 20\%
+    \qquad
+    h_{disp} = 1.82 m
     \end{equation*}
- \item Para obtener la $V_{min}$, sabiendo el tirante y el tipo de agua, poco limoso de limo fino, buscamos en
- la tabla de velocidades mínimas y obtenemos $V_{min} = 0.47 m/s$.
-    \begin{equation*}
-      \begin{cases}
-      V_{min} = 0.47 m/s \\
-      V_{max} = 5 m/s
-      \end{cases}
-      \Longrightarrow \quad
-      V_{m} = 1.81 m/s
-      \qquad
-      VERIFICA
-    \end{equation*}
+    \begin{align*}
+    y + r &\leq h_{disp} \\
+    1.0568 m + 0.2 \times 1.0568 m &\leq h_{disp} \\
+    1.27 m &\leq 1.82 m
+    \qquad
+    \therefore
+    VERIFICA
+    \end{align*}
 \end{itemize}
 
-\subsubsection*{Desborde}
-
-\begin{equation*}
- r = 20\%
- \qquad
- h_{disp} = 1.82 m
-\end{equation*}
-\begin{align*}
- y + r &\leq h_{disp} \\
- 1.0568 m + 0.2 \times 1.0568 m &\leq h_{disp} \\
- 1.27 m &\leq 1.82 m
- \qquad
- VERIFICA
-\end{align*}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.1)  14 SEP 2016 03:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.1)  14 SEP 2016 04:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1019,51 +1019,43 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./1.tex [1
+) (./vmax1.tex
+[1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./2.tex [2] [3]) (./3.te
-x
-[4]) (./vmax1.tex [5]) (./vmax2.tex) (./vmax3.tex [6])
-Underfull \hbox (badness 1701) in paragraph at lines 95--95
- [][][][]\OT1/cmr/m/n/10 Suelo co-he-sivo \TS1/cmr/m/n/10 ^^Y$\OML/cmm/m/it/10 
-^^\[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^\[]$ 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./vmax2.tex)
+(./vmax3.tex) [2] (./1.tex [3]) (./2.tex [4]) (./3.tex [5] [6]) (./1r.tex
+[7]) (./2r.tex [8]) (./cond.tex
+Overfull \hbox (56.64877pt too wide) detected at line 52
+[] \OT1/cmr/m/n/10 =[]\OMS/cmsy/m/n/10 )  \OML/cmm/m/it/10 V \OT1/cmr/m/n/10 = 
+1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 13 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 75\OML
+/cmm/m/it/10 m=s \OT1/cmr/m/n/10 = 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 98\OML/cm
+m/m/it/10 m=s < V[] \OT1/cmr/m/n/10 = 5\OML/cmm/m/it/10 m=s  \U/msa/m/n/10 ) \O
+ML/cmm/m/it/10 VERIFICA
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
- []\OT1/cmr/m/n/10 + 
- []
-
-
-Underfull \hbox (badness 1558) in paragraph at lines 102--102
- []\OT1/cmr/m/n/10 Verificamos des-bor-des: $\OML/cmm/m/it/10 y \OT1/cmr/m/n/10
- + \OML/cmm/m/it/10 r \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 h[]$ 
- []
-
-(./1r.tex [7] [8]) (./2r.tex [9]) [10] (./tr.aux) ) 
+[9]) [10] (./tr.aux) ) 
 Here is how much of TeX's memory you used:
- 16516 strings out of 493304
- 313610 string characters out of 6139872
- 398935 words of memory out of 5000000
- 19579 multiletter control sequences out of 15000+600000
- 13062 words of font info for 52 fonts, out of 8000000 for 9000
+ 16395 strings out of 493304
+ 311295 string characters out of 6139872
+ 396935 words of memory out of 5000000
+ 19455 multiletter control sequences out of 15000+600000
+ 12755 words of font info for 51 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,11n,61p,457b,698s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/
-dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-sup
-er/sfrm1000.pfb>
-Output written on tr.pdf (10 pages, 163202 bytes).
+ 56i,11n,61p,457b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.e
+nc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
+m10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on tr.pdf (10 pages, 163012 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream
