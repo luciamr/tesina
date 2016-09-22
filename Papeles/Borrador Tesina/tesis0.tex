@@ -1,0 +1,63 @@
+\documentclass[10pt]{article}
+%\usepackage{a4wide}
+%\usepackage[cm]{fullpage} si lo queremos mas ancho
+
+%biblatex
+%\usepackage[url=false, doi=false, style=authoryear, uniquename=false]{biblatex}
+\usepackage[backend=bibtex, style=numeric, uniquename=false]{biblatex}
+%style=authoryear
+%\bibliographystyle{abbrv}
+\bibliography{cites}   
+%\nocite{*}
+%\renewcommand*{\bibfont}{\footnotesize}
+%\renewcommand*{\bibfont}{\small}
+
+%natbib
+%\usepackage{natbib}
+
+\usepackage[spanish,activeacute]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{todonotes}
+%\usepackage{listings} tiene problemas con spanish babel con el caracter ~
+\usepackage{stmaryrd}
+
+\begin{document}
+\date{Abril de 2016}
+\title{Propuesta de Tesina para la obtención del grado\\Licenciado en Ciencias de la Computación}
+\author{\textit{\large Detección de eventos en vídeos deportivos basada} \\ \textit{\large en Bag of Words: análisis de partidos de Rugby}}
+
+\maketitle
+
+\begin{description}
+  \item[Postulante:] Lucía N. Martín Reixach
+  \item[Directora:] Mónica Larese
+  \item[Codirector:] Pablo Granitto
+\end{description}
+
+%\section{Situación del postulante}
+%Actualmente me resta aprobar las materias Sistemas Operativos, Inteligencia Artificial y Compiladores,
+%las que planeo completar durante el primer cuatrimestre del próximo año.
+
+%En relación a otras actividades académicas, me estoy desempeñando como docente en las materias Programación I y Programación II.
+
+%Proyecto dedicar al menos 25 hs. semanales al desarrollo de esta Tesina.
+
+%\section{Título}
+%Detección de eventos en videos: análisis de partidos de Rugby.
+%\todo{Poner bien el titulo.}
+
+\input{mot.tex}
+\input{objgen.tex}
+\input{fundyestarte.tex}
+\input{objesp.tex}
+\input{met.tex}
+\input{plantrab.tex}
+
+%biblatex
+%\nocite{poppe2010survey, csurka2004visual, lopes2010action, yang2007evaluating, harris1988combined, lowe2004distinctive, mair2010adaptive, bay2006surf, leutenegger2011brisk, alahi2012freak, chen2009mosift, whiten2013mofreak, barla2003histogram, schuldt2004recognizing, kuehne2011hmdb, chen2011violence, nievas2011violence, deniz2014fast, laptev2005space, kliper2012motion}
+\nocite{yang2007evaluating}
+\printbibliography
+
+
+\end{document}

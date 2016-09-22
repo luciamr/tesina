@@ -251,7 +251,6 @@ void computeBOWRepresentation()
             bow_features.push_back(mat);
         }
 
-        #pragma omp parallel for
         for (int i = 0; i < mofreak_files.size(); i++)
         {
             bow_rep.convertFileToBOWFeature(g, mofreak_files[i], bow_features, i);

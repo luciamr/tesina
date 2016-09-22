@@ -38,7 +38,7 @@ public:
     void loadClusters(int group);
 
 private:
-	void extractMetadata(std::string filename, int &action, int &group, int &clip_number);
+    void extractMetadata(std::string filename, int &action, int &group, int &clip_number);
 
     cv::Mat buildHistogram(std::string &file, bool &success);
 	int actionStringToActionInt(string act);

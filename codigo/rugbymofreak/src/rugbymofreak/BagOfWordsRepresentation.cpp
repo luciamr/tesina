@@ -397,6 +397,8 @@ void BagOfWordsRepresentation::computeSlidingBagOfWords(std::string &file, int a
 
 void BagOfWordsRepresentation::extractMetadata(std::string filename, int &action, int &group, int &clip_number)
 {
+    cout << "extractMetadata: " << filename << endl;
+
     if (dataset == UCF101 || dataset == KTH)
 	{
 		std::vector<std::string> filename_parts = split(filename, '_');
@@ -446,9 +448,9 @@ void BagOfWordsRepresentation::extractMetadata(std::string filename, int &action
 		else
 		{
 			std::string parsed_group = filename_parts[2].substr(1, 2);
-			std::stringstream(parsed_group) >> group;
+            std::stringstream(parsed_group) >> group;
 		}
-		group--; // group indices start at 0, not 1, so decrement.
+        group--; // group indices start at 0, not 1, so decrement.
 
 		// extract clip number.
 		std::string parsed_clip = filename_parts[3].substr(2, 2);
@@ -511,16 +513,17 @@ void BagOfWordsRepresentation::extractMetadata(std::string filename, int &action
         }
         else
         {
+            action = -1;
             std::cout << "Didn't find action: " << parsed_action << std::endl;
-            exit(1);
+            //exit(1);
         }
 
         // extract group
-        std::stringstream(filename_parts[1].substr(5, 4)) >> group;
+        std::stringstream(filename_parts[0].substr(filename_parts[0].size()-4)) >> group;
         group--; // group indices start at 0, not 1, so decrement.
 
         // extract clip number.
-        std::string parsed_clip = filename_parts[2].substr(4, 4);
+        std::string parsed_clip = filename_parts[1].substr(4, 4);
         std::stringstream(parsed_clip) >> clip_number;
 
     }
@@ -529,7 +532,7 @@ void BagOfWordsRepresentation::extractMetadata(std::string filename, int &action
 void BagOfWordsRepresentation::intializeBOWMemory(string SVM_PATH)
 {
 
-	// initialize the output files and memory for BOW features for each grouping.
+    // initialize the output files and memory for BOW features for each grouping.
 	for (int group = 0; group < NUMBER_OF_GROUPS; ++group)
 	{
 		stringstream training_filepath, testing_filepath;
@@ -556,15 +559,13 @@ void BagOfWordsRepresentation::intializeBOWMemory(string SVM_PATH)
 
 void BagOfWordsRepresentation::convertFileToBOWFeature(int group, std::string file, std::vector<cv::Mat> bow_features, int i)
 {
-	boost::filesystem::path file_path(file);
-	boost::filesystem::path file_name = file_path.filename();
-	std::string file_name_str = file_name.generic_string();
+    //boost::filesystem::path file_path(file);
 
     std::cout << "thread: " << omp_get_thread_num() << " file: " << file << endl;
 
     // extract the metadata from this file, such as the group and action performed.
-    int action, video_group, video_number;
-    extractMetadata(file_name_str, action, group, video_number);
+    //int action, video_group, video_number;
+    //extractMetadata(file_path.filename().generic_string(), action, group, video_number);
 
     //for (int g = 1; g <= NUMBER_OF_GROUPS; g++)
     //{
@@ -645,7 +646,7 @@ void BagOfWordsRepresentation::writeBOWFeaturesToVectors(int group, std::vector<
 
     for (int i = 0; i < mofreak_files.size(); i++)
     {
-        string filename = mofreak_files[i].substr(mofreak_files[i].find_last_of("/")+1);
+        string filename = mofreak_files[i];
         extractMetadata(filename, action, video_group, video_number);
         ss << action << " ";
 

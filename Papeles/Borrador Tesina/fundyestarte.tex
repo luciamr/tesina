@@ -1,0 +1,51 @@
+\section{Fundamentos y estado del conocimiento sobre el tema} \label{fundyestarte}
+\iffalse
+Escriba una breve introducción general al tema y cite y comente las mayores
+contribuciones en el tema específico, incluyendo bibliografıa actualizada.
+\fi
+La clasificación de imágenes o vídeos en categorías semánticas es un problema de interés tanto para la comunidad científica como
+para la industria. La detección de diferentes tipos de escenas por lo general se basa en vectores de características que describen
+el color y la textura de las imágenes entre otras propiedades visuales.
+
+Hace ya más de una década, comenzó a verse una tendencia a usar \textit{keypoints} y puntos de interés local en la recuperación y
+clasificación de la información contenida en las imágenes \parencite{csurka2004visual, lopes2010action}. Los \textit{keypoints} son zonas destacadas
+de las imágenes, que contienen abundante información local acerca de la misma, los cuales pueden ser identificados usando diferentes detectores y representados
+por diversos descriptores.
+
+Una vez que los \textit{keypoints} son obtenidos, éstos son distribuidos en una gran cantidad de \textit{clusters}, asignando a un mismo
+\textit{cluster} aquellos \textit{keypoints} de características similares. Cada \textit{cluster} es considerado una \textit{visual word}
+que representa el patrón local específico compartido por todos los \textit{keypoints} de ese \textit{cluster}, lo que permite obtener un
+vocabulario de \textit{visual words} que describe todos los patrones locales de las imágenes. A partir
+de ésto, una imagen puede representarse como un \textit{Bag of Visual Words}, un vector que contiene
+la cantidad de veces que cada \textit{visual word} aparece en la imagen, el cual es usado como vector
+de características durante la clasificación \parencite{yang2007evaluating}.
+
+Esta representación es análoga a la de Bag of Words utilizada en textos para describir tanto la forma
+como la semántica. Ésto permite que muchas de las técnicas ya desarrolladas y usadas para el análisis de textos hayan podido ser aplicadas
+al trabajo con imágenes.
+
+Los \textit{keypoints} suelen encontrarse en los ángulos y bordes de los objetos presentes en las imágenes.
+Uno de los métodos más utilizados para su detección es la Diferencia de Gaussianas (DoG) \parencite{lowe2004distinctive}, sin embargo existen otros como
+Harris Corner Detector \parencite{harris1988combined}, Fast Hessian Detector \parencite{bay2006surf}, AGAST \parencite{mair2010adaptive} y
+multi-scale AGAST \parencite{leutenegger2011brisk}. 
+
+En cuanto a los descriptores, a lo largo de los años se han publicado numerosos desarrollos. Para trabajar con imágenes, algunos de los más utilizados
+son SIFT \parencite{lowe2004distinctive}, SURF \parencite{bay2006surf}, BRISK \parencite{leutenegger2011brisk} y FREAK \parencite{alahi2012freak}.
+Por lo general, cada descriptor se utiliza acompañado de un detector específico.
+En lo referente a vídeos, suelen utilizarse descriptores que se basan en los de imágenes como MoSIFT \parencite{chen2009mosift} y
+MoFREAK \parencite{whiten2013mofreak}. Éstos desglosan los vídeos en las imágenes que los componen (\textit{frames}), para luego analizar por separado
+cada una de ellas. Con esta información ya disponible se incorpora el factor temporal, siendo éste el eje en la relación entre los distintos \textit{frames},
+permitiendo, por ejemplo, analizar variaciones de un \textit{frame} a otro.
+
+
+Una vez que se completa el proceso de obtención de información de los objetos a clasificar y se construye el \textit{Bag of Visual
+Words}, se llega a la etapa de clasificación propiamente dicha. Para completar esta última etapa uno de los métodos más utilizado
+actualmente es Support Vector Machine (SVM). La \textit{performance} del SVM puede variar en gran medida de acuerdo al \textit{kernel}
+elegido, algunos de los más populares son: Histogram Intersection Kernel (HIK) \parencite{barla2003histogram}, Radial Basis Function (RBF) y Chi-Squared,
+el cual es una variante de RBF \parencite{whiten2013mofreak, nievas2011violence}.
+
+Se han hecho diversas pruebas en vídeos utilizando la idea de \textit{Bag of Visual Words}, algunas con
+datasets de vídeos específicos, con movimientos y escenas acotados, creados para el uso académico como los datasets KTH \parencite{schuldt2004recognizing}
+y HMDB51 \parencite{kuehne2011hmdb} \parencite{chen2009mosift, whiten2013mofreak} y otros con clips pertenecientes a películas \parencite{chen2011violence}, deportes
+ \parencite{nievas2011violence, deniz2014fast} y cámaras de vigilancia \parencite{chen2009mosift}. En ambos casos, los resultados fueron alentadores, mostrando el
+potencial de esta manera de abordar la detección y clasificación.

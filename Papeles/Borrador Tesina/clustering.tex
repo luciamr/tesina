@@ -1,0 +1,30 @@
+\section{Clustering}
+
+El \textit{Clustering} se encarga de dividir conjuntos de objetos en grupos (\textit{clusters}) significativos
+o útiles. Para llevar a cabo esta tarea debe basarse solamente en la información que describe
+a los objetos y sus relaciones. En algunos casos el grado de semejanza se basa en la estrucutura del objeto, en
+otros, en características o propiedades del mismo. El objetivo es que todos los objetos que se encuentran en un
+mismo \textit{cluster} sean similares o estén relacionados entre sí y sean, a su vez, diferentes de los objetos
+que se encuentran en otros \textit{clusters} o no estén vinculados a éstos. A mayor similitud dentro de cada grupo
+y mayor diferencia entre grupos, mejor y más claro es el \textit{clustering}. 
+
+El \{Clustering} puede ser visto como una forma de clasificación ya que etiqueta los objetos de acuerdo a la
+clase (\textit{cluster}) a la que pertenecen. Al basar este etiquetado exclusivamente en la información de los
+objetos que está clasificando y no en un modelo desarrollado previamente, se lo puede considerar como una forma
+de clasificación no supervisada.
+
+Al conjunto completo de \textit{clusters} de una collección se lo llama \textit{clustering}. Existen distintos
+tipos de \textit{clustering} de acuerdo a sus características:
+
+\begin{itemize}
+ \item Particional/Jeráquico
+ Un \textit{clustering} particional divide un cojunto de objetos en subconjuntos disjuntos, de manera que cada
+ objeto pertenece a solamente un subconjunto. En cambio, un \textit{clustering} jerárquico propone \textit{clusters}
+ anidados organizados en forma de árbol, cada nodo del árbol es la unión de sus hijos, siendo la raíz del árbol
+ el \textit{cluster} que contiene a todos los objetos.
+ \item Exclusivo/Superpuesto/Difuso
+ En un \textit{clustering} exclusivo cada objeto pertenece a un único \textit{cluster}, mientras que los
+ superpuestos o no exclusivos se utilizan para poder indicar que un mismo objeto puede pertenecer simultáneamente
+ a más de una clase.
+ 
+\end{itemize}

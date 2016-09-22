@@ -1,0 +1,31 @@
+\section{Metodología}
+\iffalse
+Se recomienda estructurar esta sección en función de los objetivos específicos.
+* Planteo de la hipotesis a analizar en cada objetivo o seccion del proyecto.
+* Actividades propuestas y metodologıa a usar en cada una de ellas.
+* Resultados que se esperan obtener o metas a cumplir y como se evaluaran
+los resultados.
+Trate de evaluar los potenciales problemas y limitaciones de la metodolog ́ıa
+y t ́ecnicas propuestas y en lo posible proponer alternativas.
+\fi
+
+Para desarrolar este trabajo utilizaremos un dataset compuesto por fragmentos de filmaciones de partidos de Rugby, los cuales están etiquetados en
+tres clases diferentes: \textit{line}, \textit{scrum} y \textit{juego}. Los vídeos varían mucho entre sí, ya que para armar el dataset se usaron
+tanto filmaciones amateur como transmisiones de televisión. Todos los vídeos se encuentran en formato .mp4 y tienen entre 24 y 30 FPS. Debido a la
+variedad en su origen, el tamaño y el aspecto varía entre ellos.
+
+Para llevar a cabo el reconocimiento usaremos el modelo de \textit{Bag of Visual Words} descripto en \ref{fundyestarte}. \textit{Bag of Visual Words}
+es la extensión a imágenes y vídeos de Bag of Words, un método utilizado en el procesado del lenguaje que se caracteriza por representar documentos
+basándose en diccionarios. Las principales ventajas de \textit{Bag of Visual Words} son su facilidad de uso y su eficiencia computacional.
+
+El descriptor que utilizaremos es MoFREAK \parencite{whiten2013mofreak}, el cual incorpora el factor temporal a FREAK (Fast Retina Keypoints) \parencite{alahi2012freak}.
+Se trata de un descriptor binario desarrollado por la École Polytechnique Fédérale de Laussane que se caracteriza por ser rápido, compacto y robusto.
+El hecho de ser binario hace más eficiente el cálculo y la comparación mientras conserva un buen nivel de reconocimiento. FREAK está inspirado
+en el funcionamiento de la retina humana, de ahí el origen de su nombre.
+
+Para llevar a cabo la clasificación usaremos Support Vector Machine (SVM) con Histogram Intersection Kernel (HIK) \parencite{barla2003histogram}. La
+elección del \textit{kernel} se basa en el trabajo de Whiten \parencite{whiten2013mofreak}, donde plantea que si bien Chi-Squared es el \textit{kernel}
+más utilizado en reconocimiento de acciones, en términos de precisión la diferencia con HIK es despreciable, mientras que HIK es más eficiente
+computacionalmente.
+
+Finalmente analizaremos y estudiaremos los resultados obtenidos al aplicar los métodos antes mencionados a nuestro dataset.
