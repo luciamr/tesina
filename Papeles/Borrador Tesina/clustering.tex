@@ -8,7 +8,7 @@ mismo \textit{cluster} sean similares o estén relacionados entre sí y sean, a 
 que se encuentran en otros \textit{clusters} o no estén vinculados a éstos. A mayor similitud dentro de cada grupo
 y mayor diferencia entre grupos, mejor y más claro es el \textit{clustering}. 
 
-El \{Clustering} puede ser visto como una forma de clasificación ya que etiqueta los objetos de acuerdo a la
+El \textit{Clustering} puede ser visto como una forma de clasificación ya que etiqueta los objetos de acuerdo a la
 clase (\textit{cluster}) a la que pertenecen. Al basar este etiquetado exclusivamente en la información de los
 objetos que está clasificando y no en un modelo desarrollado previamente, se lo puede considerar como una forma
 de clasificación no supervisada.
@@ -17,14 +17,50 @@ Al conjunto completo de \textit{clusters} de una collección se lo llama \textit
 tipos de \textit{clustering} de acuerdo a sus características:
 
 \begin{itemize}
- \item Particional/Jeráquico
+ \item Particional/Jeráquico \\
  Un \textit{clustering} particional divide un cojunto de objetos en subconjuntos disjuntos, de manera que cada
  objeto pertenece a solamente un subconjunto. En cambio, un \textit{clustering} jerárquico propone \textit{clusters}
  anidados organizados en forma de árbol, cada nodo del árbol es la unión de sus hijos, siendo la raíz del árbol
  el \textit{cluster} que contiene a todos los objetos.
- \item Exclusivo/Superpuesto/Difuso
+ \item Exclusivo/Superpuesto/Difuso \\
  En un \textit{clustering} exclusivo cada objeto pertenece a un único \textit{cluster}, mientras que los
  superpuestos o no exclusivos se utilizan para poder indicar que un mismo objeto puede pertenecer simultáneamente
- a más de una clase.
- 
+ a más de una clase. En cambio, en un \textit{clustering} difuso, todos los objetos pertenecen a todos los \textit{clusters}
+ con distintos grados de pertenencia, la cual varía entre 0 (enteramente no pertenece) y 1 (pertenece absolutamente),
+ es decir, los \textit{clusters} son manejados como conjuntos difusos.
+ \item Completo/Parcial \\
+ En un \textit{clustering} completo cada objeto es asignado a un \textit{cluster}, mientras que en uno parcial
+ esto no sucede, algunos objetos pueden no pertenecer a ninguno.
 \end{itemize}
+
+Los \textit{clusters} propiamente dichos pueden clasificarse de la siguiente manera:
+
+\begin{itemize}
+ \item Separados \\
+ Cada objeto está más cerca de los demás objetos del \textit{cluster} que de cualquier otro objeto que no pertenzca
+ al mismo grupo. Algunas veces se utiliza un umbral para asegurar que todos los  objetos de un mismo \textit{cluster}
+ estén lo suficientemente cerca entre sí. Ésto puede satifacerse sólo cuando la información contiene \textit{clusters}
+ naturales que se encuentran bastante alejados unos de otros.
+ \item Basados en Prototipos \\
+ Cada objeto está más cerca del prototipo que define el \textit{cluster} que de cualquier otro prototipo de otro
+ \textit{cluster}. Cuando los atributos de los objetos son continuos, el prototipo suele ser un centroide (la media de
+ los puntos del \textit{cluster}, mientras que cuando son categóricos, habitualmente el prototipo es un menoide
+ (el punto más representativo del \textit{cluster}). Mientras que un centroide casi nunca corresponde a un objeto, un
+ menoide, por definición, debe serlo. En general, este tipo de \textit{clusters} tiende a ser globular.
+ \item Basados en Grafos \\
+ Si la información se representa como un grafo, donde cada nodo es un objeto y los arcos son conexiones entre los
+ objetos, un \textit{cluster} puede verse como una componente conectada, un conjunto de objetos que están conectados
+ entre sí, pero no tienen ninguna conexión con objetos externos al grupo.
+ \item Basados en Densidad \\
+ Un \textit{cluster} es una región densa de objetos que se encuentra rodeada por una región de baja densidad.
+ \item Propiedad compartida \\
+ Cada \textit{cluster} es un conjunto de objetos que comparte una propiedad, ésto abarca las definiciones anteriores
+ de \textit{cluster} e incorpora nuevas. Para poder llevarlo a cabo es necesario un algoritmo de \textit{clustering}
+ con un concepto de \textit{cluster}lo suficientemente específico como para poder detectar exitosamente los
+ \textit{clusters}. El proceso de encontrar dichos \textit{clusters} recibe el nombre de \textit{clustering} conceptual.
+\end{itemize}
+
+Dos de las técnicas de \textit{Clustering} basados en prototipos más importantes son \textit{K-means} y \textit{K-medoid}.
+Por un lado, \textit{K-means} define un prototipo en función de un centroide y en general se aplica a objetos en
+espacios n-dimensionales contínuos. Por el otro, \textit{K-medoid} define en función de un menoide, haciendo que se
+pueda aplicar a diferentes tipos de información, ya que sólo requiere una medida de proximidad entre dos objetos.
