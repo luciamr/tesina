@@ -62,5 +62,16 @@ Los \textit{clusters} propiamente dichos pueden clasificarse de la siguiente man
 
 Dos de las técnicas de \textit{Clustering} basados en prototipos más importantes son \textit{K-means} y \textit{K-medoid}.
 Por un lado, \textit{K-means} define un prototipo en función de un centroide y en general se aplica a objetos en
-espacios n-dimensionales contínuos. Por el otro, \textit{K-medoid} define en función de un menoide, haciendo que se
+espacios n-dimensionales continuos. Por el otro, \textit{K-medoid} define en función de un menoide, haciendo que se
 pueda aplicar a diferentes tipos de información, ya que sólo requiere una medida de proximidad entre dos objetos.
+
+\textit{K-means} es una técnica de \textit{Clustering} sencilla, donde los primero que se hace es elegir \textit{K}
+centroides iniciales, donde \textit{K} es un valor elegido por el usuario que determina la cantidad de \textit{clusters}
+que se desea obtener. Luego, cada objeto es asignado al centroide más cercano, constituyendo la colección de objetos
+asignados a un centroide un \textit{cluster}. Después, cada centroide se actualiza de acuerdo a los objetos que le
+fueron asignados. El proceso de asignación y actualización se continua repitiendo hasta que ningún centroide varíe
+o sólo lo haga un pequeño porcentaje de ellos.
+
+Para asignar un objeto al centroide más cercano se necesita una medida de proximidad capaz de cuantificar la noción de
+cercanía para el tipo de datos con los que se está trabajando. Por lo general se buscan medidas de proximidad sencillas,
+ya que el algoritmo debe calcular de manera repetitiva la similitud entre cada objeto y cada centroide.
